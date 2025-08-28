@@ -39,8 +39,16 @@ Para mais informações, consulte os microfundamentos Fundamentos de Engenharia 
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| A aplicação deve permitir o cadastro de novos usuarios | ALTA | 
+|RF-002| A aplicação deve permitir que usuarios (visitantes e administradores) cadastrados realizem login | ALTA |
+|RF-003| A aplicação deve possibilitar a criação de perfis de usuario com permissoes especificas | ALTA | 
+|RF-004| A aplicação deve restringir funcionalidades de acordo com o perfil do usuario | ALTA | 
+|RF-005| A aplicação deve permitir o cadastro de projetos | ALTA | 
+|RF-006| A aplicação deve permitir a edição e exclusão logica de um projeto | MEDIA | 
+|RF-007| A aplicação deve possuir um painel para exibição de projetos em destaque | BAIXA | 
+|RF-008| A aplicação deve permitir a consulta a todos os detalhes do projeto | BAIXA | 
+|RF-009| A aplicação deve possuir uma busca avançada de projetos | MEDIA | 
+|RF-010| A aplicação deve permitir o cadastro de informações de divulgação do projeto | BAIXA | 
 
 ### Requisitos não Funcionais
 
@@ -48,21 +56,9 @@ Para mais informações, consulte os microfundamentos Fundamentos de Engenharia 
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-003| O sistema deve possuir uma interface amigavel ao usuario |  BAIXA | 
+|RNF-004| A aplicação deve proteger os dados sensiveis dos usuarios de acessos indevidos.|ALTA|
+|RNF-005| A aplicação deve ter bom nível de contraste entre os elementos da tela.	|MEDIA|
 
 ## Restrições
 
@@ -70,8 +66,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|R-01|O projeto deverá ser entregue até o final do semestre|
+|R-02|A aplicação não deve ser realizada por terceiros fora do grupo|
+|R-03|A aplicação deve ser desenvolvida utilizando linguagem e padrões em comum acordo com os integrantes do grupo|
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
