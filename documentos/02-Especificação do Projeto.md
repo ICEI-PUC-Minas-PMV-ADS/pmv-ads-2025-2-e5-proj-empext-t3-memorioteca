@@ -23,8 +23,7 @@ Descreva brevemente a arquitetura definida para o projeto e as tecnologias a ser
 
 ## Project Model Canvas
 
-Deve ser desenvolvido a partir do microfundamento: Empreendedorismo e inovação.
-Colocar a imagem do modelo construído apresentando a proposta de solução.
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/tree/main/documentos/img
 
 > **Links Úteis**:
 > Disponíveis em material de apoio do projeto
