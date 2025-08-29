@@ -52,7 +52,7 @@ Para mais informações, consulte os microfundamentos Fundamentos de Engenharia 
 |RF-005| A aplicação deve permitir o cadastro, consulta, edição e exclusão de projetos | ALTA |  
 |RF-006| A aplicação deve possuir um painel para exibição de projetos em destaque | BAIXA | 
 |RF-007| A aplicação deve possui funcionalidade de busca avançada de projetos | BAIXA | 
-|RF-008| A aplicação deve possuir funcionalidades para que visitantes possam entrar em contato | MEDIA | 
+|RF-008| A aplicação deve permitir que visitantes entrem em contato com a equipe da biblioteca | MEDIA | 
 |RF-009| A aplicação deve possuir tela contendo informações institucionais | MEDIA |
 |RF-010| A aplicação deve permitir o cadastro de informações de divulgação do projeto | BAIXA | 
 
