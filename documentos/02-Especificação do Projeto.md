@@ -23,10 +23,11 @@ Descreva brevemente a arquitetura definida para o projeto e as tecnologias a ser
 
 ## Project Model Canvas
 
-![Project Model Canvas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/tree/main/documentos/img)
+![Project Model Canvas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/commit/846d0f0e46b26fa022a9a5bb39388dae304dfacd)
 
-Link Projec Model Canvas lista - https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/Project%20Model%20Canva%20-%20Lista.pdf
-Link Project Model Canvas quadro - https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/Project%20Model%20Canva%20-%20Quadro.pdf
+- Link Projec Model Canvas lista - https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/Project%20Model%20Canva%20-%20Lista.pdf
+  
+- Link Project Model Canvas quadro - https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/Project%20Model%20Canva%20-%20Quadro.pdf
 
 
 
