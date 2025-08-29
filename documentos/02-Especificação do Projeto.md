@@ -23,7 +23,7 @@ Descreva brevemente a arquitetura definida para o projeto e as tecnologias a ser
 
 ## Project Model Canvas
 
-Project Model Canvas construído na ferramenta https://app.projectcanvas.online
+Project Model Canvas construído através da ferramenta https://app.projectcanvas.online
 
 ![Project Model Canvas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/Canvas%20print.png)
 
