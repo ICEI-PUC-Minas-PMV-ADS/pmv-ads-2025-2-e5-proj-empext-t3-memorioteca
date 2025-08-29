@@ -33,8 +33,7 @@ Project Model Canvas construído na ferramenta https://app.projectcanvas.online
 
 
 
-> **Links Úteis**:
-> Disponíveis em material de apoio do projeto
+
 
 ## Requisitos
 
