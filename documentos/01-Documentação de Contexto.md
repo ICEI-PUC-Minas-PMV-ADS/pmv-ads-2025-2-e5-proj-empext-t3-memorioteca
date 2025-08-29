@@ -46,6 +46,9 @@ Outro ponto relevante é o impacto social da Memorioteca, que se propõe a valor
 
 ## Relação com a Extensão Universitária
 
+A Memorioteca aproxima a universidade da comunidade ao propor uma solução para a dificuldade de preservação e divulgação de projetos acadêmicos, sociais e culturais. O sistema impacta o parceiro ao oferecer um espaço digital seguro e organizado para registrar e compartilhar suas iniciativas, ampliando sua visibilidade e alcance.
+
+Ao mesmo tempo, transforma a experiência dos alunos envolvidos, que aplicam seus conhecimentos em um contexto real, desenvolvendo competências técnicas, sociais e de cidadania. Dessa forma, o projeto reforça o papel da extensão universitária como ponte entre teoria e prática, promovendo a troca de saberes e a geração de impacto social concreto
 
 ## Descrição do Parceiro
 
