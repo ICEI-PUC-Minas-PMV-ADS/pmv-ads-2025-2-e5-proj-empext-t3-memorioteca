@@ -40,7 +40,7 @@ Divulgação ampliada: Integrar informações sobre as produções em mídias so
 
 A criação da Memorioteca se justifica pela necessidade concreta de preservar e tornar acessíveis os projetos pedagógicos e culturais desenvolvidos na Escola Municipal Newton Amaral Franco.
 
-Projetos relevantes já realizados pela instituição incluem:
+Projetos recentes já realizados pela instituição incluem:
 
 O curta-metragem “Memórias do Córrego das Areias”,
 
