@@ -84,14 +84,15 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Caso de Uso
 
-![Diagrama de caso de uso](https://github.com/user-attachments/assets/da992a92-a99b-41c6-a718-e1340c224cb3)
+![Diagrama de caso de uso](https://github.com/user-attachments/assets/52c02731-b4c1-4e4d-8eb5-6bf8f4ed0666)
 
 ## Modelo da Base de Dados
 
-# Para banco de dados relacional:
-- Apresentar o MER (Modelo Entidade-Relacionamento)
+### Modelo Entidade-Relacionamento
 
-## Projeto Físico da Base de Dados
+![MER](https://github.com/user-attachments/assets/77f613bb-9b5c-491d-9035-39ceba0b5189)
+
+### Projeto Físico da Base de Dados
  ```sql
 Usuarios
 CREATE TABLE Usuarios (
@@ -137,7 +138,3 @@ CREATE TABLE Contatos (
     data_envio DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 ```
-
-# Para banco de dados NoSQL:
-Apresentar o Modelo da Base de Dados (estrutura dos documentos, coleções, ou grafos, conforme o tipo de NoSQL utilizado)
-
