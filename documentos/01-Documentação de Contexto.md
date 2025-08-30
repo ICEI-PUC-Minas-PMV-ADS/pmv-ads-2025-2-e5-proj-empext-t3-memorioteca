@@ -1,54 +1,71 @@
 # Introdução
 
-Nos dias atuais, a produção e divulgação de projetos acadêmicos, culturais e sociais têm se tornado cada vez mais relevantes para a preservação da memória coletiva e para a valorização do conhecimento. Entretanto, muitas dessas iniciativas acabam se perdendo por falta de um espaço centralizado que permita o registro, a organização e a divulgação de seus conteúdos.
+Nos dias atuais, a preservação e a divulgação de projetos acadêmicos, culturais e sociais são fundamentais para valorizar o conhecimento e fortalecer a memória coletiva. Entretanto, muitas dessas iniciativas acabam se perdendo pela ausência de um espaço digital centralizado que permita o registro, a organização e a disseminação de seus conteúdos.
 
-Nesse contexto, surge a proposta da aplicação Memorioteca, uma plataforma digital que possibilita o armazenamento, a consulta e a divulgação de projetos em diferentes formatos, como textos, imagens e vídeos. A aplicação foi idealizada para atender tanto administradores, responsáveis pelo gerenciamento e organização dos projetos, quanto visitantes, que poderão explorar o acervo disponível.
+Nesse contexto, surge a Memorioteca, uma plataforma digital desenvolvida em parceria com a biblioteca da Escola Municipal Newton Amaral Franco, localizada no bairro Petrolândia, em Contagem. A escola atende turmas do 1º ao 5º ano do ensino fundamental e, em sua biblioteca, passam em média 120 alunos por dia.
 
-A Memorioteca busca ser um repositório vivo, acessível e colaborativo, que contribua para a preservação da memória institucional e social, além de facilitar o acesso à informação de forma simples e estruturada.
+A aplicação foi idealizada para atender às necessidades reais da instituição: oferecer um espaço digital para registrar, organizar e divulgar os projetos desenvolvidos pela comunidade escolar. Assim, administradores (bibliotecários e educadores) poderão gerenciar o acervo, enquanto visitantes (alunos, famílias e comunidade em geral) terão acesso às produções de forma acessível e estruturada.
+
+A Memorioteca busca ser um repositório vivo e colaborativo, que preserve a memória da escola, fortaleça a identidade institucional e amplie o alcance dos trabalhos já realizados.
 
 ## Problema
 
-Atualmente, muitos projetos acadêmicos, culturais e sociais enfrentam dificuldades em relação à sua preservação e divulgação. Frequentemente, eles ficam restritos a arquivos físicos ou dispersos em mídias digitais sem organização, o que dificulta o acesso público e reduz sua visibilidade.
+Atualmente, os projetos da Escola Municipal Newton Amaral Franco – como produções audiovisuais, atividades culturais e trabalhos pedagógicos – ficam dispersos em mídias físicas ou digitais sem um sistema de organização. Isso dificulta tanto a preservação quanto a divulgação das iniciativas.
 
-Além disso, a ausência de ferramentas adequadas de gerenciamento pode comprometer a segurança e integridade das informações, uma vez que não há controle sobre quem pode cadastrar, editar ou excluir conteúdos. Isso gera o risco de perda de dados importantes e da descaracterização do material original.
+Outro desafio está na ausência de um espaço seguro para o gerenciamento das informações: não há controle sobre quem pode cadastrar, editar ou excluir conteúdos, o que gera risco de perda ou descaracterização do material original.
 
-Outro problema identificado é a limitação na divulgação de iniciativas, que muitas vezes não alcançam o público desejado por falta de integração com mídias físicas e digitais.
+Além disso, muitos projetos de grande valor cultural e pedagógico não alcançam a comunidade externa, pois não há uma plataforma que possibilite sua divulgação de forma contínua e acessível.
 
-A Memorioteca surge justamente para enfrentar esses desafios, centralizando em um único espaço o cadastro, organização, busca e divulgação de projetos.
+A Memorioteca surge justamente para enfrentar esses desafios, centralizando em um único espaço digital o registro, a consulta e a divulgação das produções da escola.
 
 ## Objetivos
 
-O objetivo principal da aplicação Memorioteca é oferecer uma plataforma digital que permita o registro, gerenciamento e divulgação de projetos de forma estruturada e acessível.
+O objetivo principal da Memorioteca é oferecer uma plataforma digital que permita registrar, gerenciar e divulgar os projetos da Escola Municipal Newton Amaral Franco, de maneira organizada e acessível.
 
 Objetivos específicos:
 
-Cadastro e autenticação de usuários: Possibilitar que visitantes e administradores acessem a aplicação com diferentes permissões.
+Cadastro e autenticação de usuários: Diferenciar permissões de administradores (bibliotecários/professores) e visitantes (alunos, familiares e comunidade).
 
-Gerenciamento de perfis e permissões: Garantir que apenas administradores possam cadastrar, editar e excluir projetos, enquanto visitantes têm acesso à consulta.
+Gerenciamento de projetos: Possibilitar que administradores cadastrem, editem e removam conteúdos, preservando sua integridade.
 
-Cadastro de projetos: Permitir o registro de projetos com anexos de texto, imagem e vídeo.
+Registro multimídia: Permitir anexos em texto, imagem e vídeo, valorizando produções audiovisuais e trabalhos escritos.
 
-Edição e exclusão de projetos: Possibilitar que administradores atualizem ou removam projetos de forma controlada.
+Exibição organizada: Disponibilizar os projetos em um painel acessível e atrativo para visitantes.
 
-Painel de exibição: Apresentar todos os projetos cadastrados de forma organizada e acessível.
+Busca e filtragem: Facilitar a localização de projetos por palavras-chave, categorias ou outros critérios.
 
-Busca e filtragem: Facilitar a localização de projetos por palavras-chave, categorias ou outros critérios definidos.
-
-Divulgação em mídias: Incluir informações sobre divulgação em redes sociais, mídias físicas e notícias relacionadas.
+Divulgação ampliada: Integrar informações sobre as produções em mídias sociais, sites institucionais e outros canais de comunicação.
 
 ## Justificativa
 
-A criação da Memorioteca se justifica pela necessidade de preservar e tornar acessível o conhecimento produzido em projetos acadêmicos, culturais e sociais. Muitas dessas iniciativas acabam restritas a um público limitado ou esquecidas com o tempo, por falta de um espaço que garanta sua visibilidade e permanência.
+A criação da Memorioteca se justifica pela necessidade concreta de preservar e tornar acessíveis os projetos pedagógicos e culturais desenvolvidos na Escola Municipal Newton Amaral Franco.
 
-Além disso, a plataforma atende à demanda por organização e segurança, estabelecendo níveis de acesso diferenciados entre administradores e visitantes. Isso assegura que o conteúdo seja preservado de forma confiável, ao mesmo tempo em que é disponibilizado ao público de maneira prática e acessível.
+Projetos relevantes já realizados pela instituição incluem:
 
-Outro ponto relevante é o impacto social da Memorioteca, que se propõe a valorizar e divulgar iniciativas importantes, promovendo a democratização da informação e contribuindo para o fortalecimento da memória coletiva.
+O curta-metragem “Memórias do Córrego das Areias”,
+
+O curta-metragem “Natureza”,
+
+O projeto de Comunicação Não Violenta, voltado ao trabalho com meninos sobre controle emocional e reconhecimento das próprias emoções.
+
+Esses projetos demonstram a riqueza do trabalho pedagógico da escola, mas também evidenciam a dificuldade de preservação e divulgação das iniciativas sem um repositório centralizado.
+
+Com a Memorioteca, essas produções poderão ser registradas de forma segura, alcançando tanto a comunidade escolar quanto um público mais amplo, fortalecendo a memória e a identidade da instituição.
 
 ## Relação com a Extensão Universitária
 
-A Memorioteca aproxima a universidade da comunidade ao propor uma solução para a dificuldade de preservação e divulgação de projetos acadêmicos, sociais e culturais. O sistema impacta o parceiro ao oferecer um espaço digital seguro e organizado para registrar e compartilhar suas iniciativas, ampliando sua visibilidade e alcance.
+O desenvolvimento da Memorioteca aproxima a universidade da comunidade escolar, ao aplicar conhecimentos técnicos em um contexto real, de impacto social.
 
-Ao mesmo tempo, transforma a experiência dos alunos envolvidos, que aplicam seus conhecimentos em um contexto real, desenvolvendo competências técnicas, sociais e de cidadania. Dessa forma, o projeto reforça o papel da extensão universitária como ponte entre teoria e prática, promovendo a troca de saberes e a geração de impacto social concreto
+O sistema atende diretamente à biblioteca da Escola Municipal Newton Amaral Franco, oferecendo um espaço digital seguro e organizado para registrar e compartilhar seus projetos. Ao mesmo tempo, amplia a visibilidade das produções escolares, reforçando o papel da escola como agente de transformação social e cultural.
+
+Para os alunos universitários envolvidos, a experiência proporciona a oportunidade de aplicar teoria na prática, desenvolver competências técnicas e sociais, além de contribuir com a valorização da educação básica. Assim, o projeto se alinha ao papel da extensão universitária de promover a troca de saberes, a cidadania e o impacto positivo na comunidade.
 
 ## Descrição do Parceiro
 
+A parceira do projeto é a biblioteca da Escola Municipal Newton Amaral Franco, localizada no bairro Petrolândia, em Contagem/MG.
+
+A biblioteca é coordenada por uma profissional formada em pedagogia, que atua no espaço desde 2014, acumulando mais de 10 anos de experiência no trabalho de incentivo à leitura, preservação cultural e promoção de projetos educativos.
+
+Com a média de 120 alunos atendidos por dia, a biblioteca é um espaço dinâmico de aprendizagem e criação. Ao longo dos últimos anos, desenvolveu iniciativas marcantes, como curtas-metragens premiados em festivais internacionais e projetos pedagógicos de impacto social.
+
+A parceria estabelece a Memorioteca como uma ferramenta estratégica para fortalecer ainda mais a atuação da biblioteca e garantir a preservação de sua memória e produções.
