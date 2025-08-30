@@ -90,7 +90,54 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 # Para banco de dados relacional:
 - Apresentar o MER (Modelo Entidade-Relacionamento)
-- Apresentar o Projeto Físico da Base de Dados (estrutura das tabelas, tipos de dados, chaves primárias e estrangeiras)
+
+## Projeto Físico da Base de Dados
+ ```sql
+Usuarios
+CREATE TABLE Usuarios (
+    id_usuario INT [PK],
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    tipo ENUM('Administrador','Visitante') NOT NULL
+);
+
+Perfis
+CREATE TABLE Perfis (
+    id_perfil INT [PK],
+    id_usuario INT NOT NULL [FK]
+);
+
+Projetos
+CREATE TABLE Projetos (
+    id_projeto INT [PK],
+    id_usuario INT NOT NULL  [FK],
+    titulo VARCHAR(150) NOT NULL,
+    descricao TEXT NOT NULL,
+    data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+Informações Institucionais
+CREATE TABLE InformacoesInstitucionais (
+    id_info  [PK],
+    id_usuario INT NOT NULL [FK],
+    titulo VARCHAR(150) NOT NULL,
+    descricao TEXT,,
+    endereco VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20) NOT NULL
+);
+
+Contatos
+CREATE TABLE Contatos (
+    id_contato [PK],
+    id_usuario INT NOT NULL [FK],
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    mensagem TEXT NOT NULL,
+    data_envio DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
+
 # Para banco de dados NoSQL:
 Apresentar o Modelo da Base de Dados (estrutura dos documentos, coleções, ou grafos, conforme o tipo de NoSQL utilizado)
 
