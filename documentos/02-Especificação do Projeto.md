@@ -84,7 +84,7 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Caso de Uso
 
-![Diagrama de caso de uso](https://github.com/user-attachments/assets/78c1358f-8b0e-4804-aef6-b86b0979b256)
+![Diagrama de caso de uso](https://github.com/user-attachments/assets/da992a92-a99b-41c6-a718-e1340c224cb3)
 
 ## Modelo da Base de Dados
 
