@@ -19,7 +19,53 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 
 ## Arquitetura e Tecnologias
 
-Descreva brevemente a arquitetura definida para o projeto e as tecnologias a serem utilizadas. Sugere-se a criação de um diagrama de componentes da solução.
+A aplicação será composta dos seguintes componentes:
+
+### Memorioteca Frontend
+**Tipo:** Website  
+**Tecnologia:** ReactJS
+
+**Hospedagem (opções):**
+- Vercel
+- Netlify
+
+---
+
+### Memorioteca Backend
+**Tipo:** RESTful Web API  
+**Tecnologia:** Node.js + Express
+
+**Hospedagem (opções):**
+- Vercel
+- Railway
+- Render
+
+---
+
+### Memorioteca Database
+**Tipo:** Database System  
+**Tecnologia:** SQL
+
+**Hospedagem (opções):**
+- PlanetScale
+- Supabase
+
+---
+
+### Memorioteca Files
+**Tipo:** Storage System  
+
+**Hospedagem (opções):**
+- Firebase
+- Cloudinary
+
+---
+
+### Diagrama de Arquitetura
+
+![Arquitetura do Sistema](image.png)
+
+*Diagrama ilustrando a arquitetura e comunicação entre os componentes do sistema Memorioteca*
 
 ## Project Model Canvas
 
@@ -58,13 +104,16 @@ Para mais informações, consulte os microfundamentos Fundamentos de Engenharia 
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-|RNF-003| O sistema deve possuir uma interface amigavel ao usuario |  BAIXA | 
-|RNF-004| A aplicação deve proteger os dados sensiveis dos usuarios de acessos indevidos.|ALTA|
-|RNF-005| A aplicação deve ter bom nível de contraste entre os elementos da tela.	|MEDIA|
+| ID      | Descrição do Requisito | Categoria ISO/IEC 25010 | Prioridade |
+|---------|------------------------|-------------------------|------------|
+| RNF-001 | O sistema deve ser responsivo, adaptando-se automaticamente a diferentes tamanhos de tela e sistemas operacionais móveis. | Portabilidade / Usabilidade | MÉDIA |
+| RNF-002 | O sistema deve processar requisições do usuário em até 3 segundos, sob condições normais de rede e carga. | Desempenho / Eficiência | BAIXA |
+| RNF-003 | A interface do sistema deve seguir princípios de design centrado no usuário, com navegação intuitiva, feedback claro e consistência visual. | Usabilidade | BAIXA |
+| RNF-004 | A aplicação deve proteger dados sensíveis dos usuários contra acessos não autorizados, utilizando criptografia, autenticação forte e controle de acesso, conforme diretrizes da LGPD e OWASP. | Segurança | ALTA |
+| RNF-005 | A interface deve apresentar contraste adequado entre elementos visuais, atendendo aos critérios de acessibilidade definidos pelas diretrizes WCAG 2.1. | Usabilidade / Acessibilidade | MÉDIA |
+| RNF-006 | O sistema deve ser compatível com os principais navegadores modernos (Chrome, Firefox, Edge, Safari). | Compatibilidade / Portabilidade | MÉDIA |
+| RNF-007 | O sistema deve estar disponível 99,5% do tempo, considerando o período mensal. | Confiabilidade / Disponibilidade | ALTA |
+| RNF-008 | O sistema deve permitir fácil manutenção e atualização, com documentação clara e modularidade no código. | Manutenibilidade | MÉDIA |
 
 ## Restrições
 
