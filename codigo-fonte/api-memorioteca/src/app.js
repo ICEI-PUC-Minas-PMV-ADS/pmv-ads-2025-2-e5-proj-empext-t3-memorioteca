@@ -1,5 +1,6 @@
 import express from 'express';
 import healthcheckRoutes from './routes/healthcheck.js';
+import userRoutes from './routes/user.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -11,6 +12,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 app.use('/api', healthcheckRoutes);
+app.use('/api', userRoutes);
 
 app.get('/', (req, res) => {
   res.json({ message: 'API funcionando!' });
