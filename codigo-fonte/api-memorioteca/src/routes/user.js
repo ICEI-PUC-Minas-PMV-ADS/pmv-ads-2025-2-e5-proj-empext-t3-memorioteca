@@ -1,9 +1,10 @@
 import express from 'express';
 import {User} from '../service/user.js';
+import { authenticate } from '../middleware/auth.js';
 
 const router = express.Router();
 
-router.get('/user', async (req, res) => {
+router.get('/user', authenticate, async (req, res) => {
   try {
     let result = await User.listarTodos();
 

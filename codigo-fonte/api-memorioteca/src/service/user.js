@@ -1,7 +1,12 @@
 import bcrypt from 'bcrypt';
 import { supabase } from '../infra/database.js';
+import jwt from "jsonwebtoken";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export class User {
+  
   constructor(data = {}) {
     this.id = data.id || null;
     this.email = data.email || '';
@@ -96,7 +101,7 @@ export class User {
       if (existingUser.success && existingUser.user) {
         return {
           success: false,
-          errors: ['Email já está em uso'],
+          errors: ['Já existe um usuario cadastrado com o email informado.'],
           user: null
         };
       }
@@ -169,9 +174,6 @@ export class User {
         .single();
 
       if (error) {
-        if (error.code === 'PGRST116') {
-          return { success: true, user: null };
-        }
         console.error('Erro ao buscar usuário por email:', error);
         return { success: false, user: null, error: error.message };
       }
@@ -215,10 +217,19 @@ export class User {
 
       await user.updateLastLogin();
 
+      let userData = user.toPublic();
+      
+      const token = jwt.sign(
+        { user: userData },
+        process.env.JWT_SECRET,
+        { expiresIn: process.env.JWT_EXPIRES_IN }
+      );
+
       return {
         success: true,
         message: 'Login realizado com sucesso',
-        user: user.toPublic()
+        token: token,
+        user: userData
       };
 
     } catch (error) {
