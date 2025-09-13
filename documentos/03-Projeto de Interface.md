@@ -13,6 +13,8 @@
 
 <img width="300" alt="Não autenticado - Login" src="https://github.com/user-attachments/assets/313d40c7-7608-46df-b478-847df4865bac" />
 
+https://github.com/user-attachments/assets/3a81809b-3663-4552-9646-357d9fa02dfb
+
 ## Usuário Visitante
 
 <img width="300" alt="Visitante - Página Inicial" src="https://github.com/user-attachments/assets/9383430e-7640-4685-aaba-70394e7d61a8" />
@@ -30,6 +32,10 @@
 <img width="300" alt="Visitante - Alterar senha" src="https://github.com/user-attachments/assets/e622b68a-34e7-4f3f-857e-d311c6d5042c" />
 
 <img width="300" alt="Visitante - Deletar conta" src="https://github.com/user-attachments/assets/36f659aa-0fde-4a60-b768-a7936edc0458" />
+
+https://github.com/user-attachments/assets/c926af38-c948-4868-89bb-d533e7f3edea
+
+
 
 
 
