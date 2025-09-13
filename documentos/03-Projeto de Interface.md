@@ -39,9 +39,29 @@ https://github.com/user-attachments/assets/3a81809b-3663-4552-9646-357d9fa02dfb
 
 https://github.com/user-attachments/assets/c926af38-c948-4868-89bb-d533e7f3edea
 
+## Usuário Administrador
 
+<img width="300" alt="Administrador - Página Inicial" src="https://github.com/user-attachments/assets/1f282340-7a44-4e2c-9a10-7acb20a9effb" />
 
+<img width="300" alt="Administrador - Informações Institucionais" src="https://github.com/user-attachments/assets/77c52448-d11c-412e-9e89-843c9f528e6d" />
 
+<img width="300" alt="Administrador - Editar Informações Institucionais" src="https://github.com/user-attachments/assets/60ac65f6-672e-4470-ae73-e4030aa984f5" />
 
+<img width="300" alt="Administrador - Projetos" src="https://github.com/user-attachments/assets/250cb87d-f9ec-4a6b-bafb-8c939cbac42f" />
 
+<img width="300" alt="Administrador - Cadastrar Projeto" src="https://github.com/user-attachments/assets/e3728cfa-7ab3-4b26-ac91-ac555b312525" />
+
+<img width="300" alt="Administrador - Detalhe Projeto" src="https://github.com/user-attachments/assets/fad279ac-da6b-4b3b-adc7-cf07e714f6ea" />
+
+<img width="300" alt="Administrador - Editar Projeto" src="https://github.com/user-attachments/assets/2359c94d-6af1-45fe-9116-0cb8b79aa77f" />
+
+<img width="300" alt="Administrador - Deletar Projeto" src="https://github.com/user-attachments/assets/45cf7e44-90f8-4c46-b495-bd786c70fa5d" />
+
+<img width="300" alt="Administrador - Editar Perfil" src="https://github.com/user-attachments/assets/15adf4c8-63e4-4608-af43-7a24d0acee07" />
+
+<img width="300" alt="Administrador - Alterar senha" src="https://github.com/user-attachments/assets/018f76bf-11d1-4da3-9d01-dfae221ee575" />
+
+<img width="300" alt="Administrador - Deletar Conta" src="https://github.com/user-attachments/assets/2bec0de6-fa5b-4ea1-a0e6-2ae8b8a939b8" />
+
+https://github.com/user-attachments/assets/cd92c136-2336-4d45-bce7-3f0b5dc71e50
 
