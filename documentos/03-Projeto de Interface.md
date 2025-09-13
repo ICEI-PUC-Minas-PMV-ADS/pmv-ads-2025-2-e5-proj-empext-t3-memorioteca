@@ -1,6 +1,10 @@
 
 # Projeto de Interface
 
+[Protótipo Interativo Figma - Visitante](https://www.figma.com/design/L5aSuOAkFLnNfOiOkv2Z3C/Memorioteca?node-id=0-1&t=Oh1hrQeOyhaUNCg8-1)
+
+[Protótipo Interativo Figma - Administrador](https://www.figma.com/design/L5aSuOAkFLnNfOiOkv2Z3C/Memorioteca?node-id=127-38&t=Oh1hrQeOyhaUNCg8-1)
+
 ## Usuário não autenticado
 
 <img width="300" alt="Não autenticado - Página Inicial" src="https://github.com/user-attachments/assets/646c0271-d339-4301-86e6-95ea4cb9b098" />
