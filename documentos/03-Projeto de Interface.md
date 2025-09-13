@@ -1,9 +1,9 @@
 
 # Projeto de Interface
 
-[Protótipo Interativo Figma - Visitante](https://www.figma.com/design/L5aSuOAkFLnNfOiOkv2Z3C/Memorioteca?node-id=0-1&t=Oh1hrQeOyhaUNCg8-1)
+[Protótipo Interativo Figma - Visitante](https://www.figma.com/proto/L5aSuOAkFLnNfOiOkv2Z3C/Memorioteca?node-id=2-20&p=f&t=IIIXSmbaUxJJXmzu-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A20)
 
-[Protótipo Interativo Figma - Administrador](https://www.figma.com/design/L5aSuOAkFLnNfOiOkv2Z3C/Memorioteca?node-id=127-38&t=Oh1hrQeOyhaUNCg8-1)
+[Protótipo Interativo Figma - Administrador](https://www.figma.com/proto/L5aSuOAkFLnNfOiOkv2Z3C/Memorioteca?node-id=127-865&p=f&t=j3KOTLHjzHhzb20N-1&scaling=min-zoom&content-scaling=fixed&page-id=127%3A38&starting-point-node-id=127%3A865)
 
 ## Usuário não autenticado
 
