@@ -7,7 +7,7 @@
 
 ## Paleta de cores 
 
-Definida as cores para o site, resultado de uma escolha feita com cuidado para refletir a identidade e a proposta do projeto.
+Definida as cores para o site, o resultado de uma escolha feita com cuidado para refletir a identidade e a proposta do projeto.
 Vale destacar que o vermelho não faz parte dessa paleta, sendo utilizado apenas em ações específicas como deletar ou excluir. Assim. essa decisão garante que o vermelho mantenha seu papel de alerta e não interfira na harmonia visual do restante da 
 
 ![alt text](<Captura de tela 2025-09-21 111550.png>)
