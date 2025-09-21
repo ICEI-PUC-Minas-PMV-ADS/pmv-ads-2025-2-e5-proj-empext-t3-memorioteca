@@ -23,10 +23,10 @@ const DashboardPage = () => {
           </div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight mb-4">
-              Bem-vindo à sua Memorioteca!
+              Bem-vindo a Memorioteca!
             </h2>
             <p className="text-lg text-muted-foreground">
-              Você está logado com sucesso. Em breve, aqui você poderá gerenciar suas memórias.
+              Você está logado com sucesso.
             </p>
           </div>
           
