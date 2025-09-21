@@ -107,7 +107,7 @@ Teste de Login</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-001 - I02<br>Cadastro com e-mail inválido</th>
+    <th colspan="2" width="1000">CT-001 - I01<br>Cadastro com e-mail inválido</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -186,6 +186,51 @@ Teste de Login</th>
     <td>O sistema deve exibir uma mensagem de erro informando "E-mail ou senha inválidos".</td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-003 - I03  
+Cadastro com e-mail já cadastrado</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se o sistema impede o cadastro de um e-mail que já existe na base de dados.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">João Victor Antunes</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Insucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-001</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Abrir a aplicação e ir para a página de cadastro.<br>  
+      2. Preencher o campo de e-mail com um endereço que já está cadastrado.<br>  
+      3. Preencher os campos de senha.<br>  
+      4. Clicar no botão "Cadastrar".
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>E-mail:</strong> email_ja_existente@exemplo.com  
+
+      - <strong>Senha:</strong> SenhaQualquer123
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve exibir uma mensagem de erro informando que o e-mail fornecido já está em uso.</td>
+  </tr>
+</table>
+
 
 ### ETAPA 3
 
@@ -393,46 +438,3 @@ Colocar evidências de teste da etapa 3
 
 Colocar evidências de teste da etapa 4
 
-## Parte 2 - Testes por pares
-
-A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade deve ser testada por um colega e os testes devem ser evidenciados. O colega "Tester" deve utilizar o caso de teste criado pelo desenvolvedor responsável pela funcionalidade (desenvolveu a funcionalidade e criou o caso de testes descrito no plano de testes) e caso perceba a necessidade de outros casos de teste, deve acrescentá-los na sessão "Plano de Testes".
-
-### ETAPA 2
-
-### Exemplo
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-002<br>Login com credenciais válidas</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">O sistema deve redirecionar o usuário para a página inicial do aplicativo após o login bem-sucedido.</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">José da Silva </td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">Maria Oliveira </td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">08/05/2024</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O sistema está permitindo o login corretamente.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-time-sheet/assets/82043220/2e3c1722-7adc-4bd4-8b4c-3abe9ddc1b48"/></td>
-  </tr>
-</table>
-
-### ETAPA 3
-
-Colocar evidências de teste da etapa 3
-
-### ETAPA 4
-
-Colocar evidências de teste da etapa 4
