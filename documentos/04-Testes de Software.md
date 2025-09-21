@@ -79,10 +79,14 @@ Teste de Login</th>
     <td><strong>Passos</strong></td>
     <td>
       1. Abrir a aplicação e ir para a página de login.  
+      
       2. Inserir um e-mail válido e cadastrado.  
+      
       3. Inserir a senha correta correspondente ao e-mail.  
+      
       4. Clicar no botão "Entrar".
-    </td>
+    
+  </td>
   </tr>
   <tr>
     <td><strong>Dados de teste</strong></td>
@@ -107,7 +111,7 @@ Teste de Login</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - I01<br>Cadastro com e-mail inválido</th>
+    <th colspan="2" width="1000">CT-001 - I01<br>Cadastro com e-mail inválido</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -148,7 +152,7 @@ Teste de Login</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - I01<br>Cadastro com e-mail inválido</th>
+    <th colspan="2" width="1000">CT-002 - I01<br>Cadastro com senha inválido</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
