@@ -1,6 +1,7 @@
 import { AuthResponse, RegisterResponse, LoginData, RegisterData } from '@/types'
+import { config } from '@/config/env'
 
-const API_BASE_URL = 'http://localhost:3000'
+const API_BASE_URL = config.API_BASE_URL
 
 export class ApiService {
   static async login(credentials: LoginData): Promise<AuthResponse> {
