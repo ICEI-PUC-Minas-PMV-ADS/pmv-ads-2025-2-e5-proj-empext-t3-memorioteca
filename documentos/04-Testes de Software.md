@@ -11,7 +11,7 @@ O caso de teste de sucesso deve ser identificado por CT - xxx - S
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-001 - S<br>Login com credenciais válidas</th>
+    <th colspan="2" width="1000">CT-002 - S<br>Login com credenciais válidas</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -27,7 +27,7 @@ O caso de teste de sucesso deve ser identificado por CT - xxx - S
   </tr> 
   <tr>
     <td><strong>Requisitos associados</strong></td>
-    <td>RF-001: O funcionário deve conseguir logar no aplicativo</td>
+    <td>RF-002: O funcionário deve conseguir logar no aplicativo</td>
   </tr>
   <tr>
     <td><strong>Passos</strong></td>
@@ -56,7 +56,7 @@ Para cada etapa do projeto, criar uma seção com o nome da Etapa do projeto: Et
 ### ETAPA 2  
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-001 - I01<br>Login com credenciais inválidas</th>
+    <th colspan="2" width="1000">CT-002 - I01<br>Login com credenciais inválidas</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -72,7 +72,7 @@ Para cada etapa do projeto, criar uma seção com o nome da Etapa do projeto: Et
   </tr> 
   <tr>
     <td><strong>Requisitos associados</strong></td>
-    <td>RF-001: O funcionário não conseguirá logar no aplicativo</td>
+    <td>RF-002: O funcionário não conseguirá logar no aplicativo</td>
   </tr>
   <tr>
     <td><strong>Passos</strong></td>
@@ -112,7 +112,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 ### ETAPA 2
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-001<br>Login com credenciais válidas</th>
+    <th colspan="6" width="1000">CT-002<br>Login com credenciais válidas</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -150,7 +150,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 ### Exemplo
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-001<br>Login com credenciais válidas</th>
+    <th colspan="6" width="1000">CT-002<br>Login com credenciais válidas</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
