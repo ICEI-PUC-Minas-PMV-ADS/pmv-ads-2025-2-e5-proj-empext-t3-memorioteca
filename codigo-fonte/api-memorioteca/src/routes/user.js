@@ -24,7 +24,10 @@ router.post('/user', async (req, res) => {
   try {
     let result = await User.criarNovo(req.body);
 
-    res.status(200).json(result);
+    if(result.success)
+      res.status(201).json(result);
+    else
+      res.status(400).json(result);
 
   } catch (error) {
     console.error('User failed:', error);
