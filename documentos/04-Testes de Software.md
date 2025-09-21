@@ -247,8 +247,6 @@ Apresente imagens e/ou vídeos que comprovam que um determinado teste foi execut
 
 Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, utilizando casos de teste, tanto de sucesso quanto de insucesso, elaborados por ele. Todos os testes devem ser evidenciados.
 
-### Exemplo
-
 ### ETAPA 2
 
 <table>
