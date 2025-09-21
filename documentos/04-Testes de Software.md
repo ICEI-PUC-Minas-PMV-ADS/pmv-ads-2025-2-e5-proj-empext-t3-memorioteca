@@ -34,13 +34,9 @@ Teste de Cadastro</th>
     <td><strong>Passos</strong></td>
     <td>
       1. Abrir a aplicação e ir para a página de cadastro.  
-
       2. Preencher o campo de e-mail com um endereço válido e não cadastrado.  
-
       3. Preencher o campo de senha com uma senha válida.  
-
       4. Confirmar a senha.  
-
       5. Clicar no botão "Cadastrar".
     </td>
   </tr>
@@ -83,11 +79,8 @@ Teste de Login</th>
     <td><strong>Passos</strong></td>
     <td>
       1. Abrir a aplicação e ir para a página de login.  
-
       2. Inserir um e-mail válido e cadastrado.  
-
       3. Inserir a senha correta correspondente ao e-mail.  
-
       4. Clicar no botão "Entrar".
     </td>
   </tr>
@@ -95,7 +88,6 @@ Teste de Login</th>
     <td><strong>Dados de teste</strong></td>
     <td>
       - <strong>E-MAIL:</strong> email_ja_existente@exemplo.com  
-
       - <strong>Senha:</strong> SenhaCorretaParaOEmail
     </td>
   </tr>
