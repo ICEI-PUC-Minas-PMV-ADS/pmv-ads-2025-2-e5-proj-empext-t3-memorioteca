@@ -10,59 +10,71 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 #### Etapa 2
 
 <table>
-     <tr>
-      <th colspan="2" width="1000">CT-001 - S<br>Teste de Cadastro</th>
-     </tr>
-      <tr>
-       <td width="150"><strong>Descrição</strong></td>
-        <td> Este caso de teste verifica se um novo usuário consegue se cadastrar com sucesso na aplicação.</td>
+  <tr>
+    <th colspan="2" width="1000">CT-001 - S  
+Teste de Cadastro</th>
   </tr>
   <tr>
-    <td><strong>Responsável Caso de Teste </strong></td>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se um novo usuário consegue se cadastrar com sucesso na aplicação.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
     <td width="430">João Victor Antunes</td>
   </tr>
- <tr>
+  <tr>
     <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
     <td>RF-001</td>
   </tr>
   <tr>
     <td><strong>Passos</strong></td>
     <td>
-      1. Abrir a aplicação e ir para a página de cadastro.<br>
-      2. Preencher o campo de e-mail com um endereço válido e não cadastrado.<br>
-      3. Preencher o campo de senha com uma senha válida.<br>
-      4. Confirmar a senha.
+      1. Abrir a aplicação e ir para a página de cadastro.  
+
+      2. Preencher o campo de e-mail com um endereço válido e não cadastrado.  
+
+      3. Preencher o campo de senha com uma senha válida.  
+
+      4. Confirmar a senha.  
+
       5. Clicar no botão "Cadastrar".
     </td>
   </tr>
-    <tr>
+  <tr>
     <td><strong>Dados de teste</strong></td>
     <td>
-      - <strong>E-MAIL:</strong> um_email_123@exemplo.com<br>
-      - <strong>Senha:</strong>  SenhaValida123
+      - <strong>E-MAIL:</strong> um_email_123@exemplo.com  
+      - <strong>Senha:</strong> SenhaValida123
+    </td>
   </tr>
-    <tr>
+  <tr>
     <td><strong>Critérios de êxito</strong></td>
     <td>O sistema deve criar o novo usuário e redirecioná-lo para a página de login ou para a página principal já logado, exibindo uma mensagem de sucesso.</td>
   </tr>
 </table>
 
+
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - S<br>Teste de Login</th>
+    <th colspan="2" width="1000">CT-002 - S  
+Teste de Login</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
-    <td> Este caso de teste verifica se um usuário cadastrado consegue realizar login com sucesso.</td>
+    <td>Este caso de teste verifica se um usuário cadastrado consegue realizar login com sucesso.</td>
   </tr>
   <tr>
-    <td><strong>Responsável Caso de Teste </strong></td>
+    <td><strong>Responsável Caso de Teste</strong></td>
     <td width="430">João Victor Antunes</td>
   </tr>
- <tr>
+  <tr>
     <td><strong>Tipo do Teste</strong></td>
     <td width="430">Sucesso</td>
-  </tr> 
+  </tr>
   <tr>
     <td><strong>Requisitos associados</strong></td>
     <td>RF-002</td>
@@ -70,28 +82,34 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   <tr>
     <td><strong>Passos</strong></td>
     <td>
-      1. Abrir a aplicação e ir para a página de login.<br>
-      2. Inserir um e-mail válido e cadastrado.<br>
-      3. Inserir a senha correta correspondente ao e-mail.<br>
+      1. Abrir a aplicação e ir para a página de login.  
+
+      2. Inserir um e-mail válido e cadastrado.  
+
+      3. Inserir a senha correta correspondente ao e-mail.  
+
       4. Clicar no botão "Entrar".
-      </td>
-    <td>
+    </td>
+  </tr>
+  <tr>
     <td><strong>Dados de teste</strong></td>
-    <strong>E-MAIL:</strong> : email_ja_existente@exemplo.com<br>
-      - <strong>Senha:</strong>  SenhaCorretaParaOEmail
+    <td>
+      - <strong>E-MAIL:</strong> email_ja_existente@exemplo.com  
+
+      - <strong>Senha:</strong> SenhaCorretaParaOEmail
+    </td>
   </tr>
   <tr>
     <td><strong>Critérios de êxito</strong></td>
-  <td>O sistema deve autenticar o usuário e redirecioná-lo para a página inicial da aplicação.</td>
+    <td>O sistema deve autenticar o usuário e redirecioná-lo para a página inicial da aplicação.</td>
   </tr>
 </table>
+
       
 
 
 #### Exemplo de Caso de Teste de Insucesso
 
-Os casos de testes de insucesso devem ser identificados por CT - xxx - I + sequencial de insucesso.
-Para cada etapa do projeto, criar uma seção com o nome da Etapa do projeto: Etapa 2, Etapa 3 e Etapa 4
 
 ### ETAPA 2  
 
