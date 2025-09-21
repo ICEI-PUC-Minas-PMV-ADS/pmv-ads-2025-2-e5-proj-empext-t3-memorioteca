@@ -11,7 +11,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-001 - S  
+    <th colspan="2" width="1000">CT-001 - S01
 Teste de Cadastro</th>
   </tr>
   <tr>
@@ -33,17 +33,17 @@ Teste de Cadastro</th>
   <tr>
     <td><strong>Passos</strong></td>
     <td>
-      1. Abrir a aplicação e ir para a página de cadastro.  
-      2. Preencher o campo de e-mail com um endereço válido e não cadastrado.  
-      3. Preencher o campo de senha com uma senha válida.  
-      4. Confirmar a senha.  
+      1. Abrir a aplicação e ir para a página de cadastro.<br>
+      2. Preencher o campo de e-mail com um endereço válido e não cadastrado.<br>
+      3. Preencher o campo de senha com uma senha válida.<br>  
+      4. Confirmar a senha.<br>
       5. Clicar no botão "Cadastrar".
     </td>
   </tr>
   <tr>
     <td><strong>Dados de teste</strong></td>
     <td>
-      - <strong>E-MAIL:</strong> um_email_123@exemplo.com  
+      - <strong>E-MAIL:</strong> um_email_123@exemplo.com<br>  
       - <strong>Senha:</strong> SenhaValida123
     </td>
   </tr>
@@ -56,7 +56,7 @@ Teste de Cadastro</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - S  
+    <th colspan="2" width="1000">CT-002 - S02  
 Teste de Login</th>
   </tr>
   <tr>
@@ -78,16 +78,16 @@ Teste de Login</th>
   <tr>
     <td><strong>Passos</strong></td>
     <td>
-      1. Abrir a aplicação e ir para a página de login.  
-      2. Inserir um e-mail válido e cadastrado.  
-      3. Inserir a senha correta correspondente ao e-mail.  
+      1. Abrir a aplicação e ir para a página de login.<br>  
+      2. Inserir um e-mail válido e cadastrado.<br>  
+      3. Inserir a senha correta correspondente ao e-mail.<br>  
       4. Clicar no botão "Entrar".
     </td>
   </tr>
   <tr>
     <td><strong>Dados de teste</strong></td>
     <td>
-      - <strong>E-MAIL:</strong> email_ja_existente@exemplo.com  
+      - <strong>E-MAIL:</strong> email_ja_existente@exemplo.com<br> 
       - <strong>Senha:</strong> SenhaCorretaParaOEmail
     </td>
   </tr>
@@ -107,7 +107,7 @@ Teste de Login</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-001 - I01<br>Cadastro com e-mail inválido</th>
+    <th colspan="2" width="1000">CT-001 - I02<br>Cadastro com e-mail inválido</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -148,7 +148,7 @@ Teste de Login</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - I01<br>Cadastro com senha inválido</th>
+    <th colspan="2" width="1000">CT-002 - I02<br>Cadastro com senha inválido</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
