@@ -5,6 +5,15 @@
 
 [Protótipo Interativo Figma - Administrador](https://www.figma.com/proto/L5aSuOAkFLnNfOiOkv2Z3C/Memorioteca?node-id=127-38&t=Oh1hrQeOyhaUNCg8-1)
 
+## Paleta de cores 
+
+Definida as cores para o site, resultado de uma escolha feita com cuidado para refletir a identidade e a proposta do projeto.
+Vale destacar que o vermelho não faz parte dessa paleta, sendo utilizado apenas em ações específicas como deletar ou excluir. Assim. essa decisão garante que o vermelho mantenha seu papel de alerta e não interfira na harmonia visual do restante da 
+
+![alt text](<Captura de tela 2025-09-21 111550.png>)
+
+![alt text](<Captura de tela 2025-09-21 111606.png>)
+
 ## Usuário não autenticado
 
 <img width="300" alt="Não autenticado - Página Inicial" src="https://github.com/user-attachments/assets/646c0271-d339-4301-86e6-95ea4cb9b098" />
