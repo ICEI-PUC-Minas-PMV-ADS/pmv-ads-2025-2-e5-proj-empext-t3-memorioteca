@@ -220,8 +220,7 @@ Cadastro com e-mail já cadastrado</th>
   <tr>
     <td><strong>Dados de teste</strong></td>
     <td>
-      - <strong>E-mail:</strong> email_ja_existente@exemplo.com  
-
+      - <strong>E-mail:</strong> email_ja_existente@exemplo.com <br> 
       - <strong>Senha:</strong> SenhaQualquer123
     </td>
   </tr>
