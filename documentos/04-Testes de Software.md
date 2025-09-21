@@ -79,14 +79,10 @@ Teste de Login</th>
     <td><strong>Passos</strong></td>
     <td>
       1. Abrir a aplicação e ir para a página de login.  
-      
       2. Inserir um e-mail válido e cadastrado.  
-      
       3. Inserir a senha correta correspondente ao e-mail.  
-      
       4. Clicar no botão "Entrar".
-    
-  </td>
+    </td>
   </tr>
   <tr>
     <td><strong>Dados de teste</strong></td>
