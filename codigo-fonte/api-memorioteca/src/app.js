@@ -3,12 +3,16 @@ import healthcheckRoutes from './routes/healthcheck.js';
 import userRoutes from './routes/user.js';
 import authRoutes from './routes/auth.js';
 import dotenv from 'dotenv';
+import projectRoutes from './routes/destaqueprojects.js' 
+
+
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use('/projects', projectRoutes) 
 
 app.use(express.json());
 

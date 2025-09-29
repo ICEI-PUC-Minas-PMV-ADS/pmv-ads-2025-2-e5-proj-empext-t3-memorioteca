@@ -1,11 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Card, CardHeader, CardTitle, CardContent, CardFooter, CardDescription } from '@/components/ui/Card'
 import { Button } from '@/components/ui'
-// import { Link } from 'react-router-dom' // Descomente quando tiver rota de detalhes
+import { ApiService, type ProjectFeaturedDto } from '@/services/api'
 
-// ------------------------------
-// Tipos
-// ------------------------------
 type Project = {
   id: string
   titulo: string
@@ -13,42 +10,6 @@ type Project = {
   capaUrl?: string
   createdAt: string // ISO
 }
-
-// ------------------------------
-// Mock de dados (substituir pelo backend depois)
-// ------------------------------
-const MOCK_PROJECTS: Project[] = [
-  {
-    id: 'p-001',
-    titulo: 'Atlas da Memória',
-    resumo: 'Mapeamento afetivo dos acervos e autores locais.',
-    capaUrl: '',
-    createdAt: '2025-09-17T10:12:00Z',
-  },
-  {
-    id: 'p-002',
-    titulo: 'Natureza',
-    resumo: 'Historias de prezervação ambiental guiada por alunos',
-    capaUrl: '',
-    createdAt: '2025-09-20T13:45:00Z',
-  },
-  {
-    id: 'p-003',
-    titulo: 'Laboratório de Zines',
-    resumo: 'Fanzines impressos e digitais produzidos pelos alunos.',
-    capaUrl: '',
-    createdAt: '2025-09-25T08:30:00Z',
-  },
-  {
-    id: 'p-004',
-    titulo: 'Acervo Vivo',
-    resumo: 'Histórias orais com a comunidade e arquivo sonoro.',
-    capaUrl: '',
-    createdAt: '2025-09-27T16:05:00Z',
-  },
-]
-
-// NÃO ESQUECER TROCAR o mock por chamada real quando o backend estiver pronto
 
 function useFeaturedProjects() {
   const [data, setData] = useState<Project[] | null>(null)
@@ -61,21 +22,25 @@ function useFeaturedProjects() {
       try {
         setLoading(true)
 
-        //BACKEND FAZER ROTA <AQUI> !!!!
-        
+        // chamada real ao backend
+        const dto = await ApiService.getFeaturedProjects(3)
 
-        // SIMULAR
-        await new Promise(r => setTimeout(r, 500))
         if (!mounted) return
-        const top3 = [...MOCK_PROJECTS]
-          .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-          .slice(0, 3)
 
-        setData(top3)
-      } catch (e: any) {
-        if (mounted) setError('Falha ao carregar destaques.')
+        // mapeia snake_case (back) -> camelCase (UI)
+        const normalized: Project[] = dto.map((p: ProjectFeaturedDto) => ({
+          id: p.id,
+          titulo: p.titulo,
+          resumo: p.resumo,
+          capaUrl: p.capa_url || '',
+          createdAt: p.created_at,
+        }))
+
+        setData(normalized)
+      } catch (e) {
+        setError('Falha ao carregar destaques.')
       } finally {
-        if (mounted) setLoading(false)
+        setLoading(false)
       }
     })()
 
@@ -100,16 +65,13 @@ function SquareSkeleton() {
   )
 }
 
-
 function FeaturedSquare({ project }: { project: Project }) {
   const date = useMemo(() => new Date(project.createdAt), [project.createdAt])
 
   return (
     <Card className="overflow-hidden">
       <CardContent className="p-4">
-        
         <div className="w-full aspect-square rounded-lg bg-muted flex items-center justify-center overflow-hidden">
-         
           {project.capaUrl ? (
             <img
               src={project.capaUrl}
@@ -122,7 +84,6 @@ function FeaturedSquare({ project }: { project: Project }) {
           )}
         </div>
 
-        
         <div className="mt-4">
           <CardTitle className="line-clamp-2">{project.titulo}</CardTitle>
           {project.resumo && (
@@ -133,7 +94,6 @@ function FeaturedSquare({ project }: { project: Project }) {
           </div>
         </div>
 
-    
         <CardFooter className="px-0 pt-4">
           <Button className="w-full sm:w-auto">Ver projeto</Button>
         </CardFooter>
@@ -144,6 +104,8 @@ function FeaturedSquare({ project }: { project: Project }) {
 
 const DestaquesPage: React.FC = () => {
   const { data, loading, error } = useFeaturedProjects()
+
+  const isEmpty = !loading && !error && (data?.length ?? 0) === 0
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -160,6 +122,12 @@ const DestaquesPage: React.FC = () => {
         {error && (
           <div className="mb-4 p-3 text-sm text-destructive bg-destructive/10 border border-destructive/20 rounded-md">
             {error}
+          </div>
+        )}
+
+        {isEmpty && (
+          <div className="mb-4 p-3 text-sm text-muted-foreground bg-muted/10 border border-muted/20 rounded-md">
+            Nenhum projeto cadastrado ainda.
           </div>
         )}
 

@@ -1,7 +1,17 @@
+
 import { AuthResponse, RegisterResponse, LoginData, RegisterData } from '@/types'
 import { config } from '@/config/env'
 
 const API_BASE_URL = config.API_BASE_URL
+
+
+export type ProjectFeaturedDto = {
+  id: string
+  titulo: string
+  resumo?: string
+  capa_url?: string
+  created_at: string
+}
 
 export class ApiService {
   static async login(credentials: LoginData): Promise<AuthResponse> {
@@ -80,6 +90,25 @@ export class ApiService {
     } catch (error) {
       console.error('Erro ao buscar perfil:', error)
       throw error
+    }
+  }
+
+  static async getFeaturedProjects(limit = 3, token?: string): Promise<ProjectFeaturedDto[]> {
+    try {
+      const url = `${API_BASE_URL}/projects/featured?limit=${encodeURIComponent(String(limit))}`
+      const headers: Record<string, string> = { Accept: 'application/json' }
+      if (token) headers.Authorization = `Bearer ${token}`
+
+      const res = await fetch(url, { method: 'GET', headers })
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}))
+        throw new Error(err.message || `Falha ao buscar destaques (HTTP ${res.status})`)
+      }
+      const data = (await res.json()) as ProjectFeaturedDto[]
+      return data ?? []
+    } catch (e) {
+      console.error('Erro ao buscar projetos em destaque:', e)
+      return [] // deixa a UI tratar estado vazio
     }
   }
 }
