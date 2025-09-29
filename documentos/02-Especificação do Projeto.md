@@ -19,15 +19,67 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 
 ## Arquitetura e Tecnologias
 
-Descreva brevemente a arquitetura definida para o projeto e as tecnologias a serem utilizadas. Sugere-se a criação de um diagrama de componentes da solução.
+A aplicação será composta dos seguintes componentes:
+
+### Memorioteca Frontend
+**Tipo:** Website  
+**Tecnologia:** ReactJS
+
+**Hospedagem (opções):**
+- Vercel
+- Netlify
+
+---
+
+### Memorioteca Backend
+**Tipo:** RESTful Web API  
+**Tecnologia:** Node.js + Express
+
+**Hospedagem (opções):**
+- Vercel
+- Railway
+- Render
+
+---
+
+### Memorioteca Database
+**Tipo:** Database System  
+**Tecnologia:** SQL
+
+**Hospedagem (opções):**
+- PlanetScale
+- Supabase
+
+---
+
+### Memorioteca Files
+**Tipo:** Storage System  
+
+**Hospedagem (opções):**
+- Firebase
+- Cloudinary
+
+---
+
+### Diagrama de Arquitetura
+
+![Arquitetura do Sistema](image.png)
+
+*Diagrama ilustrando a arquitetura e comunicação entre os componentes do sistema Memorioteca*
 
 ## Project Model Canvas
 
-Deve ser desenvolvido a partir do microfundamento: Empreendedorismo e inovação.
-Colocar a imagem do modelo construído apresentando a proposta de solução.
+Project Model Canvas construído através da seguinte ferramenta indicada no Microfundamento: https://app.projectcanvas.online
 
-> **Links Úteis**:
-> Disponíveis em material de apoio do projeto
+![Project Model Canvas](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/Canvas%20print.png)
+
+- Link Projec Model Canvas lista - https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/docs/Project%20Model%20Canva%20-%20Lista.pdf
+  
+- Link Project Model Canvas quadro - https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/docs/Project%20Model%20Canva%20-%20Quadro.pdf
+
+
+
+
 
 ## Requisitos
 
@@ -39,30 +91,29 @@ Para mais informações, consulte os microfundamentos Fundamentos de Engenharia 
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| A aplicação deve permitir o cadastro de novos usuarios | ALTA |
+|RF-002| A aplicação deve permitir que usuários (visitantes e administradores) cadastrados realizem login | ALTA |
+|RF-003| A aplicação deve possibilitar a criação de perfis de usuário com permissoes especificas | ALTA |
+|RF-004| A aplicação deve restringir funcionalidades de acordo com o perfil do usuário | ALTA |
+|RF-005| A aplicação deve permitir o cadastro, consulta, edição e exclusão de projetos | ALTA |
+|RF-006| A aplicação deve possuir um painel para exibição de projetos em destaque | BAIXA |
+|RF-007| A aplicação deve possui funcionalidade de busca avançada de projetos mediante filtros por parte do título, conteúdo e data | BAIXA |
+|RF-008| A aplicação deve permitir que visitantes entrem em contato com a equipe da biblioteca | MEDIA |
+|RF-009| A aplicação deve permitir a atualização e visualização das informações institucionais | MEDIA |
+|RF-010| A aplicação deve permitir o cadastro de informações de divulgação do projeto | BAIXA |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| ID      | Descrição do Requisito | Categoria ISO/IEC 25010 | Prioridade |
+|---------|------------------------|-------------------------|------------|
+| RNF-001 | O sistema deve ser responsivo, adaptando-se automaticamente a diferentes tamanhos de tela e sistemas operacionais móveis. | Portabilidade / Usabilidade | MÉDIA |
+| RNF-002 | O sistema deve processar requisições do usuário em até 3 segundos, sob condições normais de rede e carga. | Desempenho / Eficiência | BAIXA |
+| RNF-003 | A interface do sistema deve seguir princípios de design centrado no usuário, com navegação intuitiva, feedback claro e consistência visual. | Usabilidade | BAIXA |
+| RNF-004 | A aplicação deve proteger dados sensíveis dos usuários contra acessos não autorizados, utilizando criptografia, autenticação forte e controle de acesso, conforme diretrizes da LGPD e OWASP. | Segurança | ALTA |
+| RNF-005 | A interface deve apresentar contraste adequado entre elementos visuais, atendendo aos critérios de acessibilidade definidos pelas diretrizes WCAG 2.1. | Usabilidade / Acessibilidade | MÉDIA |
+| RNF-006 | O sistema deve ser compatível com os principais navegadores modernos (Chrome, Firefox, Edge, Safari). | Compatibilidade / Portabilidade | MÉDIA |
+| RNF-007 | O sistema deve estar disponível 99,5% do tempo, considerando o período mensal. | Confiabilidade / Disponibilidade | ALTA |
+| RNF-008 | O sistema deve permitir fácil manutenção e atualização, com documentação clara e modularidade no código. | Manutenibilidade | MÉDIA |
 
 ## Restrições
 
@@ -70,35 +121,66 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|R-01|O projeto deverá ser entregue até o final do semestre|
+|R-02|A aplicação não deve ser realizada por terceiros fora do grupo|
+|R-03|A aplicação deve ser desenvolvida utilizando linguagem e padrões em comum acordo com os integrantes do grupo|
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Caso de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+![Diagrama de caso de uso](https://github.com/user-attachments/assets/3af5b040-050a-4a83-84f3-eba08cdf4b9f)
 
-Para mais informações, consulte o microfundamento Engenharia de Requisitos de Software 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
 
 ## Modelo da Base de Dados
 
-# Para banco de dados relacional:
-- Apresentar o MER (Modelo Entidade-Relacionamento)
-- Apresentar o Projeto Físico da Base de Dados (estrutura das tabelas, tipos de dados, chaves primárias e estrangeiras)
-# Para banco de dados NoSQL:
-Apresentar o Modelo da Base de Dados (estrutura dos documentos, coleções, ou grafos, conforme o tipo de NoSQL utilizado)
+### Modelo Entidade-Relacionamento
 
+![MER](https://github.com/user-attachments/assets/77f613bb-9b5c-491d-9035-39ceba0b5189)
+
+### Projeto Físico da Base de Dados
+ ```sql
+Usuarios
+CREATE TABLE Usuarios (
+    id_usuario INT [PK],
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    tipo ENUM('Administrador','Visitante') NOT NULL
+);
+
+Perfis
+CREATE TABLE Perfis (
+    id_perfil INT [PK],
+    id_usuario INT NOT NULL [FK]
+);
+
+Projetos
+CREATE TABLE Projetos (
+    id_projeto INT [PK],
+    id_usuario INT NOT NULL  [FK],
+    titulo VARCHAR(150) NOT NULL,
+    descricao TEXT NOT NULL,
+    data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+Informações Institucionais
+CREATE TABLE InformacoesInstitucionais (
+    id_info  [PK],
+    id_usuario INT NOT NULL [FK],
+    titulo VARCHAR(150) NOT NULL,
+    descricao TEXT,,
+    endereco VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20) NOT NULL
+);
+
+Contatos
+CREATE TABLE Contatos (
+    id_contato [PK],
+    id_usuario INT NOT NULL [FK],
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    mensagem TEXT NOT NULL,
+    data_envio DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```

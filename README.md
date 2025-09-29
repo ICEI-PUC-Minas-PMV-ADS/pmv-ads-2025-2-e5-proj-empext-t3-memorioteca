@@ -1,25 +1,25 @@
-# TÍTULO DO PROJETO
+# MEMORIOTECA
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Projeto Eixo 5 - Desenvolvimento de um Sistema Sociotécnico Inovador`
 
-`SEMESTRE`
+`2025/2`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+
+* João Victor Antunes Faria Lima
+* Laila Suelen Martins Costa
+* Mayara da Rocha Pinheiro
+* Pedro de Souza Louzada Silva
+* Priscila Myuki do Nascimento Maruno
 
 ## Orientador
 
-* Nome completo do professor orientador
+* José Wilson da Costa
 
 ## Instruções de utilização
 
