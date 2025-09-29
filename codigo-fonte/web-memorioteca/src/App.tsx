@@ -5,6 +5,8 @@ import { LoadingProvider } from './contexts/LoadingContext'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import DashboardPage from './pages/DashboardPage'
+import InstitucionalPage from './pages/InstitucionalPage'
+import EditarInstitucionalPage from './pages/EditarInstitucionalPage';
 import Footer from './components/Footer'
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
@@ -73,6 +75,10 @@ function App() {
                 <DashboardPage />
               </ProtectedRoute>
             } />
+
+            <Route path="/institucional" element={<InstitucionalPage />} />
+
+            <Route path="/institucional/editar" element={<EditarInstitucionalPage />} />
             
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
