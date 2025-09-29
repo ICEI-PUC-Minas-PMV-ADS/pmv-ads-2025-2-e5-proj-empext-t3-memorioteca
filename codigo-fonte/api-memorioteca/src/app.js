@@ -3,6 +3,7 @@ import healthcheckRoutes from './routes/healthcheck.js';
 import userRoutes from './routes/user.js';
 import authRoutes from './routes/auth.js';
 import dotenv from 'dotenv';
+import institucionalRoutes from './routes/institucional.js';
 
 dotenv.config();
 
@@ -27,6 +28,7 @@ app.use((req, res, next) => {
 app.use('/', healthcheckRoutes);
 app.use('/', userRoutes);
 app.use('/', authRoutes);
+app.use('/institucional', institucionalRoutes)
 
 app.get('/', (req, res) => {
   res.json({ message: 'API funcionando!' });
