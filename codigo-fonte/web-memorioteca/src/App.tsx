@@ -5,11 +5,11 @@ import { LoadingProvider } from './contexts/LoadingContext'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import DashboardPage from './pages/DashboardPage'
+import DestaquesPage from './pages/DestaquesPage' 
 import Footer from './components/Footer'
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated, loading } = useAuth()
-  
   if (loading) {
     return (
       <div className="h-screen flex items-center justify-center">
@@ -17,13 +17,11 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
       </div>
     )
   }
-  
   return isAuthenticated ? <>{children}</> : <Navigate to="/login" replace />
 }
 
 const PublicRoute = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated, loading } = useAuth()
-  
   if (loading) {
     return (
       <div className="h-screen flex items-center justify-center">
@@ -31,7 +29,6 @@ const PublicRoute = ({ children }: { children: React.ReactNode }) => {
       </div>
     )
   }
-  
   return !isAuthenticated ? <>{children}</> : <Navigate to="/dashboard" replace />
 }
 
@@ -44,47 +41,8 @@ const PublicLayout = ({ children }: { children: React.ReactNode }) => (
   </div>
 )
 
-function App() {
-  return (
-    <LoadingProvider>
-      <AuthProvider>
-        <Router>
-          <Routes>
-            <Route path="/" element={<RedirectRoot />} />
-            
-            <Route path="/login" element={
-              <PublicRoute>
-                <PublicLayout>
-                  <LoginPage />
-                </PublicLayout>
-              </PublicRoute>
-            } />
-            
-            <Route path="/register" element={
-              <PublicRoute>
-                <PublicLayout>
-                  <RegisterPage />
-                </PublicLayout>
-              </PublicRoute>
-            } />
-            
-            <Route path="/dashboard" element={
-              <ProtectedRoute>
-                <DashboardPage />
-              </ProtectedRoute>
-            } />
-            
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </Router>
-      </AuthProvider>
-    </LoadingProvider>
-  )
-}
-
 const RedirectRoot = () => {
   const { isAuthenticated, loading } = useAuth()
-  
   if (loading) {
     return (
       <div className="h-screen flex items-center justify-center">
@@ -92,8 +50,66 @@ const RedirectRoot = () => {
       </div>
     )
   }
-  
   return <Navigate to={isAuthenticated ? "/dashboard" : "/login"} replace />
+}
+
+function App() {
+  return (
+    <LoadingProvider>
+      <AuthProvider>
+        <Router>
+          <Routes>
+            
+            <Route path="/" element={<RedirectRoot />} />
+
+            <Route
+              path="/login"
+              element={
+                <PublicRoute>
+                  <PublicLayout>
+                    <LoginPage />
+                  </PublicLayout>
+                </PublicRoute>
+              }
+            />
+            <Route
+              path="/register"
+              element={
+                <PublicRoute>
+                  <PublicLayout>
+                    <RegisterPage />
+                  </PublicLayout>
+                </PublicRoute>
+              }
+            />
+
+            
+            <Route
+              path="/dashboard"
+              element={
+                <ProtectedRoute>
+                  <DashboardPage />
+                </ProtectedRoute>
+              }
+            />
+
+        
+            <Route
+              path="/destaques"
+              element={
+                <ProtectedRoute>
+                  <DestaquesPage />
+                </ProtectedRoute>
+              }
+            />
+
+            
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Router>
+      </AuthProvider>
+    </LoadingProvider>
+  )
 }
 
 export default App
