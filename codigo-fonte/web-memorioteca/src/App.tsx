@@ -7,6 +7,9 @@ import RegisterPage from './pages/RegisterPage'
 import DashboardPage from './pages/DashboardPage'
 import InstitucionalPage from './pages/InstitucionalPage'
 import EditarInstitucionalPage from './pages/EditarInstitucionalPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ProjectCreatePage from './pages/ProjectCreatePage';
+import ProjectEditPage from './pages/ProjectEditPage';
 import Footer from './components/Footer'
 import FaleConoscoPage from '@/pages/FaleConoscoPage'
 import MensagensRecebidasPage from '@/pages/MensagensRecebidasPage'
@@ -77,6 +80,24 @@ function App() {
                 <DashboardPage />
               </ProtectedRoute>
             } />
+
+            <Route path="/projects" element={
+              <ProtectedRoute>
+                  <ProjectsPage />
+                </ProtectedRoute>
+              } />
+
+            <Route path="/projects/create" element={
+              <ProtectedRoute>
+                <ProjectCreatePage />
+                  </ProtectedRoute>
+              } />
+
+            <Route path="/projects/edit" element={
+              <ProtectedRoute>
+                <ProjectEditPage />
+                  </ProtectedRoute>
+              } />
 
             <Route path="/institucional" element={<InstitucionalPage />} />
 
