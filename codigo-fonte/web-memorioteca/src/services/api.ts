@@ -82,6 +82,27 @@ export class ApiService {
       throw error
     }
   }
+
+  static async getProject(id:string, token: string) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/project:${id}`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      })
+
+      if (!response.ok) {
+        throw new Error('Falha ao recuperar o projeto')
+      }
+
+      return await response.json()
+    } catch (error) {
+      console.error('Erro ao recuperar projeto:', error)
+      throw error
+    }
+  }
 }
 
 export const isValidEmail = (email: string): boolean => {

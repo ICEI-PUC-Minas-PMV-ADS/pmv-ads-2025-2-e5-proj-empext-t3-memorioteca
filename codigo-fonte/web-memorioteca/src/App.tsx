@@ -10,6 +10,7 @@ import EditarInstitucionalPage from './pages/EditarInstitucionalPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ProjectCreatePage from './pages/ProjectCreatePage';
 import ProjectEditPage from './pages/ProjectEditPage';
+import ProjectViewPage from './pages/ProjectViewPage';
 import Footer from './components/Footer'
 import FaleConoscoPage from '@/pages/FaleConoscoPage'
 import MensagensRecebidasPage from '@/pages/MensagensRecebidasPage'
@@ -106,6 +107,8 @@ function App() {
             <Route path="/fale-conosco" element={<FaleConoscoPage />} />
 
             <Route path="/mensagens" element={<MensagensRecebidasPage />} />
+
+            <Route path="/projeto/:id" element={<ProjectViewPage />} />
             
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
