@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
-import axios from 'axios'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
 import { ApiService } from '@/services/api'
-import {  useAuth } from '@/contexts/AuthContext'
+import { useParams } from 'react-router-dom';
 
 const ProjetoPage = () => {
-  const { user } = useAuth()
-
+  
+  const { id } = useParams<{ id: string }>();
   const [projeto, setProjeto] = useState<{
     titulo: string
     descricao: string
@@ -14,8 +13,8 @@ const ProjetoPage = () => {
 
   useEffect(() =>  {
     
-    ApiService.getProject('ffca1494-198a-4d00-a545-d12eabdbac1f','user')
-      .then(res => setProjeto(res.data))
+    ApiService.getProject(id)
+      .then(res => setProjeto(res))
       .catch(err => console.error('Erro ao recuperar projeto:', err))
   }, [])
 

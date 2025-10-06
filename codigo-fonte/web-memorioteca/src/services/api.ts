@@ -83,21 +83,24 @@ export class ApiService {
     }
   }
 
-  static async getProject(id:string, token: string) {
+  static async getProject(id:string) {
     try {
-      const response = await fetch(`${API_BASE_URL}/project:${id}`, {
+
+      const token = localStorage.getItem('memorioteca_token')
+      const response = await fetch(`${API_BASE_URL}/projetos/${id}`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
       })
-
-      if (!response.ok) {
+      const resp = await response.json();
+      
+      if (!resp.success) {
         throw new Error('Falha ao recuperar o projeto')
       }
 
-      return await response.json()
+      return resp.project;
     } catch (error) {
       console.error('Erro ao recuperar projeto:', error)
       throw error
