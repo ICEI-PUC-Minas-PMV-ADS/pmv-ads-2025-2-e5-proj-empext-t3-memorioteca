@@ -1,9 +1,15 @@
 import { useAuth } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui'
 import Footer from '@/components/Footer'
+import { useNavigate } from 'react-router-dom' 
 
 const DashboardPage = () => {
   const { user, logout } = useAuth()
+  const navigate = useNavigate() 
+
+  const handleProjects = () => {
+    navigate('/projects') 
+  }
 
   return (
     <div className="h-screen flex flex-col bg-background">
@@ -14,6 +20,12 @@ const DashboardPage = () => {
               <h1 className="text-3xl font-bold mb-2">Memorioteca</h1>
               <p className="text-muted-foreground">Olá, {user?.nome}!</p>
             </div>
+            <Button
+              variant="outline"
+              onClick={handleProjects}
+            >
+              Projetos
+            </Button>
             <Button
               variant="outline"
               onClick={logout}
@@ -40,7 +52,6 @@ const DashboardPage = () => {
                 <p><strong>Último login:</strong> {user?.ultimo_login ? new Date(user.ultimo_login).toLocaleDateString('pt-BR') : 'Primeiro acesso'}</p>
               </div>
             </div>
-          
           </div>
         </div>
       </main>
