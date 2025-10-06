@@ -41,10 +41,9 @@ export class Project {
   }
 
   static async criarNovo(data) {
-    try {
-      console.log(data);
+    try {      
       const project = new Project(data);
-      console.log(project);
+      
       const validation = project.validate();
       if (!validation.isValid) {
         return { success: false, errors: validation.errors, project: null };
