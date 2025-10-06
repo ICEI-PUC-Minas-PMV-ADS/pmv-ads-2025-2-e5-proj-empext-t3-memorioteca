@@ -42,7 +42,9 @@ export class Project {
 
   static async criarNovo(data) {
     try {
+      console.log(data);
       const project = new Project(data);
+      console.log(project);
       const validation = project.validate();
       if (!validation.isValid) {
         return { success: false, errors: validation.errors, project: null };
@@ -144,6 +146,31 @@ export class Project {
     } catch (err) {
       console.error('Erro inesperado ao deletar projeto:', err);
       return { success: false, errors: ['Erro interno do servidor'] };
+    }
+  }
+
+  static async recuperar(id) {
+    try {
+      
+      const { data: updated, error } = await supabase
+        .from('projetos')
+        .select('*')
+        .eq('id', id)
+        .single();
+      
+      if (error) {
+        if(error.code == "PGRST116") return { success: false, errors: ['Não foi encontrado nenhum projeto com o id informado.'], project: null, code: 404 };
+        if(error.code == "22P02") return { success: false, errors: ['O id informado é invalido.'], project: null, code: 400 };
+        console.error('Erro ao recuperar o projeto:', error);
+        return { success: false, errors: ['Erro interno do servidor'], project: null, code: 500 };
+      }        
+
+      var atual = new Project(updated).toPublic();
+
+      return { success: true, errors: [], project: atual };
+    } catch (err) {
+      console.error('Erro ao recuperar o projeto:', err);
+      return { success: false, errors: ['Erro interno do servidor'], project: null };
     }
   }
 }

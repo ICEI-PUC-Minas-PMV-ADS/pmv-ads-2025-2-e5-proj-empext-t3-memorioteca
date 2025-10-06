@@ -4,7 +4,7 @@ import { authenticate } from '../middleware/auth.js';
 
 const router = express.Router();
 
-router.get('/user', authenticate, async (req, res) => {
+router.get('/', authenticate, async (req, res) => {
   try {
     let result = await User.listarTodos();
 
@@ -20,7 +20,7 @@ router.get('/user', authenticate, async (req, res) => {
   }
 });
 
-router.post('/user', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     let result = await User.criarNovo(req.body);
 
