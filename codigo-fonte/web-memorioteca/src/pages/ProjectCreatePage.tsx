@@ -23,16 +23,19 @@ const ProjectCreatePage: React.FC = () => {
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
     if (!formData.titulo?.trim()) newErrors.titulo = "Título é obrigatório";
-    if (!formData.descricao?.trim()) newErrors.descricao = "Descrição é obrigatória";
+    if (!formData.descricao?.trim())
+      newErrors.descricao = "Descrição é obrigatória";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
 
-    if (errors[name]) setErrors(prev => ({ ...prev, [name]: "" }));
+    if (errors[name]) setErrors((prev) => ({ ...prev, [name]: "" }));
     if (apiErrors.length > 0) setApiErrors([]);
     if (successMessage) setSuccessMessage("");
   };
@@ -55,7 +58,7 @@ const ProjectCreatePage: React.FC = () => {
       const payload = { ...formData, url: formData.url?.trim() || null };
       const res = await ProjectService.createProject(payload, token);
 
-      if (res.success && res.projeto) {
+      if (res.success) {
         setSuccessMessage("Projeto criado com sucesso!");
         setFormData({ titulo: "", descricao: "", url: "" });
 
@@ -76,7 +79,9 @@ const ProjectCreatePage: React.FC = () => {
       <div className="w-full max-w-md">
         <Card>
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-bold">Cadastrar Projeto</CardTitle>
+            <CardTitle className="text-2xl font-bold">
+              Cadastrar Projeto
+            </CardTitle>
             <p className="text-sm text-muted-foreground mt-1">
               Preencha os dados do projeto abaixo
             </p>
@@ -109,7 +114,9 @@ const ProjectCreatePage: React.FC = () => {
               />
 
               <div>
-                <label className="block text-sm font-medium mb-1">Descrição*</label>
+                <label className="block text-sm font-medium mb-1">
+                  Descrição*
+                </label>
                 <textarea
                   name="descricao"
                   value={formData.descricao}
@@ -118,7 +125,9 @@ const ProjectCreatePage: React.FC = () => {
                   placeholder="Descrição do projeto"
                 />
                 {errors.descricao && (
-                  <p className="text-destructive text-sm mt-1">{errors.descricao}</p>
+                  <p className="text-destructive text-sm mt-1">
+                    {errors.descricao}
+                  </p>
                 )}
               </div>
 
@@ -131,7 +140,9 @@ const ProjectCreatePage: React.FC = () => {
                 placeholder="Cole a URL do arquivo aqui"
               />
 
-              <p className="text-xs text-muted-foreground mt-1">*Campos obrigatórios</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                *Campos obrigatórios
+              </p>
 
               <div className="flex gap-4 mt-4">
                 <Button
