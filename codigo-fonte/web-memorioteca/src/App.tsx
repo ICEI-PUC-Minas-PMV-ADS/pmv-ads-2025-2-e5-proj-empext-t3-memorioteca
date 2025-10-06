@@ -8,6 +8,8 @@ import DashboardPage from './pages/DashboardPage'
 import InstitucionalPage from './pages/InstitucionalPage'
 import EditarInstitucionalPage from './pages/EditarInstitucionalPage';
 import Footer from './components/Footer'
+import FaleConoscoPage from '@/pages/FaleConoscoPage'
+import MensagensRecebidasPage from '@/pages/MensagensRecebidasPage'
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated, loading } = useAuth()
@@ -79,6 +81,10 @@ function App() {
             <Route path="/institucional" element={<InstitucionalPage />} />
 
             <Route path="/institucional/editar" element={<EditarInstitucionalPage />} />
+
+            <Route path="/fale-conosco" element={<FaleConoscoPage />} />
+
+            <Route path="/mensagens" element={<MensagensRecebidasPage />} />
             
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

@@ -4,6 +4,7 @@ import userRoutes from './routes/user.js';
 import authRoutes from './routes/auth.js';
 import dotenv from 'dotenv';
 import institucionalRoutes from './routes/institucional.js';
+import faleConoscoRouter from './routes/faleconosco.js'
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ app.use('/', healthcheckRoutes);
 app.use('/', userRoutes);
 app.use('/', authRoutes);
 app.use('/institucional', institucionalRoutes)
+app.use('/fale-conosco', faleConoscoRouter)
 
 app.get('/', (req, res) => {
   res.json({ message: 'API funcionando!' });
