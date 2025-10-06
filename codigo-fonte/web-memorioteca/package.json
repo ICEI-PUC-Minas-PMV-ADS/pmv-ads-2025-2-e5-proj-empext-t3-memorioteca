@@ -23,8 +23,10 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.2",
+    "axios": "^1.12.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.18",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.1",
