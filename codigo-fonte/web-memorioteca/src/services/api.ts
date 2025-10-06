@@ -82,6 +82,54 @@ export class ApiService {
       throw error
     }
   }
+
+  static async getProject(id:string) {
+    try {
+
+      const token = localStorage.getItem('memorioteca_token')
+      const response = await fetch(`${API_BASE_URL}/projetos/${id}`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      })
+      const resp = await response.json();
+      
+      if (!resp.success) {
+        throw new Error('Falha ao recuperar o projeto')
+      }
+
+      return resp.project;
+    } catch (error) {
+      console.error('Erro ao recuperar projeto:', error)
+      throw error
+    }
+  }
+
+  static async listProject() {
+    try {
+
+      const token = localStorage.getItem('memorioteca_token')
+      const response = await fetch(`${API_BASE_URL}/projetos`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      })
+      const resp = await response.json();
+      
+      if (!resp.success) {
+        throw new Error('Falha ao recuperar o projeto')
+      }
+
+      return resp.project;
+    } catch (error) {
+      console.error('Erro ao recuperar projeto:', error)
+      throw error
+    }
+  }
 }
 
 export const isValidEmail = (email: string): boolean => {
