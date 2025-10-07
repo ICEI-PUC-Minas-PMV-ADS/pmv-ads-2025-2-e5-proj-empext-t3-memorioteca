@@ -62,7 +62,7 @@ const ProjectCreatePage: React.FC = () => {
         setSuccessMessage("Projeto criado com sucesso!");
         setFormData({ titulo: "", descricao: "", url: "" });
 
-        setTimeout(() => navigate("/projects"), 1500);
+        setTimeout(() => navigate("/projects"), 1000);
       } else {
         setApiErrors(res.errors || ["Erro ao criar projeto"]);
       }

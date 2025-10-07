@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { ProjectService } from "@/services/projectService";
+import { ProjectData, ProjectService } from "@/services/projectService";
 import { useAuth } from "@/contexts/AuthContext";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Input, Button } from "@/components/ui";
@@ -10,78 +10,85 @@ const ProjectEditPage: React.FC = () => {
   const navigate = useNavigate();
   const { token } = useAuth();
 
-  const [formData, setFormData] = useState({ titulo: "", descricao: "", url: "" });
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [apiError, setApiError] = useState("");
+  const [formData, setFormData] = useState<ProjectData>({
+    titulo: "",
+    descricao: "",
+    url: "",
+  });
+
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [apiErrors, setApiErrors] = useState<string[]>([]);
+  const [successMessage, setSuccessMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [loadingProject, setLoadingProject] = useState(true);
 
   useEffect(() => {
     const fetchProject = async () => {
-      if (!id || !token) return;
-      setLoadingProject(true);
-
-      const proj = await ProjectService.getProject(id);
-      setLoadingProject(false);
-              
-      if (proj) {
+      try {
+        if (!id) return;
+        const project = await ProjectService.getProject(id);
         setFormData({
-          titulo: proj.titulo,
-          descricao: proj.descricao,
-          url: proj.url || "",
+          titulo: project.titulo || "",
+          descricao: project.descricao || "",
+          url: project.url || "",
         });
-      } else {
-        setApiError("Projeto não encontrado");
-      }       
+      } catch (error) {
+        console.error("Erro ao carregar projeto:", error);
+        setApiErrors(["Erro ao carregar dados do projeto."]);
+      }
     };
-
     fetchProject();
-  }, [id, token]);
+  }, [id]);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: "" }));
+    if (apiErrors.length) setApiErrors([]);
+    if (successMessage) setSuccessMessage("");
+  };
 
   const validateForm = () => {
-    const newErrors: Record<string, string> = {};
-    if (!formData.titulo.trim()) newErrors.titulo = "Título é obrigatório";
-    if (!formData.descricao.trim()) newErrors.descricao = "Descrição é obrigatória";
+    const newErrors: { [key: string]: string } = {};
+    if (!formData.titulo?.trim()) newErrors.titulo = "Título é obrigatório";
+    if (!formData.descricao?.trim())
+      newErrors.descricao = "Descrição é obrigatória";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    if (errors[name]) setErrors(prev => ({ ...prev, [name]: "" }));
-    if (apiError) setApiError("");
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setApiError("");
+    setApiErrors([]);
+    setSuccessMessage("");
 
     if (!token) {
-      setApiError("Usuário não autenticado");
+      setApiErrors(["Usuário não autenticado"]);
       return;
     }
 
     if (!validateForm()) return;
 
     setIsLoading(true);
-    const res = await ProjectService.updateProject(Number(id), formData, token);
-    setIsLoading(false);
 
-    if (res.success) {
-      navigate("/projects");
-    } else {
-      setApiError(res.errors?.join(", ") || "Erro ao atualizar projeto");
+    try {
+      const payload = { ...formData, url: formData.url?.trim() || null };
+      const res = await ProjectService.updateProject(id!, payload, token);
+
+      if (res.success) {
+        setSuccessMessage("Projeto atualizado com sucesso!");
+        setTimeout(() => navigate(`/projects/${id}`), 1000);
+      } else {
+        setApiErrors(res.errors || ["Erro ao atualizar projeto"]);
+      }
+    } catch (err) {
+      console.error("Erro inesperado:", err);
+      setApiErrors(["Erro interno do servidor"]);
+    } finally {
+      setIsLoading(false);
     }
   };
-
-  if (loadingProject) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <p className="text-muted-foreground">Carregando projeto...</p>
-      </div>
-    );
-  }
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-background p-4">
@@ -96,9 +103,19 @@ const ProjectEditPage: React.FC = () => {
 
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
-              {apiError && (
+              {successMessage && (
+                <div className="p-3 text-sm text-green-600 bg-green-50 border border-green-200 rounded-md">
+                  {successMessage}
+                </div>
+              )}
+
+              {apiErrors.length > 0 && (
                 <div className="p-3 text-sm text-destructive bg-destructive/10 border border-destructive/20 rounded-md">
-                  {apiError}
+                  <ul className="space-y-1">
+                    {apiErrors.map((err, idx) => (
+                      <li key={idx}>{err}</li>
+                    ))}
+                  </ul>
                 </div>
               )}
 
@@ -111,7 +128,9 @@ const ProjectEditPage: React.FC = () => {
               />
 
               <div>
-                <label className="block text-sm font-medium mb-1">Descrição*</label>
+                <label className="block text-sm font-medium mb-1">
+                  Descrição*
+                </label>
                 <textarea
                   name="descricao"
                   value={formData.descricao}
@@ -120,25 +139,32 @@ const ProjectEditPage: React.FC = () => {
                   placeholder="Descrição do projeto"
                 />
                 {errors.descricao && (
-                  <p className="text-destructive text-sm mt-1">{errors.descricao}</p>
+                  <p className="text-destructive text-sm mt-1">
+                    {errors.descricao}
+                  </p>
                 )}
               </div>
 
-              <div>
-                <label className="block text-sm font-medium mb-1">URL do Arquivo</label>
-                <Input
-                  type="text"
-                  name="url"
-                  value={formData.url}
-                  onChange={handleChange}
-                  placeholder="Cole a URL do arquivo aqui"
-                />
-              </div>
+              <Input
+                label="URL do Arquivo"
+                type="text"
+                name="url"
+                value={formData.url || ""}
+                onChange={handleChange}
+                placeholder="Cole a URL do arquivo aqui"
+              />
 
-              <p className="text-xs text-muted-foreground mt-1">*Campos obrigatórios</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                *Campos obrigatórios
+              </p>
 
               <div className="flex gap-4 mt-4">
-                <Button type="submit" className="flex-1" loading={isLoading} disabled={isLoading}>
+                <Button
+                  type="submit"
+                  className="flex-1"
+                  loading={isLoading}
+                  disabled={isLoading}
+                >
                   {isLoading ? "Atualizando..." : "Salvar"}
                 </Button>
                 <Button
