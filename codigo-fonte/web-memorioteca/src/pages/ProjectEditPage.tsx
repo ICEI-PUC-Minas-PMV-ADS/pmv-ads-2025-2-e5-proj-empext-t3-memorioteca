@@ -21,23 +21,18 @@ const ProjectEditPage: React.FC = () => {
       if (!id || !token) return;
       setLoadingProject(true);
 
-      const res = await ProjectService.getProjects(token);
+      const proj = await ProjectService.getProject(id);
       setLoadingProject(false);
-
-      if (res.success && res.projetos) {
-        const proj = res.projetos.find(p => p.id === Number(id));
-        if (proj) {
-          setFormData({
-            titulo: proj.titulo,
-            descricao: proj.descricao,
-            url: proj.url || "",
-          });
-        } else {
-          setApiError("Projeto não encontrado");
-        }
+              
+      if (proj) {
+        setFormData({
+          titulo: proj.titulo,
+          descricao: proj.descricao,
+          url: proj.url || "",
+        });
       } else {
-        setApiError(res.errors?.join(", ") || "Erro ao carregar projetos");
-      }
+        setApiError("Projeto não encontrado");
+      }       
     };
 
     fetchProject();
