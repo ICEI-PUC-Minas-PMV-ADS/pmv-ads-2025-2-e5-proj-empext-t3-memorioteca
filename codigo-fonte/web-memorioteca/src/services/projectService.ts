@@ -36,7 +36,7 @@ export class ProjectService {
       const data: ProjectResponse = await res.json()
       return {
         success: data.success,
-        projetos: data.projetos || [],
+        projetos: data.projects || [],
         errors: data.errors || [],
       }
     } catch (error) {
