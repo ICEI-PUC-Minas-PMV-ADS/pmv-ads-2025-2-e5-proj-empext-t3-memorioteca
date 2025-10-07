@@ -7,12 +7,15 @@ export interface ProjectData {
   url?: string | null
   data_criacao?: string
   data_atualizacao?: string
+  nome_autor?: string
+  data_inicio?: string
+  data_fim?: string
 }
 
 export interface ProjectResponse {
   success: boolean
   projetos?: ProjectData[]
-  projeto?: ProjectData
+  project?: ProjectData
   errors?: string[]
 }
 
@@ -95,8 +98,9 @@ export class ProjectService {
   }
 
   // Deletar projeto
-  static async deleteProject(id: number, token: string): Promise<ProjectResponse> {
+  static async deleteProject(id: string): Promise<ProjectResponse> {
     try {
+      const token = localStorage.getItem('memorioteca_token')
       const res = await fetch(`${API_BASE_URL}/projetos/${id}`, {
         method: 'DELETE',
         headers: {
@@ -113,6 +117,30 @@ export class ProjectService {
     } catch (error) {
       console.error('Erro ao deletar projeto:', error)
       return { success: false, errors: ['Erro de conexão com o servidor'] }
+    }
+  }
+
+  static async getProject(id:string): Promise<ProjectData> {
+    try {
+
+      const token = localStorage.getItem('memorioteca_token')
+      const res = await fetch(`${API_BASE_URL}/projetos/${id}`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      })
+      const data: ProjectResponse = await res.json()
+      console.log(data)
+      if (!data.success) {
+        throw new Error('Falha ao recuperar o projeto')
+      }
+
+      return data.project;
+    } catch (error) {
+      console.error('Erro ao recuperar projeto:', error)
+      throw error
     }
   }
 }

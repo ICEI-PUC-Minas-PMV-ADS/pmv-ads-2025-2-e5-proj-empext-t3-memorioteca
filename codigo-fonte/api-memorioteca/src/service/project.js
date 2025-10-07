@@ -8,6 +8,9 @@ export class Project {
     this.url = data.url || null;
     this.data_criacao = data.data_criacao || new Date().toISOString();
     this.data_atualizacao = data.data_atualizacao || null;
+    this.nome_autor = data.nome_autor || null;
+    this.data_inicio = data.data_inicio || null;
+    this.data_fim = data.data_fim || null;
   }
 
   validate() {
@@ -24,6 +27,9 @@ export class Project {
       descricao: this.descricao.trim(),
       url: this.url,
       data_criacao: this.data_criacao,
+      nome_autor: this.nome_autor,
+      data_inicio: this.data_inicio,
+      data_fim: this.data_fim,
     };
     if (update) dbObj.data_atualizacao = now;
     return dbObj;
@@ -37,6 +43,9 @@ export class Project {
       url: this.url,
       data_criacao: this.data_criacao,
       data_atualizacao: this.data_atualizacao,
+      nome_autor: this.nome_autor,
+      data_inicio: this.data_inicio,
+      data_fim: this.data_fim,
     };
   }
 

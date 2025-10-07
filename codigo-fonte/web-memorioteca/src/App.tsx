@@ -94,7 +94,7 @@ function App() {
                   </ProtectedRoute>
               } />
 
-            <Route path="/projects/edit" element={
+            <Route path="/projects/:id/edit" element={
               <ProtectedRoute>
                 <ProjectEditPage />
                   </ProtectedRoute>
@@ -108,7 +108,7 @@ function App() {
 
             <Route path="/mensagens" element={<MensagensRecebidasPage />} />
 
-            <Route path="/projeto/:id" element={<ProjectViewPage />} />
+            <Route path="/projects/:id" element={<ProjectViewPage />} />
             
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
