@@ -167,7 +167,7 @@ const ProjectEditPage: React.FC = () => {
                   type="submit"
                   className="flex-1"
                   loading={isLoading}
-                  disabled={isLoading}
+                  disabled={isLoading || !!successMessage}
                 >
                   {isLoading ? "Atualizando..." : "Salvar"}
                 </Button>

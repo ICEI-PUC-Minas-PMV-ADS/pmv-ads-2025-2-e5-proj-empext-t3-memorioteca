@@ -49,7 +49,12 @@ const ProjectsPage: React.FC = () => {
         <div className="max-w-6xl mx-auto">
 
           <div className="mb-8">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Projetos</h2>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-3xl font-bold tracking-tight">Projetos</h2>
+              <Button onClick={handleCreateProject}>
+                Cadastrar Novo Projeto
+              </Button>
+            </div>
 
             {loading ? (
               <div className="text-center py-8">
