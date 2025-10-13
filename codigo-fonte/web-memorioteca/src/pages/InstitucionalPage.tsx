@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 const InstitucionalPage = () => {
   const [institucional, setInstitucional] = useState<{
@@ -17,8 +19,10 @@ const InstitucionalPage = () => {
   if (!institucional) return <p>Carregando...</p>
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-6 bg-muted">
-      <div className="w-full max-w-4xl">
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1 flex items-center justify-center p-6">
+        <div className="w-full max-w-4xl">
         <Card className="p-6">
           <CardHeader>
             <CardTitle className="text-3xl font-bold text-center">
@@ -40,7 +44,9 @@ const InstitucionalPage = () => {
             </div>
           </CardContent>
         </Card>
-      </div>
+        </div>
+      </main>
+      <Footer />
     </div>
   )
 }

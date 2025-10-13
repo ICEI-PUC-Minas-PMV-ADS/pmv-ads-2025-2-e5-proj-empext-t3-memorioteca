@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "@/contexts/AuthContext";
 import { Button } from "@/components/ui";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ProjectService, ProjectData } from "@/services/projectService";
 
 const ProjectsPage: React.FC = () => {
   const navigate = useNavigate();
-  const { user, logout } = useAuth();
   const [projetos, setProjetos] = useState<ProjectData[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -35,10 +34,6 @@ const ProjectsPage: React.FC = () => {
     fetchProjects();
   }, [navigate]);
 
-  const handleHome = () => {
-    navigate("/");
-  };
-
   const handleCreateProject = () => {
     navigate("/projects/create");
   };
@@ -49,25 +44,9 @@ const ProjectsPage: React.FC = () => {
 
   return (
     <div className="h-screen flex flex-col bg-background">
+      <Header />
       <main className="flex-1 container mx-auto px-4 py-8 overflow-y-auto">
         <div className="max-w-6xl mx-auto">
-          <div className="flex justify-between items-center mb-8">
-            <div>
-              <h1 className="text-3xl font-bold mb-2">Memorioteca</h1>
-              <p className="text-muted-foreground">Olá, {user?.nome}!</p>
-            </div>
-            <div className="flex gap-4">
-              <Button variant="outline" onClick={handleHome}>
-                Home
-              </Button>
-              <Button variant="outline" onClick={handleCreateProject}>
-                Cadastrar Projeto
-              </Button>
-              <Button variant="outline" onClick={logout}>
-                Sair
-              </Button>
-            </div>
-          </div>
 
           <div className="mb-8">
             <h2 className="text-3xl font-bold tracking-tight mb-4">Projetos</h2>

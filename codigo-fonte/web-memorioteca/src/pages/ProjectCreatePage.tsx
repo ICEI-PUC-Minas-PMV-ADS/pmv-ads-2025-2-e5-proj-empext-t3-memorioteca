@@ -4,6 +4,8 @@ import { ProjectService, ProjectData } from "@/services/projectService";
 import { useAuth } from "@/contexts/AuthContext";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Input, Button } from "@/components/ui";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const ProjectCreatePage: React.FC = () => {
   const navigate = useNavigate();
@@ -75,8 +77,10 @@ const ProjectCreatePage: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-background p-4">
-      <div className="w-full max-w-md">
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1 flex items-center justify-center p-4">
+        <div className="w-full max-w-md">
         <Card>
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold">
@@ -164,7 +168,9 @@ const ProjectCreatePage: React.FC = () => {
             </form>
           </CardContent>
         </Card>
-      </div>
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 };

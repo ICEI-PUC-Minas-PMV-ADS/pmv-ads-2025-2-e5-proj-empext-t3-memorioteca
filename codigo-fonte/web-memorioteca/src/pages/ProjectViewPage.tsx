@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { ProjectData, ProjectService } from '@/services/projectService'
+import { useAuth } from '@/contexts/AuthContext'
 import Button from '@/components/ui/Button'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 const ProjetoPage = () => {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
+  const { user } = useAuth()
   const [showDeleteModal, setShowDeleteModal] = useState(false)
   const [showErrorModal, setShowErrorModal] = useState(false)
   const [projeto, setProjeto] = useState<ProjectData | null>(null)
@@ -33,13 +37,15 @@ const ProjetoPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {!projeto && !showErrorModal ? (
-        <div className="flex items-center justify-center min-h-screen">
-          <p>Carregando...</p>
-        </div>
-      ) : projeto ? (
-        <div className="max-w-7xl mx-auto px-6 py-12">
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1 bg-gray-50">
+        {!projeto && !showErrorModal ? (
+          <div className="flex items-center justify-center min-h-screen">
+            <p>Carregando...</p>
+          </div>
+        ) : projeto ? (
+          <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Coluna da esquerda - Conteúdo do projeto */}
             <div className="flex flex-col h-[600px]">
@@ -73,20 +79,23 @@ const ProjetoPage = () => {
                 )}
               </div>
 
-              <div className="flex gap-4">
-                <Button
-                  onClick={handleEditar}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded"
-                >
-                  EDITAR PROJETO
-                </Button>
-                <Button
-                  onClick={() => setShowDeleteModal(true)}
-                  className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded"
-                >
-                  DELETAR PROJETO
-                </Button>
-              </div>
+              {/* Botões de ação - apenas para ADMINISTRADOR */}
+              {user?.user_type === 'ADMINISTRADOR' && (
+                <div className="flex gap-4">
+                  <Button
+                    onClick={handleEditar}
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded"
+                  >
+                    EDITAR PROJETO
+                  </Button>
+                  <Button
+                    onClick={() => setShowDeleteModal(true)}
+                    className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded"
+                  >
+                    DELETAR PROJETO
+                  </Button>
+                </div>
+              )}
             </div>
 
             {/* Coluna da direita - Imagem */}
@@ -104,8 +113,9 @@ const ProjetoPage = () => {
               )}
             </div>
           </div>
-        </div>
-      ) : null}
+          </div>
+        ) : null}
+      </main>
 
       {/* Modal de Confirmação */}
       {showDeleteModal && (
@@ -152,6 +162,7 @@ const ProjetoPage = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   )
 }

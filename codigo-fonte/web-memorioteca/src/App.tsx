@@ -11,6 +11,9 @@ import ProjectsPage from './pages/ProjectsPage';
 import ProjectCreatePage from './pages/ProjectCreatePage';
 import ProjectEditPage from './pages/ProjectEditPage';
 import ProjectViewPage from './pages/ProjectViewPage';
+import UsersPage from './pages/UsersPage';
+import UserEditPage from './pages/UserEditPage';
+import ChangePasswordPage from './pages/ChangePasswordPage';
 import Footer from './components/Footer'
 import FaleConoscoPage from '@/pages/FaleConoscoPage'
 import MensagensRecebidasPage from '@/pages/MensagensRecebidasPage'
@@ -109,7 +112,25 @@ function App() {
             <Route path="/mensagens" element={<MensagensRecebidasPage />} />
 
             <Route path="/projects/:id" element={<ProjectViewPage />} />
-            
+
+            <Route path="/admin/usuarios" element={
+              <ProtectedRoute>
+                <UsersPage />
+              </ProtectedRoute>
+            } />
+
+            <Route path="/admin/usuarios/:id/edit" element={
+              <ProtectedRoute>
+                <UserEditPage />
+              </ProtectedRoute>
+            } />
+
+            <Route path="/change-password" element={
+              <ProtectedRoute>
+                <ChangePasswordPage />
+              </ProtectedRoute>
+            } />
+
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Router>

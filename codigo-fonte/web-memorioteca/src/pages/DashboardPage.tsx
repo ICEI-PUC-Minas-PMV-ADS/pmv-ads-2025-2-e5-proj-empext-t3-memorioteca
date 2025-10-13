@@ -1,38 +1,15 @@
 import { useAuth } from '@/contexts/AuthContext'
-import { Button } from '@/components/ui'
+import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { useNavigate } from 'react-router-dom' 
 
 const DashboardPage = () => {
-  const { user, logout } = useAuth()
-  const navigate = useNavigate() 
-
-  const handleProjects = () => {
-    navigate('/projects') 
-  }
+  const { user } = useAuth()
 
   return (
     <div className="h-screen flex flex-col bg-background">
+      <Header />
       <main className="flex-1 container mx-auto px-4 py-8 overflow-y-auto">
         <div className="max-w-4xl mx-auto">
-          <div className="flex justify-between items-center mb-8">
-            <div>
-              <h1 className="text-3xl font-bold mb-2">Memorioteca</h1>
-              <p className="text-muted-foreground">Olá, {user?.nome}!</p>
-            </div>
-            <Button
-              variant="outline"
-              onClick={handleProjects}
-            >
-              Projetos
-            </Button>
-            <Button
-              variant="outline"
-              onClick={logout}
-            >
-              Sair
-            </Button>
-          </div>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight mb-4">
               Bem-vindo a Memorioteca!

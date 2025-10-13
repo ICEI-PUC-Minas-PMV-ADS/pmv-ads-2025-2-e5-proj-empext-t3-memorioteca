@@ -2,6 +2,7 @@ export interface User {
   id: string
   email: string
   nome: string
+  user_type?: string
   data_criacao: string
   ultimo_login: string | null
 }
