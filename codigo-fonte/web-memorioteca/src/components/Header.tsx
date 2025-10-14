@@ -51,6 +51,12 @@ const Header = () => {
             >
               Projetos
             </button>
+            <button
+              onClick={() => navigate('/fale-conosco')}
+              className="text-base font-normal text-black hover:text-gray-600 transition-colors uppercase"
+            >
+              Entrar em Contato
+            </button>
 
             {/* User Menu */}
             <div className="relative" ref={dropdownRef}>
@@ -89,9 +95,21 @@ const Header = () => {
                         }}
                         className="block w-full text-left px-4 py-2 text-sm text-black hover:bg-gray-100 uppercase"
                       >
-                        Listar usuarios
+                        Listar usuários
                       </button>
                     )}
+
+                    {/* NOVA OPÇÃO: Dados da Conta */}
+                    <button
+                      onClick={() => {
+                        setIsDropdownOpen(false)
+                        navigate('/dashboard')
+                      }}
+                      className="block w-full text-left px-4 py-2 text-sm text-black hover:bg-gray-100 uppercase"
+                    >
+                      Dados da Conta
+                    </button>
+
                     <button
                       onClick={() => {
                         setIsDropdownOpen(false)
@@ -101,6 +119,7 @@ const Header = () => {
                     >
                       Alterar Senha
                     </button>
+
                     <button
                       onClick={() => {
                         setIsDropdownOpen(false)
