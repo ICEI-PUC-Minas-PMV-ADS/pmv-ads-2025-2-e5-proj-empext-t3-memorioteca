@@ -80,7 +80,7 @@ const Header = () => {
                     />
                   </svg>
                 </div>
-                <span>Usuário</span>
+                <span>{user?.nome}</span>
               </button>
 
               {/* Dropdown */}

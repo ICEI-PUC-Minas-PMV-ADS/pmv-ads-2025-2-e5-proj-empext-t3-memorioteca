@@ -4,9 +4,11 @@ import { Button } from "@/components/ui";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ProjectService, ProjectData } from "@/services/projectService";
+import { useAuth } from "@/contexts/AuthContext";
 
 const ProjectsPage: React.FC = () => {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [projetos, setProjetos] = useState<ProjectData[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -49,7 +51,15 @@ const ProjectsPage: React.FC = () => {
         <div className="max-w-6xl mx-auto">
 
           <div className="mb-8">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Projetos</h2>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-3xl font-bold tracking-tight">Projetos</h2>
+
+              {user?.user_type === 'ADMINISTRADOR' && (
+              <Button onClick={handleCreateProject}>
+                Cadastrar Novo Projeto
+              </Button>
+              )}
+            </div>
 
             {loading ? (
               <div className="text-center py-8">
@@ -58,9 +68,12 @@ const ProjectsPage: React.FC = () => {
             ) : projetos.length === 0 ? (
               <div className="text-center py-8">
                 <p className="text-muted-foreground mb-4">Nenhum projeto encontrado.</p>
+
+                {user?.user_type === 'ADMINISTRADOR' && (
                 <Button onClick={handleCreateProject}>
                   Criar Primeiro Projeto
                 </Button>
+                )}
               </div>
             ) : (
               <div className="bg-white rounded-lg shadow overflow-hidden">
