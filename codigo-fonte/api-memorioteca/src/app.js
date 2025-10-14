@@ -29,9 +29,9 @@ app.use((req, res, next) => {
 });
 
 // Rotas
-app.use('/', healthcheckRoutes);
-app.use('/', userRoutes);
-app.use('/', authRoutes);
+app.use('/health', healthcheckRoutes);
+app.use('/user', userRoutes);
+app.use('/auth', authRoutes);
 app.use('/institucional', institucionalRoutes);
 app.use('/fale-conosco', faleConoscoRouter);
 app.use('/projetos', projectRoutes);

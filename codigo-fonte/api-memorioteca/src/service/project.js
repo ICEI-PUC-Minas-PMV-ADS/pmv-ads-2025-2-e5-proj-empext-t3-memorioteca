@@ -8,6 +8,9 @@ export class Project {
     this.url = data.url || null;
     this.data_criacao = data.data_criacao || new Date().toISOString();
     this.data_atualizacao = data.data_atualizacao || null;
+    this.nome_autor = data.nome_autor || null;
+    this.data_inicio = data.data_inicio || null;
+    this.data_fim = data.data_fim || null;
   }
 
   validate() {
@@ -24,6 +27,9 @@ export class Project {
       descricao: this.descricao.trim(),
       url: this.url,
       data_criacao: this.data_criacao,
+      nome_autor: this.nome_autor,
+      data_inicio: this.data_inicio,
+      data_fim: this.data_fim,
     };
     if (update) dbObj.data_atualizacao = now;
     return dbObj;
@@ -37,12 +43,16 @@ export class Project {
       url: this.url,
       data_criacao: this.data_criacao,
       data_atualizacao: this.data_atualizacao,
+      nome_autor: this.nome_autor,
+      data_inicio: this.data_inicio,
+      data_fim: this.data_fim,
     };
   }
 
   static async criarNovo(data) {
-    try {
+    try {      
       const project = new Project(data);
+      
       const validation = project.validate();
       if (!validation.isValid) {
         return { success: false, errors: validation.errors, project: null };
@@ -144,6 +154,31 @@ export class Project {
     } catch (err) {
       console.error('Erro inesperado ao deletar projeto:', err);
       return { success: false, errors: ['Erro interno do servidor'] };
+    }
+  }
+
+  static async recuperar(id) {
+    try {
+      
+      const { data: updated, error } = await supabase
+        .from('projetos')
+        .select('*')
+        .eq('id', id)
+        .single();
+      
+      if (error) {
+        if(error.code == "PGRST116") return { success: false, errors: ['Não foi encontrado nenhum projeto com o id informado.'], project: null, code: 404 };
+        if(error.code == "22P02") return { success: false, errors: ['O id informado é invalido.'], project: null, code: 400 };
+        console.error('Erro ao recuperar o projeto:', error);
+        return { success: false, errors: ['Erro interno do servidor'], project: null, code: 500 };
+      }        
+
+      var atual = new Project(updated).toPublic();
+
+      return { success: true, errors: [], project: atual };
+    } catch (err) {
+      console.error('Erro ao recuperar o projeto:', err);
+      return { success: false, errors: ['Erro interno do servidor'], project: null };
     }
   }
 }

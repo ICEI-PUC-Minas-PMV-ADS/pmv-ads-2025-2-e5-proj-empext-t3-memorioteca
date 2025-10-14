@@ -4,6 +4,8 @@ import { getInstitucional, updateInstitucional } from '@/services/institucionalS
 import { supabase } from '@/infra/supabaseClient';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/Card';
 import { Input, Button } from '@/components/ui';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function EditarInstitucionalPage() {
   const [texto, setTexto] = useState<string>('');
@@ -79,8 +81,10 @@ export default function EditarInstitucionalPage() {
   if (erro) return <p className="text-center text-red-500 mt-10">{erro}</p>;
 
   return (
-    <div className="flex items-center justify-center p-4 min-h-screen bg-muted">
-      <div className="w-full max-w-2xl">
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1 flex items-center justify-center p-4">
+        <div className="w-full max-w-2xl">
         <Card>
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold">Editar Página Institucional</CardTitle>
@@ -126,7 +130,9 @@ export default function EditarInstitucionalPage() {
             <Button onClick={handleSalvar}>Salvar alterações</Button>
           </CardFooter>
         </Card>
-      </div>
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 }

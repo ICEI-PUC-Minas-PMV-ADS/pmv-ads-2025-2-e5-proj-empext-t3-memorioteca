@@ -4,8 +4,9 @@ import { check } from '../service/healthcheck.js';
 const router = express.Router();
 
 // Endpoint de healthcheck básico
-router.get('/health', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
+    console.log('fdsfdsfsd')
     let result = await check();
 
     res.status(200).json(result);

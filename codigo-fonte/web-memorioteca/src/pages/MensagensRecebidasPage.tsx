@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
 import { MensagemResposta } from '@/services/faleConoscoService'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import axios from 'axios'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
@@ -30,7 +32,10 @@ export default function MensagensRecebidasPage() {
   }, [])
 
   return (
-    <Card>
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1 container mx-auto px-4 py-8">
+        <Card>
       <CardHeader>
         <CardTitle>Mensagens Recebidas</CardTitle>
       </CardHeader>
@@ -52,6 +57,9 @@ export default function MensagensRecebidasPage() {
           </div>
         ))}
       </CardContent>
-    </Card>
+        </Card>
+      </main>
+      <Footer />
+    </div>
   )
 }
