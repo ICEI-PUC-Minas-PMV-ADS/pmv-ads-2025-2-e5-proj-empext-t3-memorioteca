@@ -26,12 +26,12 @@ const Header = () => {
   }
 
   return (
-    <header className="bg-white border-b border-gray-200 shadow-sm">
+    <header className="bg-primary border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <h1
-            className="text-3xl font-bold text-black cursor-pointer"
+            className="text-3xl font-bold text-white cursor-pointer"
             onClick={() => navigate('/dashboard')}
           >
             Memorioteca
@@ -41,19 +41,19 @@ const Header = () => {
           <nav className="flex items-center gap-8">
             <button
               onClick={() => navigate('/institucional')}
-              className="text-base font-normal text-black hover:text-gray-600 transition-colors uppercase"
+              className="text-base font-normal text-white hover:text-gray-200 transition-colors uppercase"
             >
               Sobre
             </button>
             <button
               onClick={() => navigate('/projects')}
-              className="text-base font-normal text-black hover:text-gray-600 transition-colors uppercase"
+              className="text-base font-normal text-white hover:text-gray-200 transition-colors uppercase"
             >
               Projetos
             </button>
             <button
               onClick={() => navigate('/fale-conosco')}
-              className="text-base font-normal text-black hover:text-gray-600 transition-colors uppercase"
+              className="text-base font-normal text-white hover:text-gray-200 transition-colors uppercase"
             >
               Entrar em Contato
             </button>
@@ -62,7 +62,7 @@ const Header = () => {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="flex items-center gap-2 text-base font-normal text-black hover:text-gray-600 transition-colors uppercase"
+                className="flex items-center gap-2 text-base font-normal text-white hover:text-gray-200 transition-colors uppercase"
               >
                 <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white">
                   <svg
@@ -99,7 +99,6 @@ const Header = () => {
                       </button>
                     )}
 
-                    {/* NOVA OPÇÃO: Dados da Conta */}
                     <button
                       onClick={() => {
                         setIsDropdownOpen(false)

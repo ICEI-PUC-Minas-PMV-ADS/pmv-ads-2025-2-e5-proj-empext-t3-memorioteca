@@ -25,8 +25,8 @@ const InstitucionalPage = () => {
   return (
     <div className="h-screen flex flex-col bg-background">
       <Header />
-      <main className="flex-1 container mx-auto px-4 py-8 overflow-y-auto">
-        <div className="max-w-6xl mx-auto">
+      <main className="flex-1 container mx-auto px-4 py-6 flex items-center justify-center">
+        <div className="max-w-6xl w-full">
           {!institucional ? (
             <p className="text-center text-muted-foreground">Carregando...</p>
           ) : (
@@ -38,24 +38,18 @@ const InstitucionalPage = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
-                  {/* Layout responsivo */}
-                  <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-                    
-                    {/* Texto */}
-                    <div className="flex-1 text-lg leading-relaxed text-justify space-y-4">
-                      {institucional.texto.split('\n').map((paragrafo, idx) => (
-                        <p key={idx}>{paragrafo}</p>
-                      ))}
-                    </div>
+                  <div className="text-lg leading-relaxed text-justify space-y-4">
+                    {/* Imagem flutuando à direita */}
+                    <img
+                      src={institucional.imagem_url}
+                      alt="Imagem institucional"
+                      className="w-96 h-96 object-cover rounded-md shadow-lg float-right ml-6 mb-4"
+                    />
 
-                    {/* Imagem */}
-                    <div className="flex-shrink-0 w-full md:w-1/3 flex justify-center">
-                      <img
-                        src={institucional.imagem_url}
-                        alt="Imagem institucional"
-                        className="max-w-full h-auto rounded-md shadow-md"
-                      />
-                    </div>
+                    {/* Texto flui ao lado e depois ocupa toda largura */}
+                    {institucional.texto.split('\n').map((paragrafo, idx) => (
+                      <p key={idx}>{paragrafo}</p>
+                    ))}
                   </div>
                 </CardContent>
               </Card>

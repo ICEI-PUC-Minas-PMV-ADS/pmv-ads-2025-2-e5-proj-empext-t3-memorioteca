@@ -50,8 +50,8 @@ export default function FaleConoscoPage() {
   return (
     <div className="h-screen flex flex-col bg-background">
       <Header />
-      <main className="flex-1 container mx-auto px-4 py-8 overflow-y-auto">
-        <div className="max-w-xl mx-auto">
+      <main className="flex-1 container mx-auto px-4 py-6 flex items-center justify-center">
+        <div className="max-w-xl w-full">
           <Card>
             <CardHeader>
               <CardTitle>Fale Conosco</CardTitle>
@@ -92,19 +92,13 @@ export default function FaleConoscoPage() {
                 )}
               </form>
             </CardContent>
-            <CardFooter className="p-4 pt-0">
+            <CardFooter className="p-4 pt-0 flex gap-4 justify-center">
               <Button type="submit">Enviar</Button>
+              {user?.user_type === 'ADMINISTRADOR' && (
+                <Button onClick={() => navigate('/mensagens')}>Mensagens</Button>
+              )}
             </CardFooter>
           </Card>
-
-          {/* Botão "Mensagens" fora do Card */}
-          {user?.user_type === 'ADMINISTRADOR' && (
-            <div className="mt-6 text-center">
-              <Button onClick={() => navigate('/mensagens')}>
-                Mensagens
-              </Button>
-            </div>
-          )}
         </div>
       </main>
       <Footer />
