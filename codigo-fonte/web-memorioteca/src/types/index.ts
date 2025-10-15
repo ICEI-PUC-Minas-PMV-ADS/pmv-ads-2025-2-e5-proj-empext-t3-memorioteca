@@ -76,3 +76,44 @@ export interface ValidationResult {
   isValid: boolean
   errors: Record<string, string>
 }
+
+export interface Projeto {
+  id: string
+  titulo: string
+  descricao: string
+  url?: string
+  data_criacao: string
+  updated_at?: string
+}
+
+export interface ProjetoFormData {
+  titulo: string
+  descricao: string
+  url?: string
+}
+
+export interface ProjetosFilters {
+  titulo?: string
+  descricao?: string
+  data_criacao?: string
+  page?: number
+  limit?: number
+}
+
+export interface ProjetosResponse {
+  success: boolean
+  data: Projeto[]
+  pagination: {
+    currentPage: number
+    totalPages: number
+    totalItems: number
+    itemsPerPage: number
+  }
+  message?: string
+}
+
+export interface ProjetoResponse {
+  success: boolean
+  data?: Projeto
+  message?: string
+}

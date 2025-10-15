@@ -1,6 +1,8 @@
 import { useAuth } from '@/contexts/AuthContext'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { Link } from 'react-router-dom'
+import { Button } from '@/components/ui'
 
 const DashboardPage = () => {
   const { user } = useAuth()
@@ -37,6 +39,31 @@ const DashboardPage = () => {
                   : 'Primeiro acesso'}
               </p>
             </div>
+
+            <div className="bg-card p-6 rounded-lg border">
+              <h3 className="font-semibold mb-2">Explorar Projetos</h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Explore todos os projetos disponíveis na Memorioteca
+              </p>
+              <Link to="/projetos">
+                <Button className="w-full">
+                  Ver Projetos
+                </Button>
+              </Link>
+            </div>
+
+            <div className="bg-card p-6 rounded-lg border">
+              <h3 className="font-semibold mb-2">Página Institucional</h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Conheça mais sobre a Memorioteca
+              </p>
+              <Link to="/institucional">
+                <Button variant="outline" className="w-full">
+                  Saiba Mais
+                </Button>
+              </Link>
+            </div>
+          
           </div>
         </div>
       </main>
