@@ -31,9 +31,9 @@ function useFeaturedProjects() {
         const normalized: Project[] = dto.map((p: ProjectFeaturedDto) => ({
           id: p.id,
           titulo: p.titulo,
-          resumo: p.resumo,
-          capaUrl: p.capa_url || '',
-          createdAt: p.created_at,
+          resumo: p.descricao,
+          capaUrl: p.url || '',
+          createdAt: p.data_criacao,
         }))
 
         setData(normalized)

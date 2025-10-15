@@ -14,6 +14,7 @@ export class User {
     this.senha = data.senha || '';
     this.data_criacao = data.data_criacao || new Date().toISOString();
     this.ultimo_login = data.ultimo_login || null;
+    this.user_type = data.user_type || null;
   }
 
   validate() {
@@ -64,7 +65,8 @@ export class User {
       email: this.email.toLowerCase().trim(),
       nome: this.nome.trim(),
       data_criacao: this.data_criacao,
-      ultimo_login: this.ultimo_login
+      ultimo_login: this.ultimo_login,
+      user_type: this.user_type
     };
 
     if (this.senha) {
@@ -75,12 +77,14 @@ export class User {
   }
 
   toPublic() {
+    console.log(this)
     return {
       id: this.id,
       email: this.email,
       nome: this.nome,
       data_criacao: this.data_criacao,
-      ultimo_login: this.ultimo_login
+      ultimo_login: this.ultimo_login,
+      user_type: this.user_type,
     };
   }
 
@@ -326,7 +330,7 @@ export class User {
 
       let query = supabase
         .from('users')
-        .select('id, email, nome, data_criacao, ultimo_login', { count: 'exact' });
+        .select('id, email, nome, data_criacao, ultimo_login, user_type', { count: 'exact' });
 
       if (search) {
         query = query.or(`nome.ilike.%${search}%,email.ilike.%${search}%`);
@@ -364,6 +368,196 @@ export class User {
         success: false,
         users: [],
         pagination: null
+      };
+    }
+  }
+
+  static async atualizarUsuario(id, updateData) {
+    try {
+      const userResult = await this.buscarPorId(id);
+
+      if (!userResult.success || !userResult.user) {
+        return {
+          success: false,
+          errors: ['Usuário não encontrado']
+        };
+      }
+
+      const user = new User(userResult.user);
+
+      const allowedFields = ['nome', 'email', 'user_type'];
+      const updates = {};
+
+      for (const field of allowedFields) {
+        if (updateData[field] !== undefined) {
+          user[field] = updateData[field];
+          if (field === 'email') {
+            updates[field] = updateData[field].toLowerCase().trim();
+          } else if (field === 'user_type') {
+            // Valida valores permitidos para user_type
+            if (!['ADMINISTRADOR', 'NORMAL'].includes(updateData[field])) {
+              return {
+                success: false,
+                errors: ['Tipo de usuário inválido. Use ADMINISTRADOR ou NORMAL']
+              };
+            }
+            updates[field] = updateData[field];
+          } else {
+            updates[field] = updateData[field].trim();
+          }
+        }
+      }
+
+      if (Object.keys(updates).length === 0) {
+        return {
+          success: false,
+          errors: ['Nenhum campo para atualizar']
+        };
+      }
+
+      const validation = user.validate();
+      if (!validation.isValid) {
+        return {
+          success: false,
+          errors: validation.errors
+        };
+      }
+
+      if (updates.email) {
+        const existingUser = await this.findByEmail(updates.email);
+        if (existingUser.success && existingUser.user && existingUser.user.id !== id) {
+          return {
+            success: false,
+            errors: ['Email já está em uso por outro usuário']
+          };
+        }
+      }
+
+      const { data, error } = await supabase
+        .from('users')
+        .update(updates)
+        .eq('id', id)
+        .select('*')
+        .single();
+
+      if (error) {
+        console.error('Erro ao atualizar usuário:', error);
+        return {
+          success: false,
+          errors: ['Erro interno do servidor']
+        };
+      }
+
+      const updatedUser = new User(data);
+      return {
+        success: true,
+        user: updatedUser.toPublic()
+      };
+
+    } catch (error) {
+      console.error('Erro inesperado ao atualizar usuário:', error);
+      return {
+        success: false,
+        errors: ['Erro interno do servidor']
+      };
+    }
+  }
+
+  static async alterarSenha(id, senhaAtual, novaSenha) {
+    try {
+      const { data, error } = await supabase
+        .from('users')
+        .select('*')
+        .eq('id', id)
+        .single();
+
+      if (error || !data) {
+        return {
+          success: false,
+          errors: ['Usuário não encontrado']
+        };
+      }
+
+      const user = new User(data);
+
+      const isPasswordValid = await user.verifyPassword(senhaAtual, data.senha_hash);
+      if (!isPasswordValid) {
+        return {
+          success: false,
+          errors: ['Senha atual incorreta']
+        };
+      }
+
+      if (!novaSenha || novaSenha.length < 6) {
+        return {
+          success: false,
+          errors: ['Nova senha deve ter pelo menos 6 caracteres']
+        };
+      }
+
+      const senhaHash = await user.hashPassword(novaSenha);
+
+      const { error: updateError } = await supabase
+        .from('users')
+        .update({ senha_hash: senhaHash })
+        .eq('id', id);
+
+      if (updateError) {
+        console.error('Erro ao alterar senha:', updateError);
+        return {
+          success: false,
+          errors: ['Erro interno do servidor']
+        };
+      }
+
+      return {
+        success: true,
+        message: 'Senha alterada com sucesso'
+      };
+
+    } catch (error) {
+      console.error('Erro inesperado ao alterar senha:', error);
+      return {
+        success: false,
+        errors: ['Erro interno do servidor']
+      };
+    }
+  }
+
+  static async excluirUsuario(id) {
+    try {
+      const userResult = await this.buscarPorId(id);
+
+      if (!userResult.success || !userResult.user) {
+        return {
+          success: false,
+          errors: ['Usuário não encontrado']
+        };
+      }
+
+      const { error } = await supabase
+        .from('users')
+        .delete()
+        .eq('id', id);
+
+      if (error) {
+        console.error('Erro ao excluir usuário:', error);
+        return {
+          success: false,
+          errors: ['Erro interno do servidor']
+        };
+      }
+
+      return {
+        success: true,
+        message: 'Usuário excluído com sucesso'
+      };
+
+    } catch (error) {
+      console.error('Erro inesperado ao excluir usuário:', error);
+      return {
+        success: false,
+        errors: ['Erro interno do servidor']
       };
     }
   }

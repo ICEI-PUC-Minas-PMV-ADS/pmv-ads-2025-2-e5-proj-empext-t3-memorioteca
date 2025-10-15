@@ -8,9 +8,9 @@ const API_BASE_URL = config.API_BASE_URL
 export type ProjectFeaturedDto = {
   id: string
   titulo: string
-  resumo?: string
-  capa_url?: string
-  created_at: string
+  descricao?: string
+  url?: string
+  data_criacao: string
 }
 
 export class ApiService {
@@ -95,7 +95,7 @@ export class ApiService {
 
   static async getFeaturedProjects(limit = 3, token?: string): Promise<ProjectFeaturedDto[]> {
     try {
-      const url = `${API_BASE_URL}/projects/featured?limit=${encodeURIComponent(String(limit))}`
+      const url = `${API_BASE_URL}/projetos/featured?limit=${encodeURIComponent(String(limit))}`
       const headers: Record<string, string> = { Accept: 'application/json' }
       if (token) headers.Authorization = `Bearer ${token}`
 

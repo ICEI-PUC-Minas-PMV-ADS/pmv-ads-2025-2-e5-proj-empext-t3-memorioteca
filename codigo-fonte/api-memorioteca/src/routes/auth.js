@@ -3,7 +3,7 @@ import {User} from '../service/user.js';
 
 const router = express.Router();
 
-router.post('/auth', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     let result = await User.authenticate(req.body.email, req.body.senha);
 

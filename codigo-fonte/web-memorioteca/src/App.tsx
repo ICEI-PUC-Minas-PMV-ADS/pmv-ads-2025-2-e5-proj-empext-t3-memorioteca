@@ -5,8 +5,19 @@ import { LoadingProvider } from './contexts/LoadingContext'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import DashboardPage from './pages/DashboardPage'
+import InstitucionalPage from './pages/InstitucionalPage'
+import EditarInstitucionalPage from './pages/EditarInstitucionalPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ProjectCreatePage from './pages/ProjectCreatePage';
+import ProjectEditPage from './pages/ProjectEditPage';
+import ProjectViewPage from './pages/ProjectViewPage';
+import UsersPage from './pages/UsersPage';
+import UserEditPage from './pages/UserEditPage';
+import ChangePasswordPage from './pages/ChangePasswordPage';
 import DestaquesPage from './pages/DestaquesPage' 
 import Footer from './components/Footer'
+import FaleConoscoPage from '@/pages/FaleConoscoPage'
+import MensagensRecebidasPage from '@/pages/MensagensRecebidasPage'
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated, loading } = useAuth()
@@ -84,17 +95,59 @@ function App() {
             />
 
             
-            <Route
-              path="/dashboard"
-              element={
-                <ProtectedRoute>
-                  <DashboardPage />
-                </ProtectedRoute>
-              }
-            />
+            <Route path="/dashboard" element={
+              <ProtectedRoute>
+                <DashboardPage />
+              </ProtectedRoute>
+            } />
 
-        
-            <Route
+            <Route path="/projects" element={
+              <ProtectedRoute>
+                  <ProjectsPage />
+                </ProtectedRoute>
+              } />
+
+            <Route path="/projects/create" element={
+              <ProtectedRoute>
+                <ProjectCreatePage />
+                  </ProtectedRoute>
+              } />
+
+            <Route path="/projects/:id/edit" element={
+              <ProtectedRoute>
+                <ProjectEditPage />
+                  </ProtectedRoute>
+              } />
+
+            <Route path="/institucional" element={<InstitucionalPage />} />
+
+            <Route path="/institucional/editar" element={<EditarInstitucionalPage />} />
+
+            <Route path="/fale-conosco" element={<FaleConoscoPage />} />
+
+            <Route path="/mensagens" element={<MensagensRecebidasPage />} />
+
+            <Route path="/projects/:id" element={<ProjectViewPage />} />
+
+            <Route path="/admin/usuarios" element={
+              <ProtectedRoute>
+                <UsersPage />
+              </ProtectedRoute>
+            } />
+
+            <Route path="/admin/usuarios/:id/edit" element={
+              <ProtectedRoute>
+                <UserEditPage />
+              </ProtectedRoute>
+            } />
+
+            <Route path="/change-password" element={
+              <ProtectedRoute>
+                <ChangePasswordPage />
+              </ProtectedRoute>
+            } />
+
+<Route
               path="/destaques"
               element={
                 <ProtectedRoute>
@@ -102,7 +155,6 @@ function App() {
                 </ProtectedRoute>
               }
             />
-
             
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
