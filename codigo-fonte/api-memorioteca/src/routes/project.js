@@ -1,6 +1,6 @@
 import express from 'express';
 import { Project } from '../service/project.js';
-import { authenticate } from '../middleware/auth.js';
+import authenticate from '../middleware/auth.js';
 import { listRecentProjects } from '../service/destaquesprojects.js'
 
 const router = express.Router();
