@@ -1,6 +1,6 @@
 import express from 'express';
 import {User} from '../service/user.js';
-import { authenticate } from '../middleware/auth.js';
+import authenticate from '../middleware/auth.js';
 
 const router = express.Router();
 

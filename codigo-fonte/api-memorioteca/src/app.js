@@ -7,6 +7,7 @@ import authRoutes from './routes/auth.js';
 import institucionalRoutes from './routes/institucional.js';
 import faleConoscoRouter from './routes/faleconosco.js';
 import projectRoutes from './routes/project.js';
+import projetosRoutes from './routes/projetos.js';
 
 dotenv.config();
 
@@ -32,6 +33,7 @@ app.use('/health', healthcheckRoutes);
 app.use('/user', userRoutes);
 app.use('/auth', authRoutes);
 app.use('/institucional', institucionalRoutes);
+app.use('/projetos', projetosRoutes);;
 app.use('/fale-conosco', faleConoscoRouter);
 app.use('/projetos', projectRoutes);
 

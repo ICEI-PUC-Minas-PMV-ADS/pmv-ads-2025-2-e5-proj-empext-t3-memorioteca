@@ -6,7 +6,8 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import DashboardPage from './pages/DashboardPage'
 import InstitucionalPage from './pages/InstitucionalPage'
-import EditarInstitucionalPage from './pages/EditarInstitucionalPage';
+import EditarInstitucionalPage from './pages/EditarInstitucionalPage'
+import ProjetosPage from './pages/ProjetosPage'
 import ProjectsPage from './pages/ProjectsPage';
 import ProjectCreatePage from './pages/ProjectCreatePage';
 import ProjectEditPage from './pages/ProjectEditPage';
@@ -118,6 +119,8 @@ function App() {
                 <ProjectEditPage />
                   </ProtectedRoute>
               } />
+
+            <Route path="/projetos" element={<ProjetosPage />} />
 
             <Route path="/institucional" element={<InstitucionalPage />} />
 

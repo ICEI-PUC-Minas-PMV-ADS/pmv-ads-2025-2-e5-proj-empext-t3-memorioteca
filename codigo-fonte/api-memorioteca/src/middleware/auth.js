@@ -21,4 +21,4 @@ const authenticate = (req, res, next) => {
   }
 };
 
-export {  authenticate };
+export default authenticate;
