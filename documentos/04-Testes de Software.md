@@ -7,8 +7,9 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 - **Sucesso**: Tem o objetivo de verificar se as funcionalidades funcionam corretamente.
 - **Insucesso**: Tem o objetivo de verificar se o sistema trata erros de maneira correta.
 
-#### Etapa 2
+### Etapa 2
 
+#### Exemplo de Caso de Teste de Sucesso
 <table>
   <tr>
     <th colspan="2" width="1000">CT-001 - S01
@@ -53,11 +54,9 @@ Teste de Cadastro</th>
   </tr>
 </table>
 
-
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - S02  
-Teste de Login</th>
+    <th colspan="2" width="1000">CT-002 - S02 Teste de Login</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -97,13 +96,7 @@ Teste de Login</th>
   </tr>
 </table>
 
-      
-
-
 #### Exemplo de Caso de Teste de Insucesso
-
-
-### ETAPA 2  
 
 <table>
   <tr>
@@ -189,8 +182,7 @@ Teste de Login</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-003 - I03  
-Cadastro com e-mail já cadastrado</th>
+    <th colspan="2" width="1000">CT-003 - I03 Cadastro com e-mail já cadastrado</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -230,10 +222,56 @@ Cadastro com e-mail já cadastrado</th>
   </tr>
 </table>
 
-
 ### ETAPA 3
 
-Criar casos de teste da etapa 3
+#### Exemplo de Caso de Teste de Sucesso
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-004 - S04 Teste de Cadastro de Projeto</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se o usuário consegue cadastrar um projeto com sucesso na aplicação.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-005</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Abrir a aplicação e fazer o login.<br>
+      2. Ir para a página de projetos.<br>
+      3. Clicar em "Cadastrar Novo Projeto".<br>
+      4. Preencher o campo de título, descrição, nome do autor, data de início, data de fim e URL do arquivo.<br>
+      5. Clicar no botão "Cadastrar".
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Título:</strong>Projeto Leitura<br>  
+      - <strong>Descrição:</strong>Leitura para crianças<br>
+      - <strong>Nome do Autor:</strong>Priscila Maruno<br>
+      - <strong>Data de Início:</strong>12/10/2025<br>
+      - <strong>Data de Fim:</strong>17/10/2025<br>
+      - <strong>URL do Arquivo:</strong>https://img.freepik.com/vetores-premium/ilustracao-em-vetor-de-livro-de-leitura-de-crianca_29937-1554.jpg?semt=ais_hybrid&w=740&q=80<br>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve cadastrar o projeto e exibir uma mensagem de sucesso. Depois redirecionar o usuário para a página de projetos.</td>
+  </tr>
+</table>
 
 ### ETAPA 4
 
