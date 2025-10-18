@@ -10,10 +10,10 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 ### Etapa 2
 
 #### Exemplo de Caso de Teste de Sucesso
+
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-001 - S01
-Teste de Cadastro</th>
+    <th colspan="2" width="1000">CT-001 - S01<br> Teste de Cadastro</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -56,7 +56,7 @@ Teste de Cadastro</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - S02 Teste de Login</th>
+    <th colspan="2" width="1000">CT-002 - S02<br> Teste de Login</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -182,7 +182,7 @@ Teste de Cadastro</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-003 - I03 Cadastro com e-mail já cadastrado</th>
+    <th colspan="2" width="1000">CT-003 - I03<br> Cadastro com e-mail já cadastrado</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -228,7 +228,7 @@ Teste de Cadastro</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-004 - S04 Teste de Cadastro de Projeto</th>
+    <th colspan="2" width="1000">CT-004 - S04<br> Teste de Cadastro de Projeto</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -259,12 +259,12 @@ Teste de Cadastro</th>
   <tr>
     <td><strong>Dados de teste</strong></td>
     <td>
-      - <strong>Título:</strong> Projeto Leitura<br>  
-      - <strong>Descrição:</strong> Leitura para crianças<br>
-      - <strong>Nome do Autor:</strong> Priscila Maruno<br>
-      - <strong>Data de Início:</strong> 12/10/2025<br>
-      - <strong>Data de Fim:</strong> 17/10/2025<br>
-      - <strong>URL do Arquivo:</strong> https://img.freepik.com/vetores-premium/ilustracao-em-vetor-de-livro-de-leitura-de-crianca_29937-1554.jpg?semt=ais_hybrid&w=740&q=80<br>
+      - <strong>Título:</strong> Colocar o título do Projeto<br>  
+      - <strong>Descrição:</strong> Descrever o projeto<br>
+      - <strong>Nome do Autor:</strong> Colocar o nome do autor<br>
+      - <strong>Data de Início:</strong> Escolher a data que começou do projeto<br>
+      - <strong>Data de Fim:</strong> Escolher a data que acabou o projeto<br>
+      - <strong>URL do Arquivo:</strong> Inserir a foto do projeto<br>
     </td>
   </tr>
   <tr>
@@ -275,7 +275,7 @@ Teste de Cadastro</th>
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-005 - S05 Teste de Edição de Projeto</th>
+    <th colspan="2" width="1000">CT-005 - S05<br> Teste de Edição de Projeto</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -307,17 +307,85 @@ Teste de Cadastro</th>
   <tr>
     <td><strong>Dados de teste</strong></td>
     <td>
-      - <strong>Título:</strong> Projeto Leiturinha<br>  
-      - <strong>Descrição:</strong> O projeto tem como objetivo despertar o gosto pela leitura em crianças por meio de atividades lúdicas, contação de histórias e rodas de leitura interativas. A iniciativa busca desenvolver a imaginação, a criatividade e o vocabulário dos pequenos, promovendo momentos de encantamento com os livros e fortalecendo o hábito da leitura desde a infância.<br>
-      - <strong>Nome do Autor:</strong> Priscila Maruno<br>
-      - <strong>Data de Início:</strong> 01/10/2025<br>
-      - <strong>Data de Fim:</strong> 31/10/2025<br>
-      - <strong>URL do Arquivo:</strong> https://img.freepik.com/vetores-gratis/tres-criancas-leitura-storybook_1308-11640.jpg?semt=ais_hybrid&w=740&q=80<br>
+      - <strong>Título:</strong> Colocar o título do Projeto<br>  
+      - <strong>Descrição:</strong> Descrever o projeto<br>
+      - <strong>Nome do Autor:</strong> Colocar o nome do autor<br>
+      - <strong>Data de Início:</strong> Escolher a data que começou do projeto<br>
+      - <strong>Data de Fim:</strong> Escolher a data que acabou o projeto<br>
+      - <strong>URL do Arquivo:</strong> Inserir a foto do projeto<br>
     </td>
   </tr>
   <tr>
     <td><strong>Critérios de êxito</strong></td>
     <td>O sistema deve alterar as informações do projeto no banco de dados e exibe uma mensagem de sucesso.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-006 - S06<br> Teste de Exclusão de Projeto</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">João Victor Antunes</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-005</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> - </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-007 - S07<br> Teste de Consulta de Projeto</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">João Victor Antunes</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-005</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> - </td>
   </tr>
 </table>
 
@@ -361,7 +429,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 </td>
   </tr>
 </table>
-</br>
+
 <table>
   <tr>
     <th colspan="6" width="1000">CT-001<br>Login com credenciais invalidas</th>
@@ -388,7 +456,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 </td>
   </tr>
 </table>
-</br>
+
 <table>
   <tr>
     <th colspan="6" width="1000">CT-002<br>Cadastro com sucesso</th>
@@ -419,7 +487,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 </td>
   </tr>
 </table>
-</br>
+
 <table>
   <tr>
     <th colspan="6" width="1000">CT-002<br>Cadastro com senha invalida</th>
@@ -450,7 +518,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 </td>
   </tr>
 </table>
-</br>
+
 <table>
   <tr>
     <th colspan="6" width="1000">CT-002<br>Cadastro com email invalido</th>
@@ -481,7 +549,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 </td>
   </tr>
 </table>
-</br>
+
 <table>
   <tr>
     <th colspan="6" width="1000">CT-002<br>Cadastro com email já cadastrado</th>
@@ -598,7 +666,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   <tr>
     <td colspan="6" align="center">
       <img width="823" height="754" alt="image3"
-        src="https://github.com/user-attachments/assets/8960befa-c5ce-49a7-a97b-9d7f5114bb5d" />
+        src="https://github.com/user-attachments/assets/6f51259b-c04e-47f7-93d7-6f0771441e1b" />
     </td>
   </tr>
   <tr>
@@ -609,8 +677,88 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
 </table>
 
-
 ### ETAPA 4
 
 Colocar evidências de teste da etapa 4
 
+## Parte 2 - Testes por pares
+A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade deve ser testada por um colega e os testes devem ser evidenciados. O colega "Tester" deve utilizar o caso de teste criado pelo desenvolvedor responsável pela funcionalidade (desenvolveu a funcionalidade e criou o caso de testes descrito no plano de testes) e caso perceba a necessidade de outros casos de teste, deve acrescentá-los na sessão "Plano de Testes".
+
+### ETAPA 3
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-006 - S06<br> Teste de Exclusão de Projeto</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve excluir o projeto do banco de dados.</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">17/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema excluiu o projeto.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/8ea2a1b9-5d52-43c8-ab33-6c1c7dee35c8" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/9c986b08-730d-4798-8cb1-8f47ff05e3cb" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image3"
+        src="https://github.com/user-attachments/assets/223b6fcb-a52f-4c8a-9954-153862baf3e4" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-007 - S07<br> Teste de Consulta de Projeto</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir as informações do projeto.</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">17/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema exibiu as informações do projeto.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/6b753f08-2b4b-4990-837c-36e20f54c086" />
+    </td>
+  </tr>
+</table>
+
+### ETAPA 4
+Colocar evidências de teste da etapa 4
