@@ -53,10 +53,11 @@ export const CardDescription: React.FC<CardDescriptionProps> = ({ className, chi
 interface CardContentProps {
   className?: string
   children: React.ReactNode
+  onClick?: () => void
 }
 
-export const CardContent: React.FC<CardContentProps> = ({ className, children }) => (
-  <div className={cn('p-6 pt-0', className)}>
+export const CardContent: React.FC<CardContentProps> = ({ className, children, onClick }) => (
+  <div className={cn('p-6 pt-0', className)} onClick={onClick}>
     {children}
   </div>
 )

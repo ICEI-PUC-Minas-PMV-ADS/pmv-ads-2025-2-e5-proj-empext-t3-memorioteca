@@ -3,38 +3,7 @@ import projetosService from '../service/projetos.js';
 
 const router = express.Router();
 
-router.get('/', async (req, res) => {
-  try {
-    const { titulo, descricao, data_criacao, page = 1, limit = 10 } = req.query;
-    
-    const filtros = {
-      titulo,
-      descricao,
-      data_criacao,
-      page: parseInt(page),
-      limit: parseInt(limit)
-    };
 
-    const resultado = await projetosService.listarProjetos(filtros);
-    
-    res.json({
-      success: true,
-      data: resultado.projetos,
-      pagination: {
-        currentPage: filtros.page,
-        totalPages: resultado.totalPages,
-        totalItems: resultado.totalItems,
-        itemsPerPage: filtros.limit
-      }
-    });
-  } catch (error) {
-    console.error('Erro ao listar projetos:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Erro interno do servidor'
-    });
-  }
-});
 
 router.get('/:id', async (req, res) => {
   try {

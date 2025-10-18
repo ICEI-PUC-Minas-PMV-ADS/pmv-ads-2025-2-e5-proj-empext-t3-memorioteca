@@ -3,8 +3,16 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
 import { Input, Button, Select } from '@/components/ui'
 import { ProjetosService } from '@/services/projetosService'
 import { Projeto, ProjetosFilters } from '@/types'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import { useAuth } from '@/contexts/AuthContext'
+import { useNavigate } from 'react-router-dom'
+
 
 const ProjetosPage = () => {
+  const { user } = useAuth();
+  const navigate = useNavigate();
+
   const [projetos, setProjetos] = useState<Projeto[]>([])
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
@@ -23,6 +31,14 @@ const ProjetosPage = () => {
     totalItems: 0,
     itemsPerPage: 12
   })
+
+  const handleCreateProject = () => {
+    navigate("/projects/create");
+  };
+
+  const handleViewProject = (id: String) => {
+    navigate(`/projects/${id}`);
+  };
 
   const validarDataCriacao = () => {
     if (filtros.data_criacao) {
@@ -156,6 +172,7 @@ const ProjetosPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-8">
@@ -165,6 +182,11 @@ const ProjetosPage = () => {
                 Explore todos os projetos da Memorioteca
               </p>
             </div>
+            {user?.user_type === 'ADMINISTRADOR' && (
+                          <Button onClick={handleCreateProject}>
+                            Cadastrar Novo Projeto
+                          </Button>
+                          )}
           </div>
 
           <Card className="mb-6">
@@ -245,7 +267,7 @@ const ProjetosPage = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
                     {projetos.map((projeto) => (
                       <Card key={projeto.id} className="group hover:shadow-lg transition-shadow cursor-pointer">
-                        <CardContent className="p-0">
+                        <CardContent className="p-0" onClick={() => handleViewProject(projeto.id)}>
                           <div className="aspect-video w-full overflow-hidden rounded-t-lg bg-gray-100">
                             {projeto.url ? (
                               <img
@@ -397,6 +419,7 @@ const ProjetosPage = () => {
           )}
         </div>
       </main>
+      <Footer />
     </div>
   )
 }

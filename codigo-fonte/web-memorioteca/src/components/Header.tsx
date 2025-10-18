@@ -46,7 +46,7 @@ const Header = () => {
               Sobre
             </button>
             <button
-              onClick={() => navigate('/projects')}
+              onClick={() => navigate('/projetos')}
               className="text-base font-normal text-white hover:text-gray-200 transition-colors uppercase"
             >
               Projetos
@@ -99,7 +99,7 @@ const Header = () => {
                       </button>
                     )}
 
-                    <button
+                    {/* <button
                       onClick={() => {
                         setIsDropdownOpen(false)
                         navigate('/dashboard')
@@ -107,7 +107,7 @@ const Header = () => {
                       className="block w-full text-left px-4 py-2 text-sm text-black hover:bg-gray-100 uppercase"
                     >
                       Dados da Conta
-                    </button>
+                    </button> */}
 
                     <button
                       onClick={() => {

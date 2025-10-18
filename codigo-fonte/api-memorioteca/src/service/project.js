@@ -181,4 +181,64 @@ export class Project {
       return { success: false, errors: ['Erro interno do servidor'], project: null };
     }
   }
+
+  static async listarProjetos(filtros = {}) {
+    const { titulo, descricao, page = 1, limit = 10 } = filtros;
+    
+    try {
+      let query = supabase
+        .from('projetos')
+        .select(`
+          id,
+          titulo,
+          descricao,
+          url,
+          data_criacao
+        `)
+        .order('data_criacao', { ascending: false });
+
+      // Aplicar filtros
+      if (titulo) {
+        query = query.ilike('titulo', `%${titulo}%`);
+      }
+
+      if (descricao) {
+        query = query.ilike('descricao', `%${descricao}%`);
+      }
+
+    if (filtros.data_criacao) {
+      const dataInicio = `${filtros.data_criacao}T00:00:00.000Z`;
+      const dataFim = `${filtros.data_criacao}T23:59:59.999Z`;
+      
+      query = query.gte('data_criacao', dataInicio);
+      query = query.lte('data_criacao', dataFim);
+    }
+
+      const { count } = await supabase
+        .from('projetos')
+        .select('*', { count: 'exact', head: true });
+
+      const offset = (page - 1) * limit;
+      query = query.range(offset, offset + limit - 1);
+
+      const { data: projetos, error } = await query;
+
+      if (error) {
+        console.error('Erro ao listar projetos:', error);
+        throw error;
+      }
+
+      const totalItems = count || 0;
+      const totalPages = Math.ceil(totalItems / limit);
+
+      return {
+        projetos: projetos || [],
+        totalItems,
+        totalPages
+      };
+    } catch (error) {
+      console.error('Erro ao listar projetos:', error);
+      throw error;
+    }
+  }
 }

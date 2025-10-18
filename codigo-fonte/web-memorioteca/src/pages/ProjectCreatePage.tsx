@@ -81,7 +81,7 @@ const ProjectCreatePage: React.FC = () => {
           data_fim: "",
         });
 
-        setTimeout(() => navigate("/projects"), 1000);
+        setTimeout(() => navigate("/projetos"), 1000);
       } else {
         setApiErrors(res.errors || ["Erro ao criar projeto"]);
       }
@@ -202,7 +202,7 @@ const ProjectCreatePage: React.FC = () => {
                   <Button
                     type="button"
                     className="flex-1 bg-red-600 hover:bg-red-700"
-                    onClick={() => navigate("/projects")}
+                    onClick={() => navigate("/projetos")}
                   >
                     Cancelar
                   </Button>

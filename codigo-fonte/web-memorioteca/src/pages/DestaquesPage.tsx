@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { Card, CardHeader, CardTitle, CardContent, CardFooter, CardDescription } from '@/components/ui/Card'
 import { Button } from '@/components/ui'
 import { ApiService, type ProjectFeaturedDto } from '@/services/api'
+import { useNavigate } from 'react-router-dom'
 
 type Project = {
   id: string
@@ -15,6 +16,7 @@ function useFeaturedProjects() {
   const [data, setData] = useState<Project[] | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+
 
   useEffect(() => {
     let mounted = true
@@ -67,7 +69,11 @@ function SquareSkeleton() {
 
 function FeaturedSquare({ project }: { project: Project }) {
   const date = useMemo(() => new Date(project.createdAt), [project.createdAt])
+  const navigate = useNavigate();
 
+  const handleViewProject = (id: String) => {
+    navigate(`/projects/${id}`);
+  };
   return (
     <Card className="overflow-hidden">
       <CardContent className="p-4">
@@ -95,7 +101,9 @@ function FeaturedSquare({ project }: { project: Project }) {
         </div>
 
         <CardFooter className="px-0 pt-4">
-          <Button className="w-full sm:w-auto">Ver projeto</Button>
+          <Button className="w-full sm:w-auto"
+          onClick={() => handleViewProject(project.id)}
+          >Ver projeto</Button>
         </CardFooter>
       </CardContent>
     </Card>

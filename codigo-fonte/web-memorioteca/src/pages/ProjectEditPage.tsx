@@ -207,7 +207,7 @@ const ProjectEditPage: React.FC = () => {
                   <Button
                     type="button"
                     className="flex-1 bg-red-600 hover:bg-red-700"
-                    onClick={() => navigate("/projects")}
+                    onClick={() => navigate("/projetos")}
                   >
                     Cancelar
                   </Button>

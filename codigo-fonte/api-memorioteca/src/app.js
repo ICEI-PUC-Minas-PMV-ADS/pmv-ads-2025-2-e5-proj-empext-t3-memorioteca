@@ -33,7 +33,7 @@ app.use('/health', healthcheckRoutes);
 app.use('/user', userRoutes);
 app.use('/auth', authRoutes);
 app.use('/institucional', institucionalRoutes);
-app.use('/projetos', projetosRoutes);;
+//app.use('/projetos', projetosRoutes);;
 app.use('/fale-conosco', faleConoscoRouter);
 app.use('/projetos', projectRoutes);
 

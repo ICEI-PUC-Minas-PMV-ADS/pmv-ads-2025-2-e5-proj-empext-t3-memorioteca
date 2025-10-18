@@ -19,24 +19,57 @@ router.get('/featured', async (req, res) => {
 });
 
 // GET - listar todos os projetos
-router.get('/', authenticate, async (req, res) => {
+// router.get('/', authenticate, async (req, res) => {
+//   try {
+//     let options = {
+//       page: req.query.page ? parseInt(req.query.page) : 1,
+//       limit: req.query.limit ? parseInt(req.query.limit) : 10,
+//       search: req.query.search || ''
+//     };
+
+//     let result = await Project.listarTodos(options);
+
+//     res.status(200).json(result);
+
+//   } catch (error) {
+//     console.error('Project failed:', error);
+//     res.status(500).json({
+//       success: false,
+//       errors: ['Erro interno do servidor'],
+//       projects: []
+//     });
+//   }
+// });
+
+router.get('/', async (req, res) => {
   try {
-    let options = {
-      page: req.query.page ? parseInt(req.query.page) : 1,
-      limit: req.query.limit ? parseInt(req.query.limit) : 10,
-      search: req.query.search || ''
+    const { titulo, descricao, data_criacao, page = 1, limit = 10 } = req.query;
+    
+    const filtros = {
+      titulo,
+      descricao,
+      data_criacao,
+      page: parseInt(page),
+      limit: parseInt(limit)
     };
 
-    let result = await Project.listarTodos(options);
-
-    res.status(200).json(result);
-
+    const resultado = await Project.listarProjetos(filtros);
+    
+    res.json({
+      success: true,
+      data: resultado.projetos,
+      pagination: {
+        currentPage: filtros.page,
+        totalPages: resultado.totalPages,
+        totalItems: resultado.totalItems,
+        itemsPerPage: filtros.limit
+      }
+    });
   } catch (error) {
-    console.error('Project failed:', error);
+    console.error('Erro ao listar projetos:', error);
     res.status(500).json({
       success: false,
-      errors: ['Erro interno do servidor'],
-      projects: []
+      message: 'Erro interno do servidor'
     });
   }
 });
