@@ -259,17 +259,65 @@ Teste de Cadastro</th>
   <tr>
     <td><strong>Dados de teste</strong></td>
     <td>
-      - <strong>Título:</strong>Projeto Leitura<br>  
-      - <strong>Descrição:</strong>Leitura para crianças<br>
-      - <strong>Nome do Autor:</strong>Priscila Maruno<br>
-      - <strong>Data de Início:</strong>12/10/2025<br>
-      - <strong>Data de Fim:</strong>17/10/2025<br>
-      - <strong>URL do Arquivo:</strong>https://img.freepik.com/vetores-premium/ilustracao-em-vetor-de-livro-de-leitura-de-crianca_29937-1554.jpg?semt=ais_hybrid&w=740&q=80<br>
+      - <strong>Título:</strong> Projeto Leitura<br>  
+      - <strong>Descrição:</strong> Leitura para crianças<br>
+      - <strong>Nome do Autor:</strong> Priscila Maruno<br>
+      - <strong>Data de Início:</strong> 12/10/2025<br>
+      - <strong>Data de Fim:</strong> 17/10/2025<br>
+      - <strong>URL do Arquivo:</strong> https://img.freepik.com/vetores-premium/ilustracao-em-vetor-de-livro-de-leitura-de-crianca_29937-1554.jpg?semt=ais_hybrid&w=740&q=80<br>
     </td>
   </tr>
   <tr>
     <td><strong>Critérios de êxito</strong></td>
-    <td>O sistema deve cadastrar o projeto e exibir uma mensagem de sucesso. Depois redirecionar o usuário para a página de projetos.</td>
+    <td>O sistema deve cadastrar o projeto no banco de dados e exibir uma mensagem de sucesso.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-005 - S05 Teste de Edição de Projeto</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se o usuário consegue editar um projeto com sucesso na aplicação.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-005</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Abrir a aplicação e fazer o login.<br>
+      2. Ir para a página de projetos.<br>
+      3. Clicar no projeto que deseja editar.<br>
+      4. Clicar no botão "Editar Projeto".<br>
+      5. Preencher o campo de título, descrição, nome do autor, data de início, data de fim e URL do arquivo.<br>
+      5. Clicar no botão "Salvar".
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Título:</strong> Projeto Leiturinha<br>  
+      - <strong>Descrição:</strong> O projeto tem como objetivo despertar o gosto pela leitura em crianças por meio de atividades lúdicas, contação de histórias e rodas de leitura interativas. A iniciativa busca desenvolver a imaginação, a criatividade e o vocabulário dos pequenos, promovendo momentos de encantamento com os livros e fortalecendo o hábito da leitura desde a infância.<br>
+      - <strong>Nome do Autor:</strong> Priscila Maruno<br>
+      - <strong>Data de Início:</strong> 01/10/2025<br>
+      - <strong>Data de Fim:</strong> 31/10/2025<br>
+      - <strong>URL do Arquivo:</strong> https://img.freepik.com/vetores-gratis/tres-criancas-leitura-storybook_1308-11640.jpg?semt=ais_hybrid&w=740&q=80<br>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve alterar as informações do projeto no banco de dados e exibe uma mensagem de sucesso.</td>
   </tr>
 </table>
 
@@ -473,13 +521,13 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">O sistema cadastra o projeto no banco de dados e exibe uma mensagem de sucesso.</td>
+    <td colspan="5">O sistema deve cadastrar o projeto no banco de dados e exibir uma mensagem de sucesso.</td>
   </tr>
     <tr>
     <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
     <td width="430">Priscila Maruno</td>
      <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150">16/10/2025</td>
+    <td width="150">17/10/2025</td>
   </tr>
     <tr>
     <td width="170"><strong>Comentário</strong></td>
@@ -491,13 +539,72 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   <tr>
     <td colspan="6" align="center">
       <img width="823" height="754" alt="image1"
-        src="https://github.com/user-attachments/assets/fc6f4970-2376-4621-86d3-99dfaf24fc4b" />
+        src="https://github.com/user-attachments/assets/de94b546-84cf-460d-8210-3309d36cfcd9" />
     </td>
   </tr>
   <tr>
     <td colspan="6" align="center">
       <img width="823" height="754" alt="image2"
-        src="https://github.com/user-attachments/assets/a5b05d06-3036-4674-b664-d66c1df38886" />
+        src="https://github.com/user-attachments/assets/8095f768-3e5d-4ea0-b462-c03b270fc1b9" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/61bd31be-2f5f-40d0-9f55-56aabd9a4bda" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/345ba339-e311-489f-b99e-b2f0ba2f2217" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-004 - S04 <br>Teste de Edição de Projeto</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve alterar as informações do projeto no banco de dados e exibir uma mensagem de sucesso.</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Priscila Maruno</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">17/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema alterou as informações do projeto.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/391abe02-7d1c-4fee-aad7-3f7bedb22a66" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/e303be05-5cc4-4307-9b0b-580a57bd97cf" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/f05d9f52-fccd-4a05-9cdf-b0cd9bf5470d" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/de374a80-51aa-4e19-a7f8-d0cdbe932748" />
     </td>
   </tr>
 </table>
