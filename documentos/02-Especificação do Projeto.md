@@ -93,7 +93,7 @@ Para mais informações, consulte os microfundamentos Fundamentos de Engenharia 
 |------|-----------------------------------------|----|
 |RF-001| A aplicação deve permitir o cadastro de novos usuarios | ALTA |
 |RF-002| A aplicação deve permitir que usuários (visitantes e administradores) cadastrados realizem login | ALTA |
-|RF-003| A aplicação deve possibilitar a criação de perfis de usuário com permissoes especificas | ALTA |
+|RF-003| A aplicação deve permitir que o usuário administrador tenha permissão para alterar o perfil dos demais usuários | ALTA |
 |RF-004| A aplicação deve restringir funcionalidades de acordo com o perfil do usuário | ALTA |
 |RF-005| A aplicação deve permitir o cadastro, consulta, edição e exclusão de projetos | ALTA |
 |RF-006| A aplicação deve possuir um painel para exibição de projetos em destaque | BAIXA |
