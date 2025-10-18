@@ -7,16 +7,25 @@ import { Button } from '@/components/ui'
 import Textarea from '@/components/ui/Textarea'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { useAuth } from '@/contexts/AuthContext'
 
 export default function EditarInstitucionalPage() {
+  const { user } = useAuth()
+  const navigate = useNavigate()
+
   const [texto, setTexto] = useState<string>('')
   const [imagemUrl, setImagemUrl] = useState<string>('')
   const [carregando, setCarregando] = useState<boolean>(true)
   const [erro, setErro] = useState<string>('')
   const [uploading, setUploading] = useState<boolean>(false)
-  const navigate = useNavigate()
 
   useEffect(() => {
+    // Proteção de acesso: redireciona se não for ADMINISTRADOR
+    if (!user || user.user_type !== 'ADMINISTRADOR') {
+      navigate('/')
+      return
+    }
+
     async function carregarDados() {
       setCarregando(true)
       const dados = await getInstitucional()
@@ -30,7 +39,7 @@ export default function EditarInstitucionalPage() {
     }
 
     carregarDados()
-  }, [])
+  }, [user, navigate])
 
   const handleImagemUpload = async (file: File): Promise<string | null> => {
     try {
@@ -145,3 +154,4 @@ export default function EditarInstitucionalPage() {
     </div>
   )
 }
+``
