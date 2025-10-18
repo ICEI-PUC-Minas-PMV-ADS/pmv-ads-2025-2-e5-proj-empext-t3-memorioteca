@@ -550,14 +550,14 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td colspan="6" align="center">
-      <img width="823" height="754" alt="image2"
-        src="https://github.com/user-attachments/assets/61bd31be-2f5f-40d0-9f55-56aabd9a4bda" />
+      <img width="823" height="754" alt="image3"
+        src="https://github.com/user-attachments/assets/723c9ff3-e268-4466-9324-4d1f533bcf1a" />
     </td>
   </tr>
   <tr>
     <td colspan="6" align="center">
-      <img width="823" height="754" alt="image2"
-        src="https://github.com/user-attachments/assets/345ba339-e311-489f-b99e-b2f0ba2f2217" />
+      <img width="823" height="754" alt="image4"
+        src="https://github.com/user-attachments/assets/501cda8a-0f1f-44d3-925d-47fbf21e4426" />
     </td>
   </tr>
 </table>
@@ -597,17 +597,18 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td colspan="6" align="center">
-      <img width="823" height="754" alt="image2"
-        src="https://github.com/user-attachments/assets/f05d9f52-fccd-4a05-9cdf-b0cd9bf5470d" />
+      <img width="823" height="754" alt="image3"
+        src="https://github.com/user-attachments/assets/8960befa-c5ce-49a7-a97b-9d7f5114bb5d" />
     </td>
   </tr>
   <tr>
     <td colspan="6" align="center">
-      <img width="823" height="754" alt="image2"
-        src="https://github.com/user-attachments/assets/de374a80-51aa-4e19-a7f8-d0cdbe932748" />
+      <img width="823" height="754" alt="image4"
+        src="https://github.com/user-attachments/assets/8afb31e4-b347-4f56-b58d-e7cf18abcab2" />
     </td>
   </tr>
 </table>
+
 
 ### ETAPA 4
 
