@@ -1161,7 +1161,10 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
-    <td colspan="6" align="center">[Inserir print mostrando navegação de páginas]</td>
+    <td colspan="6" align="center">
+      <img width="1903" height="947" alt="image" src="https://github.com/user-attachments/assets/cd14299a-4f7e-4e2b-972f-124c01da1d3e" />
+      <img width="1904" height="945" alt="image" src="https://github.com/user-attachments/assets/4873bf78-63ef-4bb1-90ec-0a33404e8572" />
+    </td>
   </tr>
 </table>
 
