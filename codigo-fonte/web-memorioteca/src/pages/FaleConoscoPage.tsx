@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/Card'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
 import { Input, Button } from '@/components/ui'
 import Textarea from '@/components/ui/Textarea'
 import { enviarMensagem } from '@/services/faleConoscoService'
@@ -88,16 +88,24 @@ export default function FaleConoscoPage() {
                 )}
 
                 {success && (
-                  <p className="text-green-600 text-sm">Mensagem enviada com sucesso!</p>
+                  <p className="text-green-600 text-sm">
+                    Mensagem enviada com sucesso!
+                  </p>
                 )}
+
+                <div className="flex gap-4 justify-center pt-4">
+                  <Button type="submit">Enviar</Button>
+                  {user?.user_type === 'ADMINISTRADOR' && (
+                    <Button
+                      type="button"
+                      onClick={() => navigate('/mensagens')}
+                    >
+                      Mensagens
+                    </Button>
+                  )}
+                </div>
               </form>
             </CardContent>
-            <CardFooter className="p-4 pt-0 flex gap-4 justify-center">
-              <Button type="submit">Enviar</Button>
-              {user?.user_type === 'ADMINISTRADOR' && (
-                <Button onClick={() => navigate('/mensagens')}>Mensagens</Button>
-              )}
-            </CardFooter>
           </Card>
         </div>
       </main>
