@@ -1740,188 +1740,72 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-003 - S01<br> Teste de Cadastro de Projeto</th>
+    <th colspan="6" width="1000">CT-003 - S01<br>Teste de Cadastro de Projeto</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Este caso de teste verifica se o usuário consegue cadastrar um projeto com sucesso na aplicação.</td>
+    <td colspan="5">
+      Este caso de teste verifica se o usuário consegue cadastrar um projeto com sucesso na aplicação.
+    </td>
   </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
     <td width="430">Priscila Maruno</td>
-      <td><strong>Responsável pelo teste</strong></td>
+    <td><strong>Responsável pelo teste</strong></td>
     <td width="430">Laila Martins</td>
-     <td width="100"><strong>Data do teste</strong></td>
+    <td width="100"><strong>Data do teste</strong></td>
     <td width="150">19/10/2025</td>
   </tr>
-    <tr>
+  <tr>
     <td width="170"><strong>Comentário</strong></td>
     <td colspan="5">O sistema cadastrou o projeto com sucesso.</td>
   </tr>
   <tr>
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
- <tr>
+  <tr>
     <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
+      <img width="823" height="754" alt="Cadastro de Projeto"
         src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/CadastroTestePares.png" />
     </td>
   </tr>
-  <tr>
+</table>
 
-  <table>
+<br><br>
+
+<table>
   <tr>
-    <th colspan="6" width="1000">CT-004 - S01<br> Teste de Edição de Projeto</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Este caso de teste verifica se o usuário consegue editar um projeto com sucesso na aplicação.</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">Priscila Maruno</td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">Laila Martins</td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O sistema editou o projeto com sucesso.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
- <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
-        src="<table>
-  <tr>
-    <th colspan="6" width="1000">CT-003 - S01<br> Teste de Cadastro de Projeto</th>
+    <th colspan="6" width="1000">CT-004 - S01<br>Teste de Edição de Projeto</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Este caso de teste verifica se o usuário consegue cadastrar um projeto com sucesso na aplicação.</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">Priscila Maruno</td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">Laila Martins</td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O sistema cadastrou o projeto com sucesso.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
- <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
-        src="<table>
-  <tr>
-    <th colspan="6" width="1000">CT-003 - S01<br> Teste de Cadastro de Projeto</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Este caso de teste verifica se o usuário consegue cadastrar um projeto com sucesso na aplicação.</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">Priscila Maruno</td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">Laila Martins</td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O sistema cadastrou o projeto com sucesso.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
- <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
-        src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/CadastroTestePares.png" />
+    <td colspan="5">
+      Este caso de teste verifica se o usuário consegue editar um projeto com sucesso na aplicação.
     </td>
   </tr>
   <tr>
-
-  <table>
-  <tr>
-    <th colspan="6" width="1000">CT-004 - S01<br> Teste de Edição de Projeto</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Este caso de teste verifica se o usuário consegue editar um projeto com sucesso na aplicação.</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td><strong>Responsável pela funcionalidade</strong></td>
     <td width="430">Priscila Maruno</td>
-      <td><strong>Responsável pelo teste</strong></td>
+    <td><strong>Responsável pelo teste</strong></td>
     <td width="430">Laila Martins</td>
-     <td width="100"><strong>Data do teste</strong></td>
+    <td width="100"><strong>Data do teste</strong></td>
     <td width="150">19/10/2025</td>
   </tr>
-    <tr>
+  <tr>
     <td width="170"><strong>Comentário</strong></td>
     <td colspan="5">O sistema editou o projeto com sucesso.</td>
   </tr>
   <tr>
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
- <tr>
+  <tr>
     <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
+      <img width="823" height="754" alt="Edição de Projeto"
         src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/Edi%C3%A7%C3%A3oTestepares.png" />
     </td>
   </tr>
-  <tr>
-  </table>" />
-    </td>
-  </tr>
-  <tr>
+</table>
 
-  <table>
-  <tr>
-    <th colspan="6" width="1000">CT-004 - S01<br> Teste de Edição de Projeto</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Este caso de teste verifica se o usuário consegue editar um projeto com sucesso na aplicação.</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">Priscila Maruno</td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">Laila Martins</td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O sistema editou o projeto com sucesso.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
- <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
-        src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/Edi%C3%A7%C3%A3oTestepares.png" />
-    </td>
-  </tr>
-  <tr>
-  </table>" />
-    </td>
-  </tr>
-  <tr>
-  </table>
 
 <table>
   <tr>
