@@ -909,7 +909,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-004 - S04 <br>Teste de Cadastro de Projeto</th>
+    <th colspan="6" width="1000">CT-003 - S01 <br>Teste de Cadastro de Projeto</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -956,7 +956,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-005 - S05 <br>Teste de Edição de Projeto</th>
+    <th colspan="6" width="1000">CT-004 - S01 <br>Teste de Edição de Projeto</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1001,6 +1001,134 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-005 - S01 <br>Teste de Exclusão de Projeto</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5"> - </td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430"> - </td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150"> - </td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5"> - </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-006 - S01 <br>Permitir a visualização dos dados do projeto</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve permitir a visualização dos dados do projeto, e administradores devem conseguir editar/excluir</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e botoes visiveis somente para o perfil admin</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+<img width="2558" height="940" alt="04_Visualizar Projeto" src="https://github.com/user-attachments/assets/5f06a0c0-b5b7-4cd4-bc67-ec47fc9d6a51" />
+    </td>
+    <td colspan="6" align="center">
+<img width="1276" height="949" alt="05_Excluir projeto" src="https://github.com/user-attachments/assets/bfa8f3da-f352-4973-88fa-68b9f3cf37d6" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-007 - S01 <br>Teste do Painel de Projetos em Destaque</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5"> - </td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430"> - </td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150"> - </td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5"> - </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-008 - S01 <br>Permitir edição de usuarios</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Os administradores devem conseguir editar os dados do usuario</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e edição realizada com sucesso</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+<img width="1275" height="930" alt="03_Editar Usuario" src="https://github.com/user-attachments/assets/a8520719-b0c2-430a-8032-aea79706f458" />
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+   
 <table>
   <tr>
     <th colspan="6" width="1000">CT-006 - S01 <br>Definição de perfil</th>
@@ -1056,65 +1184,6 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   <tr>
     <td colspan="6" align="center">
       <img width="1268" height="507" alt="02_Lista Usuarios" src="https://github.com/user-attachments/assets/6a15caf4-4a1e-467c-8930-7088c51f32cc" />
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-008 - S01 <br>Permitir edição de usuarios</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Os administradores devem conseguir editar os dados do usuario</td>
-  </tr>
-    <tr>
-    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430">João Victor</td>
-     <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">Tela adicionada e edição realizada com sucesso</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center">
-<img width="1275" height="930" alt="03_Editar Usuario" src="https://github.com/user-attachments/assets/a8520719-b0c2-430a-8032-aea79706f458" />
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-009 - S01 <br>Permitir a visualização dos dados do projeto</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">O sistema deve permitir a visualização dos dados do projeto, e administradores devem conseguir editar/excluir</td>
-  </tr>
-    <tr>
-    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430">João Victor</td>
-     <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">Tela adicionada e botoes visiveis somente para o perfil admin</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center">
-<img width="2558" height="940" alt="04_Visualizar Projeto" src="https://github.com/user-attachments/assets/5f06a0c0-b5b7-4cd4-bc67-ec47fc9d6a51" />
-    </td>
-    <td colspan="6" align="center">
-<img width="1276" height="949" alt="05_Excluir projeto" src="https://github.com/user-attachments/assets/bfa8f3da-f352-4973-88fa-68b9f3cf37d6" />
     </td>
   </tr>
 </table>
