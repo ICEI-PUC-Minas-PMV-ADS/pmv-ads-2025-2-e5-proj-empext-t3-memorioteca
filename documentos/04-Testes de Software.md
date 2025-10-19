@@ -1007,25 +1007,27 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5"> - </td>
+    <td colspan="5"> Após solicitar a exclusão de um projeto, o sistema deve exibir uma modal de confirmação, e somente caso o usuario aceite, o projeto será excluido </td>
   </tr>
     <tr>
     <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430"> - </td>
+    <td width="430"> João Victor Antunes </td>
      <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150"> - </td>
+    <td width="150"> 19/10/2025 </td>
   </tr>
     <tr>
     <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5"> - </td>
+    <td colspan="5"> Modal e exclusão com sucesso </td>
   </tr>
   <tr>
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
     <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
-        src="" />
+      <img width="1327" height="683" alt="image" src="https://github.com/user-attachments/assets/c6393926-85ff-4352-a9eb-85941a869d6e" />
+    </td>
+    <td colspan="6" align="center">
+      <img width="1301" height="707" alt="image" src="https://github.com/user-attachments/assets/1a57a058-9d3d-48cc-b6b5-abf943d7ddee" />
     </td>
   </tr>
 </table>
