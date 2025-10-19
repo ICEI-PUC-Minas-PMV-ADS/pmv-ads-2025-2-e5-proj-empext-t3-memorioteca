@@ -55,6 +55,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   variant?: 'primary' | 'secondary' | 'destructive' | 'outline'
   size?: 'sm' | 'md' | 'lg'
   loading?: boolean
+  asChild?: boolean
   children: React.ReactNode
 }
 

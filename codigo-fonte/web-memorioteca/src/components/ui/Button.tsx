@@ -1,6 +1,7 @@
 import React from 'react'
 import { cn } from '@/lib/utils'
 import { ButtonProps } from '@/types'
+import { Slot } from '@radix-ui/react-slot'
 
 const Button: React.FC<ButtonProps> = ({
   className,
@@ -8,6 +9,7 @@ const Button: React.FC<ButtonProps> = ({
   size = 'md',
   loading = false,
   disabled,
+  asChild = false,
   children,
   ...props
 }) => {
@@ -26,8 +28,26 @@ const Button: React.FC<ButtonProps> = ({
     lg: 'h-11 px-8',
   }
 
+  const Comp = asChild ? Slot : 'button'
+
+  if (asChild) {
+    return (
+      <Comp
+        className={cn(
+          baseClasses,
+          variants[variant],
+          sizes[size],
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </Comp>
+    )
+  }
+
   return (
-    <button
+    <Comp
       className={cn(
         baseClasses,
         variants[variant],
@@ -60,7 +80,7 @@ const Button: React.FC<ButtonProps> = ({
         </svg>
       )}
       {children}
-    </button>
+    </Comp>
   )
 }
 
