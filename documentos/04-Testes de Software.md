@@ -400,7 +400,60 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-008 - S08<br> Teste de Alteração de Perfil de Usuário</th>
+    <th colspan="2" width="1000">CT-008 - S08<br> Teste do Painel de Projetos em Destaque</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se o painel de projetos em destaque exibe automaticamente os três últimos projetos cadastrados na aplicação, conforme definido pelo requisito funcional RF-006.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Laila Martins</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-006</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Abrir a aplicação e realizar o login com credenciais válidas.<br>
+      2. Acessar a página de cadastro de projetos.<br>
+      3. Cadastrar quatro novos projetos consecutivos com dados válidos.<br>
+      4. Acessar a página inicial da aplicação.<br>
+      5. Verificar se o painel de “Projetos em Destaque” exibe apenas os três últimos projetos cadastrados.<br>
+      6. Confirmar se os projetos estão ordenados do mais recente para o mais antigo.<br>
+      7. Clicar em um dos projetos destacados para validar o redirecionamento para a página de detalhes.<br>
+      8. Cadastrar um novo projeto adicional e verificar se o painel é atualizado automaticamente, exibindo agora os três projetos mais recentes.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Projeto 1:</strong> Digitalização de Documentos Antigos<br>  
+      - <strong>Projeto 2:</strong> Oficinas de Escrita Criativa<br>
+      - <strong>Projeto 3:</strong> Preservação Fotográfica Escolar<br>
+      - <strong>Projeto 4:</strong> Catálogo Interativo de Leitura<br>
+      (Após o cadastro do quarto projeto, o painel deve exibir apenas os Projetos 2, 3 e 4)
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>
+      O painel de “Projetos em Destaque” deve exibir automaticamente apenas os três projetos mais recentes cadastrados. 
+      A ordem deve seguir do mais novo para o mais antigo. 
+      O painel deve ser atualizado automaticamente após novos cadastros, e o redirecionamento ao clicar em um projeto deve funcionar corretamente.
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-009 - S09<br> Teste de Alteração de Perfil de Usuário</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
