@@ -859,7 +859,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-001<br>Carregamento inicial da página de projetos</th>
+    <th colspan="6" width="1000">CT-011<br>Carregamento inicial da página de projetos</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -887,7 +887,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-002<br>Filtro de busca por título</th>
+    <th colspan="6" width="1000">CT-012<br>Filtro de busca por título</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -916,7 +916,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-003<br>Validação de data de criação inválida</th>
+    <th colspan="6" width="1000">CT-013<br>Validação de data de criação inválida</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -944,7 +944,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-004<br>Múltiplos filtros combinados</th>
+    <th colspan="6" width="1000">CT-014<br>Múltiplos filtros combinados</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -973,7 +973,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-005<br>Navegação entre páginas (paginação)</th>
+    <th colspan="6" width="1000">CT-015<br>Navegação entre páginas (paginação)</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1002,7 +1002,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-006<br>Alteração de itens por página</th>
+    <th colspan="6" width="1000">CT-016<br>Alteração de itens por página</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1033,7 +1033,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-007<br>Visualização de projeto ao clicar no card</th>
+    <th colspan="6" width="1000">CT-017<br>Visualização de projeto ao clicar no card</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1063,7 +1063,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-008<br>Mensagem quando nenhum projeto é encontrado</th>
+    <th colspan="6" width="1000">CT-018<br>Mensagem quando nenhum projeto é encontrado</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
