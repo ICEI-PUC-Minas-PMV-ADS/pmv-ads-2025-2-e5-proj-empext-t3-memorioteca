@@ -1101,6 +1101,35 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
 </table>
 
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-019<br>Fale Conosco POST</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao acessar a funcionalidade de "Entrar em Contato" e preencher os campos de Nome com pelo menos dois caracteres, E-mail com "arroba" e Mensagem com pelo menos 10 caracteres, tais dados devem ser registrados</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Mayara Pinhero</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">05/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Dados registrados.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1901" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/Teste_FaleConosco_POST2.png" />
+    </td>
+  </tr>
+</table>
+
 ### ETAPA 4
 
 Colocar evidências de teste da etapa 4
