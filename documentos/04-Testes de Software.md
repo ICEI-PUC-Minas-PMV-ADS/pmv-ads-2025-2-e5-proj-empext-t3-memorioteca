@@ -1501,7 +1501,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-003<br>Tela contendo a lista de projetos cadastrados</th>
+    <th colspan="6" width="1000">CT-00X<br>Tela contendo a lista de projetos cadastrados</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1531,7 +1531,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-003<br>Busca avançada de projetos - Filtro Título </th>
+    <th colspan="6" width="1000">CT-00X<br>Busca avançada de projetos - Filtro Título </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1561,7 +1561,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-003<br>Busca avançada de projetos - Filtro Descrição </th>
+    <th colspan="6" width="1000">CT-00X<br>Busca avançada de projetos - Filtro Descrição </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1591,7 +1591,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-003<br>Busca avançada de projetos - Filtro Data </th>
+    <th colspan="6" width="1000">CT-00X<br>Busca avançada de projetos - Filtro Data </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
