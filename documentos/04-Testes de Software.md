@@ -1988,7 +1988,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-017<br>Validação de data de criação inválida</th>
+    <th colspan="6" width="1000">CT-018<br>Validação de data de criação inválida</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
