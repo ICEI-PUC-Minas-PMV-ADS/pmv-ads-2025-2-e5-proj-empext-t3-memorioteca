@@ -72,7 +72,7 @@ const ProjetosPage = () => {
     return true
   }
 
-  const carregarProjetos = async () => {
+  const carregarProjetos = async (filtrosCustomizados?: ProjetosFilters) => {
     if (!validarDataCriacao()) {
       return
     }
@@ -80,8 +80,10 @@ const ProjetosPage = () => {
     setIsLoading(true)
     setError('')
     
+    const filtrosParaUsar = filtrosCustomizados || filtros
+    
     try {
-      const response = await ProjetosService.listarProjetos(filtros)
+      const response = await ProjetosService.listarProjetos(filtrosParaUsar)
       
       if (response.success) {
         setProjetos(response.data)
@@ -127,11 +129,12 @@ const ProjetosPage = () => {
   }
 
   const handlePaginacao = (novaPagina: number) => {
-    setFiltros(prev => ({
-      ...prev,
+    const novosFiltros = {
+      ...filtros,
       page: novaPagina
-    }))
-    setTimeout(() => carregarProjetos(), 0)
+    }
+    setFiltros(novosFiltros)
+    carregarProjetos(novosFiltros)
   }
 
   const handleLimitChange = async (novoLimit: number) => {
@@ -226,7 +229,7 @@ const ProjetosPage = () => {
                   Limpar Filtros
                 </Button>
                 <Button
-                  onClick={carregarProjetos}
+                  onClick={() => carregarProjetos()}
                   disabled={isLoading}
                   loading={isLoading}
                 >
