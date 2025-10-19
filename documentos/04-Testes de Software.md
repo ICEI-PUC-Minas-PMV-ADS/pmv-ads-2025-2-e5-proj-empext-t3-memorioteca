@@ -1068,28 +1068,43 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5"> - </td>
+    <td colspan="5">
+      O painel de Projetos em Destaque deve exibir automaticamente os três projetos mais recentes cadastrados no sistema, retornados pela rota <code>GET /destaqueprojects/featured?limit=3</code>.<br>
+      A exibição deve ocorrer sem erros de carregamento, apresentando título, descrição e autor de cada projeto conforme os dados do banco de dados.<br>
+      A resposta da API deve retornar status <code>200 OK</code> e o corpo em formato JSON contendo os registros corretos.
+    </td>
   </tr>
-    <tr>
+  <tr>
     <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430"> - </td>
-     <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150"> - </td>
+    <td width="430">Laila Martins</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
   </tr>
-    <tr>
+  <tr>
     <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5"> - </td>
+    <td colspan="5">Painel exibiu corretamente os três últimos projetos cadastrados, conforme retorno da API. Status <code>200 OK</code>.</td>
   </tr>
   <tr>
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
     <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
-        src="" />
+      <img width="823" height="754" alt="image1" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/DestaquesEvidencias.png" />
     </td>
   </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/GETdestaques.png" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TabelaDestaques.png" />
+    </td>
+  </tr>  
+  
 </table>
+
 
 <table>
   <tr>
