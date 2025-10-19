@@ -1703,6 +1703,36 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
+    <th colspan="6" width="1000">CT-007 - S01<br>Projetos mais recentes</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir na pagina inicial os ultimos projetos criados</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Laila</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">João Victor Antunes</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Os projetos foram exibidos com sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+<img width="1038" height="925" alt="projetos_destaque" src="https://github.com/user-attachments/assets/02a0f203-dc4d-4f28-aab6-8fbbe560f75a" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <th colspan="6" width="1000">CT-008 - S01<br> Teste de Alteração de Perfil de Usuário</th>
   </tr>
   <tr>
@@ -1752,36 +1782,6 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center">
       <img width="823" height="754" alt="image5"
         src="https://github.com/user-attachments/assets/a50c0f53-916b-4712-afc6-030b8eb019b5" />
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-000 - S00<br>Projetos mais recentes</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">O sistema deve exibir na pagina inicial os ultimos projetos criados</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">Laila</td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">João Victor Antunes</td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">Os projetos foram exibidos com sucesso.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
- <tr>
-    <td colspan="6" align="center">
-<img width="1038" height="925" alt="projetos_destaque" src="https://github.com/user-attachments/assets/02a0f203-dc4d-4f28-aab6-8fbbe560f75a" />
     </td>
   </tr>
 </table>
