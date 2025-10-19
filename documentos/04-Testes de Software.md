@@ -2172,6 +2172,86 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
+    <th colspan="6" width="1000">CT-001 - S01<br> Teste de Cadastro</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve cadastrar o novo usuário do banco de dados.</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema cadastrou o novo usuário no banco de dados com sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/3fa70ded-e74a-4d43-92a3-e11dc7cf8d3b" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/211216d2-8694-4691-b9f7-ff2863c619e8" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image3"
+        src="https://github.com/user-attachments/assets/b075ffef-512e-424b-9169-1951153877be" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-002 - S01<br> Teste de Login</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve permitir que o usuário faça o login.</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema permitiu que o usuário fizesse o login com sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/e90ffddf-3906-41bb-86bf-01be0b788646" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/60fc7ab2-971d-45f8-badf-d275fcad555c" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <th colspan="6" width="1000">CT-003 - S01<br>Teste de Cadastro de Projeto</th>
   </tr>
   <tr>
