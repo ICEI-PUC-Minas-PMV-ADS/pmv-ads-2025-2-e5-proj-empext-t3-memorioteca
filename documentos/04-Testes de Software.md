@@ -1101,10 +1101,94 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-019<br> Informações Institucionais PUT </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao acessar a funcionalidade e preencher os campos de Texto com pelo menos 10 caracteres e e Imagem com uma URL válida, tais dados devem ser registrados.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Mayara Pinhero</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">28/09/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Dados registrados.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1901" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/Teste_Institucional_PUT.png" />
+    </td>
+  </tr>
+</table>
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-019<br>Fale Conosco POST</th>
+    <th colspan="6" width="1000">CT-020<br> Informações Institucionais PUT incorreto </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao acessar a funcionalidade e NÃO preencher os campos de Texto com pelo menos 10 caracteres e e Imagem com uma URL válida, tais dados NÃO devem ser registrados.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Mayara Pinhero</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">28/09/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Dados não registrados.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1901" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/Teste_Institucional_Validacoes.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-021<br> Informações Institucionais PUT incorreto GET </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Os dados registrados devem estar armazenados</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Mayara Pinhero</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">28/09/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Dados registrados exibidos.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1901" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/Teste_Institucional_GET.png" />
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-022<br>Fale Conosco POST</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1133,7 +1217,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-020<br>Fale Conosco POST incorreto</th>
+    <th colspan="6" width="1000">CT-023<br>Fale Conosco POST incorreto</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1161,7 +1245,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-020<br>Fale Conosco GET</th>
+    <th colspan="6" width="1000">CT-024<br>Fale Conosco GET</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
