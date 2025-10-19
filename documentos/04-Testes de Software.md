@@ -1060,11 +1060,6 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 <img width="2558" height="940" alt="04_Visualizar Projeto" src="https://github.com/user-attachments/assets/5f06a0c0-b5b7-4cd4-bc67-ec47fc9d6a51" />
     </td>
   </tr>
-  <tr>
-    <td colspan="6" align="center">
-<img width="1276" height="949" alt="05_Excluir projeto" src="https://github.com/user-attachments/assets/bfa8f3da-f352-4973-88fa-68b9f3cf37d6" />
-    </td>
-  </tr>
 </table>
 
 <table>
@@ -1160,6 +1155,8 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
     <td colspan="6" align="center">
       <img width="1277" height="1027" alt="01_Menu conforme perfil" src="https://github.com/user-attachments/assets/3c212053-9cf7-465c-9d78-f33dd158fa26" />
     </td>
+     </tr>
+        <tr>
     <td colspan="6" align="center">
       <img width="2551" height="455" alt="01_Menu conforme perfil cadastrar" src="https://github.com/user-attachments/assets/8665ee48-3110-4b34-b157-266aba3d7d53" />
     </td>
