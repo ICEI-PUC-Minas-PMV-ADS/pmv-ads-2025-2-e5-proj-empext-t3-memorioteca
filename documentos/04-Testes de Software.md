@@ -400,7 +400,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-008 - S08<br> Teste do Painel de Projetos em Destaque</th>
+    <th colspan="2" width="1000">CT-008 - S01<br> Teste do Painel de Projetos em Destaque</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
