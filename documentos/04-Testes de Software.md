@@ -1103,7 +1103,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-019<br> Informações Institucionais PUT </th>
+    <th colspan="6" width="1000">CT-019 - S01<br> Informações Institucionais PUT </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1131,7 +1131,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-020<br> Informações Institucionais PUT incorreto </th>
+    <th colspan="6" width="1000">CT-019 - S02<br> Informações Institucionais PUT incorreto </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1159,7 +1159,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-021<br> Informações Institucionais PUT incorreto GET </th>
+    <th colspan="6" width="1000">CT-020 - S01<br> Informações Institucionais PUT incorreto GET </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1188,7 +1188,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-022<br>Fale Conosco POST</th>
+    <th colspan="6" width="1000">CT-021 - S01<br>Fale Conosco POST</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1217,7 +1217,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-023<br>Fale Conosco POST incorreto</th>
+    <th colspan="6" width="1000">CT-021 - S02<br>Fale Conosco POST incorreto</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1245,7 +1245,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-024<br>Fale Conosco GET</th>
+    <th colspan="6" width="1000">CT-022 - S01<br>Fale Conosco GET</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
