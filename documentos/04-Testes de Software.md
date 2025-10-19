@@ -1047,7 +1047,9 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
-    <td colspan="6" align="center">[Inserir print da página carregada com lista de projetos]</td>
+    <td colspan="6" align="center">
+    <img width="1916" height="949" alt="image" src="https://github.com/user-attachments/assets/ea808d39-40e6-4362-a6dc-fda447c67f4d" />
+    </td>
   </tr>
 </table>
 
@@ -1073,7 +1075,10 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
-    <td colspan="6" align="center">[Inserir print mostrando filtro preenchido e resultados filtrados]</td>
+    <td colspan="6" align="center">
+      <img width="1917" height="946" alt="image" src="https://github.com/user-attachments/assets/43c1bb95-5166-4f8c-a9ff-95132565b17c" />
+      <img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/03ea3b8b-fbcb-410e-a98a-60d5eeb5bede" />
+    </td>
   </tr>
 </table>
 
