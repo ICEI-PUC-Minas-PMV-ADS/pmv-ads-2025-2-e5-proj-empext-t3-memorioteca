@@ -435,6 +435,229 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-019 - S01<br> Atualização de Informações Institucionais</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> Um usuário administrador deve poder editar as informações institucionais se os parâmetros estiverem corretos </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-009</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema com um usuário administrador </br>
+    2. Acessar o menu "Sobre". </br>
+    3. Clicar em "Editar" </br>
+    4. Preencher o campo "Texto Institucional" com pelo menos 10 caracteres </br>
+    5. Preencher o campo "URL do Arquivo" com um link válido </br>
+    6. Clicar em "Salvar alterações"
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> O sistema deve atualizar as informações institucionais </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-019 - I01<br> Impossibilidade de Alterar as Informações Institucionais utilizando parâmetros incorretos</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> Um usuário administrador não deve poder editar as informações institucionais se os parâmetros não estiverem corretos </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-009</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema com um usuário administrador </br>
+    2. Acessar o menu "Sobre". </br>
+    3. Clicar em "Editar" </br>
+    4. Não preencher o campo "Texto Institucional" ou preencher com menos de 10 caracteres </br>
+    5. Não preencher o campo "URL do Arquivo" ou preencher com um link inválido </br>
+    6. Clicar em "Salvar alterações"
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> O sistema deve atualizar as informações institucionais </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-020 - S01<br> As informações institucionais devem ser exibidas</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> Qualquer usuário autenticado deve conseguir visualizar as informações institucionais </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-009</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema com um usuário administrador </br>
+    2. Acessar o menu "Sobre". </br>
+    3. Visualizar as informações institucionais
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> O sistema deve atualizar exibir informações institucionais com texto e imagem </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-021 - S01<br> Deve ser possível enviar mensagem para biblioteca caso os parâmetros estejam corretos</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> Qualquer usuário autenticado deve conseguir enviar uma mensagem para o responsável pela Memorioteca através da aplicação caso os parâmetros estejam corretos</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-008</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema </br>
+    2. Acessar o menu "Entrar em Contato". </br>
+    3. Preencher o campo nome com pelo menos 2 caracteres. </br>
+    4. Preencher o campo e-mail com "arroba". </br>
+    5. Preencher o campo Mensagem com pelo menos 10 caracteres. </br>
+    6. Clicar em "Enviar"
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> O sistema deve exibir a seguinte frase "Mensagem enviada com sucesso!" </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-021 - I01<br> Não deve ser possível enviar mensagem para biblioteca caso os parâmetros não estejam corretos</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> Um usuário autenticado NÃO deve conseguir enviar uma mensagem para o responsável pela Memorioteca através da aplicação caso os parâmetros não estejam corretos </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-008</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema </br>
+    2. Acessar o menu "Entrar em Contato". </br>
+    3. Não preencher o campo nome ou preencher com menos de 2 caracteres. </br>
+    4. Não preencher o campo e-mail ou preencher sem "arroba". </br>
+    5. Não preencher o campo Mensagem ou preencher com menos de 10 caracteres. </br>
+    6. Clicar em "Enviar"
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> O sistema não deve enviar a mensagem e deve exibir os erros relacionados aos campos preenchidos incorretamente </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-022 - S01<br> O usuário administrador deve conseguir visualizar as mensagens recebidas</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> O usuário administrador devem conseguir visualizar as mensagens recebidas </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-008</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema com um usuário administrador</br>
+    2. Acessar o menu "Entrar em Contato". </br>
+    3. Clicar em "Mensagens". </br>
+    4. Visualizar as mensagens recebidas"
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> O sistema deve exibir as mensagens recebidas. </td>
+  </tr>
+</table>
+
 ### ETAPA 4
 
 Criar casos de teste da etapa 4
@@ -1131,7 +1354,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-019 - S02<br> Informações Institucionais PUT incorreto </th>
+    <th colspan="6" width="1000">CT-019 - I02<br> Informações Institucionais PUT incorreto </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1217,7 +1440,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-021 - S02<br>Fale Conosco POST incorreto</th>
+    <th colspan="6" width="1000">CT-021 - I01<br>Fale Conosco POST incorreto</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
