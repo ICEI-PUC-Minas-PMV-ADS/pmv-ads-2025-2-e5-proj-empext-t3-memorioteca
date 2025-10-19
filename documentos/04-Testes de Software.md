@@ -857,174 +857,6 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
 </table>
 
-### ETAPA 4
-
-Colocar evidências de teste da etapa 4
-
-## Parte 2 - Testes por pares
-A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade deve ser testada por um colega e os testes devem ser evidenciados. O colega "Tester" deve utilizar o caso de teste criado pelo desenvolvedor responsável pela funcionalidade (desenvolveu a funcionalidade e criou o caso de testes descrito no plano de testes) e caso perceba a necessidade de outros casos de teste, deve acrescentá-los na sessão "Plano de Testes".
-
-### ETAPA 3
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-006 - S06<br> Teste de Exclusão de Projeto</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">O sistema deve excluir o projeto do banco de dados.</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">João Victor Antunes</td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">Priscila Maruno</td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">17/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O sistema excluiu o projeto do banco de dados com sucesso.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
- <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
-        src="https://github.com/user-attachments/assets/8ea2a1b9-5d52-43c8-ab33-6c1c7dee35c8" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image2"
-        src="https://github.com/user-attachments/assets/9c986b08-730d-4798-8cb1-8f47ff05e3cb" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image3"
-        src="https://github.com/user-attachments/assets/223b6fcb-a52f-4c8a-9954-153862baf3e4" />
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-007 - S07<br> Teste de Consulta de Projeto</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">O sistema deve exibir as informações do projeto.</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">João Victor Antunes</td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">Priscila Maruno</td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">17/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O sistema exibiu as informações do projeto com sucesso.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
- <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
-        src="https://github.com/user-attachments/assets/6b753f08-2b4b-4990-837c-36e20f54c086" />
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-008 - S08<br> Teste de Alteração de Perfil de Usuário</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">O sistema deve alterar o perfil do usuário no banco de dados e exibir uma mensagem de sucesso.</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">João Victor Antunes</td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">Priscila Maruno</td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">18/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5"> O sistema alterou o perfil do usuário no banco de dados com sucesso.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
- <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image1"
-        src="https://github.com/user-attachments/assets/bbac8f26-9bc2-49e2-a34b-ecfba6d7a205" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image2"
-        src="https://github.com/user-attachments/assets/8bd34ca8-3ba0-4cfc-ba22-902e176897a0" />
-    </td>
-  </tr>
-   <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image3"
-        src="https://github.com/user-attachments/assets/3df85fef-1240-481f-a51b-1b3831770799" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image4"
-        src="https://github.com/user-attachments/assets/663d8b15-e514-40fe-a472-b51292cd563a" />
-    </td>
-  </tr>
-   <tr>
-    <td colspan="6" align="center">
-      <img width="823" height="754" alt="image5"
-        src="https://github.com/user-attachments/assets/a50c0f53-916b-4712-afc6-030b8eb019b5" />
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-000 - S00<br>Projetos mais recentes</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">O sistema deve exibir na pagina inicial os ultimos projetos criados</td>
-  </tr>
-    <tr>
-      <td><strong>Responsável pela funcionalidade</strong></td>
-    <td width="430">Laila</td>
-      <td><strong>Responsável pelo teste</strong></td>
-    <td width="430">João Victor Antunes</td>
-     <td width="100"><strong>Data do teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">Os projetos foram exibidos com sucesso.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
- <tr>
-    <td colspan="6" align="center">
-<img width="1038" height="925" alt="projetos_destaque" src="https://github.com/user-attachments/assets/02a0f203-dc4d-4f28-aab6-8fbbe560f75a" />
-    </td>
-  </tr>
-</table>
-
 <table>
   <tr>
     <th colspan="6" width="1000">CT-001<br>Carregamento inicial da página de projetos</th>
@@ -1256,6 +1088,176 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     </td>
   </tr>
 </table>
+
+### ETAPA 4
+
+Colocar evidências de teste da etapa 4
+
+## Parte 2 - Testes por pares
+A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade deve ser testada por um colega e os testes devem ser evidenciados. O colega "Tester" deve utilizar o caso de teste criado pelo desenvolvedor responsável pela funcionalidade (desenvolveu a funcionalidade e criou o caso de testes descrito no plano de testes) e caso perceba a necessidade de outros casos de teste, deve acrescentá-los na sessão "Plano de Testes".
+
+### ETAPA 3
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-006 - S06<br> Teste de Exclusão de Projeto</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve excluir o projeto do banco de dados.</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">17/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema excluiu o projeto do banco de dados com sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/8ea2a1b9-5d52-43c8-ab33-6c1c7dee35c8" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/9c986b08-730d-4798-8cb1-8f47ff05e3cb" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image3"
+        src="https://github.com/user-attachments/assets/223b6fcb-a52f-4c8a-9954-153862baf3e4" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-007 - S07<br> Teste de Consulta de Projeto</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir as informações do projeto.</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">17/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema exibiu as informações do projeto com sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/6b753f08-2b4b-4990-837c-36e20f54c086" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-008 - S08<br> Teste de Alteração de Perfil de Usuário</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve alterar o perfil do usuário no banco de dados e exibir uma mensagem de sucesso.</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">18/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5"> O sistema alterou o perfil do usuário no banco de dados com sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/bbac8f26-9bc2-49e2-a34b-ecfba6d7a205" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image2"
+        src="https://github.com/user-attachments/assets/8bd34ca8-3ba0-4cfc-ba22-902e176897a0" />
+    </td>
+  </tr>
+   <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image3"
+        src="https://github.com/user-attachments/assets/3df85fef-1240-481f-a51b-1b3831770799" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image4"
+        src="https://github.com/user-attachments/assets/663d8b15-e514-40fe-a472-b51292cd563a" />
+    </td>
+  </tr>
+   <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="image5"
+        src="https://github.com/user-attachments/assets/a50c0f53-916b-4712-afc6-030b8eb019b5" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-000 - S00<br>Projetos mais recentes</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir na pagina inicial os ultimos projetos criados</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Laila</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">João Victor Antunes</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Os projetos foram exibidos com sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+<img width="1038" height="925" alt="projetos_destaque" src="https://github.com/user-attachments/assets/02a0f203-dc4d-4f28-aab6-8fbbe560f75a" />
+    </td>
+  </tr>
+</table>
+
+
 
 ### ETAPA 4
 
