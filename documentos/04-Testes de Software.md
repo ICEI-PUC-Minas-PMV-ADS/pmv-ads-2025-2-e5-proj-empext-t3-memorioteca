@@ -56,7 +56,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - S02<br> Teste de Login</th>
+    <th colspan="2" width="1000">CT-002 - S01<br> Teste de Login</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -141,7 +141,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - I02<br>Cadastro com senha inválido</th>
+    <th colspan="2" width="1000">CT-001 - I02<br>Cadastro com senha inválido</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -182,7 +182,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-003 - I03<br> Cadastro com e-mail já cadastrado</th>
+    <th colspan="2" width="1000">CT-001 - I03<br> Cadastro com e-mail já cadastrado</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -228,7 +228,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-004 - S04<br> Teste de Cadastro de Projeto</th>
+    <th colspan="2" width="1000">CT-003 - S01<br> Teste de Cadastro de Projeto</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -275,7 +275,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-005 - S05<br> Teste de Edição de Projeto</th>
+    <th colspan="2" width="1000">CT-004 - S01<br> Teste de Edição de Projeto</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -323,7 +323,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-006 - S06<br> Teste de Exclusão de Projeto</th>
+    <th colspan="2" width="1000">CT-005 - S01<br> Teste de Exclusão de Projeto</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -363,7 +363,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-007 - S07<br> Teste de Consulta de Projeto</th>
+    <th colspan="2" width="1000">CT-006 - S01<br> Teste de Consulta de Projeto</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -400,7 +400,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-008 - S01<br> Teste do Painel de Projetos em Destaque</th>
+    <th colspan="2" width="1000">CT-007 - S01<br> Teste do Painel de Projetos em Destaque</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -453,7 +453,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-009 - S09<br> Teste de Alteração de Perfil de Usuário</th>
+    <th colspan="2" width="1000">CT-008 - S01<br> Teste de Alteração de Perfil de Usuário</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -490,7 +490,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-019 - S01<br> Atualização de Informações Institucionais</th>
+    <th colspan="2" width="1000">CT-009 - S01<br> Atualização de Informações Institucionais</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -528,45 +528,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-019 - I01<br> Impossibilidade de Alterar as Informações Institucionais utilizando parâmetros incorretos</th>
-  </tr>
-  <tr>
-    <td width="150"><strong>Descrição</strong></td>
-    <td> Um usuário administrador não deve poder editar as informações institucionais se os parâmetros não estiverem corretos </td>
-  </tr>
-  <tr>
-    <td><strong>Responsável Caso de Teste</strong></td>
-    <td width="430">Mayara Pinheiro</td>
-  </tr>
-  <tr>
-    <td><strong>Tipo do Teste</strong></td>
-    <td>Insucesso</td>
-  </tr>
-  <tr>
-    <td><strong>Requisitos associados</strong></td>
-    <td>RF-009</td>
-  </tr>
-  <tr>
-    <td><strong>Passos</strong></td>
-    <td> 1. Acessar o sistema com um usuário administrador </br>
-    2. Acessar o menu "Sobre". </br>
-    3. Clicar em "Editar" </br>
-    4. Não preencher o campo "Texto Institucional" ou preencher com menos de 10 caracteres </br>
-    5. Não preencher o campo "URL do Arquivo" ou preencher com um link inválido </br>
-    6. Clicar em "Salvar alterações"
-  <tr>
-    <td><strong>Dados de teste</strong></td>
-    <td> - </td>
-  </tr>
-  <tr>
-    <td><strong>Critérios de êxito</strong></td>
-    <td> O sistema deve atualizar as informações institucionais </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="2" width="1000">CT-020 - S01<br> As informações institucionais devem ser exibidas</th>
+    <th colspan="2" width="1000">CT-010 - S01<br> As informações institucionais devem ser exibidas</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -601,7 +563,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-021 - S01<br> Deve ser possível enviar mensagem para biblioteca caso os parâmetros estejam corretos</th>
+    <th colspan="2" width="1000">CT-011 - S01<br> Deve ser possível enviar mensagem para biblioteca caso os parâmetros estejam corretos</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -639,7 +601,83 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-021 - I01<br> Não deve ser possível enviar mensagem para biblioteca caso os parâmetros não estejam corretos</th>
+    <th colspan="2" width="1000">CT-012 - S01<br> O usuário administrador deve conseguir visualizar as mensagens recebidas</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> O usuário administrador devem conseguir visualizar as mensagens recebidas </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-008</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema com um usuário administrador</br>
+    2. Acessar o menu "Entrar em Contato". </br>
+    3. Clicar em "Mensagens". </br>
+    4. Visualizar as mensagens recebidas"
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> O sistema deve exibir as mensagens recebidas. </td>
+  </tr>
+</table>
+
+#### Exemplo de Caso de Teste de Insucesso
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-009 - I01<br> Impossibilidade de Alterar as Informações Institucionais utilizando parâmetros incorretos</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> Um usuário administrador não deve poder editar as informações institucionais se os parâmetros não estiverem corretos </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Insucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-009</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema com um usuário administrador </br>
+    2. Acessar o menu "Sobre". </br>
+    3. Clicar em "Editar" </br>
+    4. Não preencher o campo "Texto Institucional" ou preencher com menos de 10 caracteres </br>
+    5. Não preencher o campo "URL do Arquivo" ou preencher com um link inválido </br>
+    6. Clicar em "Salvar alterações"
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> O sistema deve atualizar as informações institucionais </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-011 - I01<br> Não deve ser possível enviar mensagem para biblioteca caso os parâmetros não estejam corretos</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -672,42 +710,6 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   <tr>
     <td><strong>Critérios de êxito</strong></td>
     <td> O sistema não deve enviar a mensagem e deve exibir os erros relacionados aos campos preenchidos incorretamente </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="2" width="1000">CT-022 - S01<br> O usuário administrador deve conseguir visualizar as mensagens recebidas</th>
-  </tr>
-  <tr>
-    <td width="150"><strong>Descrição</strong></td>
-    <td> O usuário administrador devem conseguir visualizar as mensagens recebidas </td>
-  </tr>
-  <tr>
-    <td><strong>Responsável Caso de Teste</strong></td>
-    <td width="430">Mayara Pinheiro</td>
-  </tr>
-  <tr>
-    <td><strong>Tipo do Teste</strong></td>
-    <td>Sucesso</td>
-  </tr>
-  <tr>
-    <td><strong>Requisitos associados</strong></td>
-    <td>RF-008</td>
-  </tr>
-  <tr>
-    <td><strong>Passos</strong></td>
-    <td> 1. Acessar o sistema com um usuário administrador</br>
-    2. Acessar o menu "Entrar em Contato". </br>
-    3. Clicar em "Mensagens". </br>
-    4. Visualizar as mensagens recebidas"
-  <tr>
-    <td><strong>Dados de teste</strong></td>
-    <td> - </td>
-  </tr>
-  <tr>
-    <td><strong>Critérios de êxito</strong></td>
-    <td> O sistema deve exibir as mensagens recebidas. </td>
   </tr>
 </table>
 
