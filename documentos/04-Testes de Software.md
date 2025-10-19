@@ -784,11 +784,11 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-015 - S01<br> Deve ser possivel editar o perfil de um usuario</th>
+    <th colspan="2" width="1000">CT-015 - S01<br> Teste Restrição de funcionalidades</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
-    <td> O usuário administrador deve conseguir alterar os dados de um usuario, incluindo seu perfil </td>
+    <td> A aplicação deve restringir funcionalidades de acordo com o perfil do usuário.</td>
   </tr>
   <tr>
     <td><strong>Responsável Caso de Teste</strong></td>
@@ -800,22 +800,19 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td><strong>Requisitos associados</strong></td>
-    <td>RF-000</td>
+    <td>RF-004</td>
   </tr>
   <tr>
     <td><strong>Passos</strong></td>
     <td> 1. Acessar o sistema com um usuário administrador</br>
-    2. Acessar o menu Usuarios. </br>
-    3. Solicitar a edição de um usuario. </br>
-    4. Alterar os dados necessarios. </br>
-    5. Salvar as alterações
+    2. Acessar o sistema com um usuário visitante</br>
   <tr>
     <td><strong>Dados de teste</strong></td>
     <td> - </td>
   </tr>
   <tr>
     <td><strong>Critérios de êxito</strong></td>
-    <td> Os dados do usuario devem ser alterados. </td>
+    <td> As funcionalidades aparecem conforme o tipo de usuário. </td>
   </tr>
 </table>
 
@@ -1913,7 +1910,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-015 - S01<br> Teste de Alteração de Perfil de Usuário</th>
+    <th colspan="6" width="1000">CT-008 - S01<br> Teste de Alteração de Perfil de Usuário</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
