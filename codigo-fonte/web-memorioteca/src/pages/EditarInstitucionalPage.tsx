@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { getInstitucional, updateInstitucional } from '@/services/institucionalService'
 import { supabase } from '@/infra/supabaseClient'
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/Card'
-import { Button } from '@/components/ui'
+import { Input, Button } from '@/components/ui'
 import Textarea from '@/components/ui/Textarea'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -17,7 +17,7 @@ export default function EditarInstitucionalPage() {
   const [imagemUrl, setImagemUrl] = useState<string>('')
   const [carregando, setCarregando] = useState<boolean>(true)
   const [erro, setErro] = useState<string>('')
-  const [uploading, setUploading] = useState<boolean>(false)
+  //const [uploading, setUploading] = useState<boolean>(false)
 
   useEffect(() => {
     // Proteção de acesso: redireciona se não for ADMINISTRADOR
@@ -41,31 +41,31 @@ export default function EditarInstitucionalPage() {
     carregarDados()
   }, [user, navigate])
 
-  const handleImagemUpload = async (file: File): Promise<string | null> => {
-    try {
-      setUploading(true)
-      const fileName = `${Date.now()}-${file.name}`
-      const filePath = `public/${fileName}`
+  // const handleImagemUpload = async (file: File): Promise<string | null> => {
+  //   try {
+  //     setUploading(true)
+  //     const fileName = `${Date.now()}-${file.name}`
+  //     const filePath = `public/${fileName}`
 
-      const { error } = await supabase.storage
-        .from('Institucional')
-        .upload(filePath, file, { upsert: true })
+  //     const { error } = await supabase.storage
+  //       .from('Institucional')
+  //       .upload(filePath, file, { upsert: true })
 
-      if (error) {
-        console.error('Erro ao fazer upload:', error)
-        alert('Erro ao fazer upload da imagem.')
-        return null
-      }
+  //     if (error) {
+  //       console.error('Erro ao fazer upload:', error)
+  //       alert('Erro ao fazer upload da imagem.')
+  //       return null
+  //     }
 
-      const { data: publicUrlData } = supabase.storage
-        .from('Institucional')
-        .getPublicUrl(filePath)
+  //     const { data: publicUrlData } = supabase.storage
+  //       .from('Institucional')
+  //       .getPublicUrl(filePath)
 
-      return publicUrlData.publicUrl
-    } finally {
-      setUploading(false)
-    }
-  }
+  //     return publicUrlData.publicUrl
+  //   } finally {
+  //     setUploading(false)
+  //   }
+  // }
 
   const handleSalvar = async () => {
     if (!texto || texto.trim().length < 10) {
@@ -113,23 +113,14 @@ export default function EditarInstitucionalPage() {
                   required
                 />
 
-                {/* Campo de imagem */}
-                <div className="space-y-2">
-                  <label className="text-sm font-medium block">Imagem institucional</label>
-                  <input
-                    type="file"
-                    accept="image/*"
-                    className="block w-full text-sm text-gray-700 border border-gray-300 rounded-md cursor-pointer focus:outline-none"
-                    onChange={async (e: React.ChangeEvent<HTMLInputElement>) => {
-                      const files = e.target.files
-                      if (!files || files.length === 0) return
-                      const file = files[0]
-                      const url = await handleImagemUpload(file)
-                      if (url) setImagemUrl(url)
-                    }}
-                  />
-                  {uploading && <p className="text-blue-500 text-sm">Fazendo upload da imagem...</p>}
-                </div>
+                <Input
+                  label="URL do Arquivo"
+                  type="text"
+                  name="url"
+                  value={imagemUrl || ""}
+                  onChange={(e) => setImagemUrl(e.target.value)}
+                  placeholder="Cole a URL do arquivo aqui"
+                />
 
                 {/* Pré-visualização */}
                 {imagemUrl && (
