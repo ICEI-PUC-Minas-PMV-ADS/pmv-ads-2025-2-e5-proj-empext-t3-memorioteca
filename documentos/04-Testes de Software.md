@@ -1210,7 +1210,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-026 - S09<br>Mensagem quando nenhum projeto é encontrado</th>
+    <th colspan="2" width="1000">CT-025 - S09<br>Mensagem quando nenhum projeto é encontrado</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
