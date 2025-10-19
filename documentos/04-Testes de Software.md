@@ -711,6 +711,166 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-006 - S01 <br>Definição de perfil</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir/ocultar os menus conforme o perfil do usuario</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Os menus respeitaram a regra definida</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+    01_Menu conforme perfil
+      <img width="823" height="754" alt="image1"
+        src="" />
+    </td>
+    <td colspan="6" align="center">
+    01_Menu conforme perfil cadastrar
+      <img width="823" height="754" alt="image1"
+        src="" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-007 - S01 <br>Permitir listagem de usuarios</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Os administradores devem conseguir listar todos os usuarios</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e exibida com sucesso</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+    02_Lista Usuarios
+      <img width="823" height="754" alt="image1"
+        src="" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-008 - S01 <br>Permitir edição de usuarios</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Os administradores devem conseguir editar os dados do usuario</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e edição realizada com sucesso</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+    03_Editar Usuario
+      <img width="823" height="754" alt="image1"
+        src="" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-009 - S01 <br>Permitir a visualização dos dados do projeto</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve permitir a visualização dos dados do projeto, e administradores devem conseguir editar/excluir</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e botoes visiveis somente para o perfil admin</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+    04_Visualizar Projeto
+      <img width="823" height="754" alt="image1"
+        src="" />
+    </td>
+    <td colspan="6" align="center">
+    05_Excluir projeto
+      <img width="823" height="754" alt="image1"
+        src="" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-010 - S01 <br>Permitir a alteração de senha</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve permitir que o usuario altere sua propria senha</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e funcional</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+    06_Alterar senha
+      <img width="823" height="754" alt="image1"
+        src="" />
+    </td>
+  </tr>
+</table>
+
 ### ETAPA 4
 
 Colocar evidências de teste da etapa 4
@@ -845,6 +1005,38 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center">
       <img width="823" height="754" alt="image5"
         src="https://github.com/user-attachments/assets/a50c0f53-916b-4712-afc6-030b8eb019b5" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-000 - S00<br>Projetos mais recentes</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir na pagina inicial os ultimos projetos criados</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Laila</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">João Victor Antunes</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Os projetos foram exibidos com sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+    projetos_destaque
+      <img width="823" height="754" alt="image1"
+        src="" />
     </td>
   </tr>
 </table>
