@@ -1257,6 +1257,65 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-001<br>Formulário fale conosco</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema exibir formulário de fale conosco.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema enviou a mensagem corretamente e exibiu a confirmação de sucesso. Os campos foram limpos após o envio.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1089" height="945" alt="image" src="https://github.com/user-attachments/assets/19c74de2-80ab-4d69-9fc4-d0a1a60a49ed" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-003<br>Carregamento das informações institucionais</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve carregar e exibir corretamente o texto e a imagem institucional armazenados no banco de dados.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema carregou corretamente as informações institucionais, exibindo o texto formatado com parágrafos e a imagem flutuando à direita.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/98ecf0ff-ebc0-4108-a7a1-7edb4c247129" />
+    </td>
+  </tr>
+</table>
 
 
 ### ETAPA 4
