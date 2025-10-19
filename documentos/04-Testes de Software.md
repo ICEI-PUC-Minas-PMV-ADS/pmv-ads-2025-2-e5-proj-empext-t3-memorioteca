@@ -711,6 +711,384 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-006 - S01 <br>Definição de perfil</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir/ocultar os menus conforme o perfil do usuario</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Os menus respeitaram a regra definida</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1277" height="1027" alt="01_Menu conforme perfil" src="https://github.com/user-attachments/assets/3c212053-9cf7-465c-9d78-f33dd158fa26" />
+    </td>
+    <td colspan="6" align="center">
+      <img width="2551" height="455" alt="01_Menu conforme perfil cadastrar" src="https://github.com/user-attachments/assets/8665ee48-3110-4b34-b157-266aba3d7d53" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-007 - S01 <br>Permitir listagem de usuarios</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Os administradores devem conseguir listar todos os usuarios</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e exibida com sucesso</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1268" height="507" alt="02_Lista Usuarios" src="https://github.com/user-attachments/assets/6a15caf4-4a1e-467c-8930-7088c51f32cc" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-008 - S01 <br>Permitir edição de usuarios</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Os administradores devem conseguir editar os dados do usuario</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e edição realizada com sucesso</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+<img width="1275" height="930" alt="03_Editar Usuario" src="https://github.com/user-attachments/assets/a8520719-b0c2-430a-8032-aea79706f458" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-009 - S01 <br>Permitir a visualização dos dados do projeto</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve permitir a visualização dos dados do projeto, e administradores devem conseguir editar/excluir</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e botoes visiveis somente para o perfil admin</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+<img width="2558" height="940" alt="04_Visualizar Projeto" src="https://github.com/user-attachments/assets/5f06a0c0-b5b7-4cd4-bc67-ec47fc9d6a51" />
+    </td>
+    <td colspan="6" align="center">
+<img width="1276" height="949" alt="05_Excluir projeto" src="https://github.com/user-attachments/assets/bfa8f3da-f352-4973-88fa-68b9f3cf37d6" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-010 - S01 <br>Permitir a alteração de senha</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve permitir que o usuario altere sua propria senha</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Tela adicionada e funcional</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+<img width="1276" height="945" alt="06_Alterar senha" src="https://github.com/user-attachments/assets/4aa76dfb-3882-42f4-8711-671f3ce55c10" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-011<br>Carregamento inicial da página de projetos</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">A página deve carregar e exibir a lista de projetos com paginação padrão (12 itens por página).</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema carregou corretamente a lista de projetos ao acessar a página.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+    <img width="1916" height="949" alt="image" src="https://github.com/user-attachments/assets/ea808d39-40e6-4362-a6dc-fda447c67f4d" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-012<br>Filtro de busca por título</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao inserir um título no campo de filtro e clicar em "Buscar", o sistema deve retornar apenas os projetos que contenham o título buscado.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">A busca por título funcionou corretamente, filtrando os projetos conforme esperado.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1917" height="946" alt="image" src="https://github.com/user-attachments/assets/43c1bb95-5166-4f8c-a9ff-95132565b17c" />
+      <img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/03ea3b8b-fbcb-410e-a98a-60d5eeb5bede" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-013<br>Validação de data de criação inválida</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao inserir uma data inválida (ex: mês 13, dia 32, ano < 1900 ou > 2100), o sistema deve exibir uma mensagem de alerta e não realizar a busca.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema validou corretamente datas inválidas, impedindo a busca e alertando o usuário.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1919" height="688" alt="image" src="https://github.com/user-attachments/assets/694e8f13-6e45-4f86-853a-9f0d32fee9f8" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-014<br>Múltiplos filtros combinados</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao preencher múltiplos campos de filtro (título, descrição e data) e clicar em "Buscar", o sistema deve retornar apenas projetos que atendam todos os critérios simultaneamente.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Os filtros combinados funcionaram corretamente, aplicando todos os critérios na busca.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1917" height="736" alt="image" src="https://github.com/user-attachments/assets/2c6b61a1-483b-40e6-af21-cae917abdb1e" />
+      <img width="1916" height="734" alt="image" src="https://github.com/user-attachments/assets/ed093722-de95-4581-bcce-bc7fddacc7d7" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-015<br>Navegação entre páginas (paginação)</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao clicar nos botões "Próxima" ou "Anterior", ou em números de página específicos, o sistema deve carregar a página correspondente e atualizar o indicador de página atual.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">A navegação entre páginas funcionou corretamente, mantendo os filtros aplicados.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1903" height="947" alt="image" src="https://github.com/user-attachments/assets/cd14299a-4f7e-4e2b-972f-124c01da1d3e" />
+      <img width="1904" height="945" alt="image" src="https://github.com/user-attachments/assets/4873bf78-63ef-4bb1-90ec-0a33404e8572" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-016<br>Alteração de itens por página</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao selecionar uma quantidade diferente de itens por página (6, 12, 24, 48 ou 96), o sistema deve recarregar a lista com a nova quantidade e resetar para a página 1.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">A alteração de itens por página funcionou corretamente, ajustando a exibição e paginação.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1903" height="947" alt="image" src="https://github.com/user-attachments/assets/3a4aa6be-69da-4242-8810-7fe36e81cca6" />
+      <img width="1905" height="945" alt="image" src="https://github.com/user-attachments/assets/1f869f2a-8e3b-4d9d-b41c-f6f81f51f7a4" />
+      <img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/eff9f113-59e5-4fd3-bff4-6b7df85fcc0c" />
+      <img width="1904" height="913" alt="image" src="https://github.com/user-attachments/assets/2139f6cd-e5db-4308-9614-e03518783d83" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-017<br>Visualização de projeto ao clicar no card</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao clicar em um card de projeto, o sistema deve redirecionar para a página de visualização detalhada do projeto (/projects/:id).</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O redirecionamento para a página de detalhes do projeto funcionou corretamente.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+        <img width="1917" height="719" alt="image" src="https://github.com/user-attachments/assets/14bf3658-8109-4702-a968-2e32e4896b0c" />
+        <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/6b753f08-2b4b-4990-837c-36e20f54c086" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-018<br>Mensagem quando nenhum projeto é encontrado</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Quando a busca não retorna resultados, deve ser exibida uma mensagem "Nenhum projeto encontrado com os filtros aplicados" com opção de limpar filtros.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">A mensagem foi exibida corretamente quando não havia resultados.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1901" height="944" alt="image" src="https://github.com/user-attachments/assets/ba323aae-69d0-41f0-9e44-33b544f0ad72" />
+    </td>
+  </tr>
+</table>
+
 ### ETAPA 4
 
 Colocar evidências de teste da etapa 4
@@ -849,5 +1227,97 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-000 - S00<br>Projetos mais recentes</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir na pagina inicial os ultimos projetos criados</td>
+  </tr>
+    <tr>
+      <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Laila</td>
+      <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">João Victor Antunes</td>
+     <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Os projetos foram exibidos com sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+ <tr>
+    <td colspan="6" align="center">
+<img width="1038" height="925" alt="projetos_destaque" src="https://github.com/user-attachments/assets/02a0f203-dc4d-4f28-aab6-8fbbe560f75a" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-001<br>Formulário fale conosco</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema exibir formulário de fale conosco.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema enviou a mensagem corretamente e exibiu a confirmação de sucesso. Os campos foram limpos após o envio.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1089" height="945" alt="image" src="https://github.com/user-attachments/assets/19c74de2-80ab-4d69-9fc4-d0a1a60a49ed" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-003<br>Carregamento das informações institucionais</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve carregar e exibir corretamente o texto e a imagem institucional armazenados no banco de dados.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema carregou corretamente as informações institucionais, exibindo o texto formatado com parágrafos e a imagem flutuando à direita.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/98ecf0ff-ebc0-4108-a7a1-7edb4c247129" />
+    </td>
+  </tr>
+</table>
+
+
 ### ETAPA 4
-Colocar evidências de teste da etapa 4
+
+
