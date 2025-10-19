@@ -1629,7 +1629,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-006 - S06<br> Teste de Exclusão de Projeto</th>
+    <th colspan="6" width="1000">CT-005 - S01<br> Teste de Exclusão de Projeto</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1672,7 +1672,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-007 - S07<br> Teste de Consulta de Projeto</th>
+    <th colspan="6" width="1000">CT-006 - S01<br> Teste de Consulta de Projeto</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1703,7 +1703,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-008 - S08<br> Teste de Alteração de Perfil de Usuário</th>
+    <th colspan="6" width="1000">CT-008 - S01<br> Teste de Alteração de Perfil de Usuário</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
