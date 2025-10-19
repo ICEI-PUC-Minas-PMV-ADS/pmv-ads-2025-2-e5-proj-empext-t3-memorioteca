@@ -1591,7 +1591,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-003<br>Busca avançada de projetos - Filtro Descrição </th>
+    <th colspan="6" width="1000">CT-003<br>Busca avançada de projetos - Filtro Data </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
