@@ -1104,7 +1104,9 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
-    <td colspan="6" align="center">[Inserir print mostrando alerta de validação de data]</td>
+    <td colspan="6" align="center">
+      <img width="1919" height="688" alt="image" src="https://github.com/user-attachments/assets/694e8f13-6e45-4f86-853a-9f0d32fee9f8" />
+    </td>
   </tr>
 </table>
 
@@ -1130,33 +1132,10 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
-    <td colspan="6" align="center">[Inserir print mostrando múltiplos filtros aplicados e resultados]</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-005<br>Função "Limpar Filtros"</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Ao clicar no botão "Limpar Filtros", todos os campos de filtro devem ser resetados e a página deve voltar para o estado inicial (página 1, 12 itens).</td>
-  </tr>
-  <tr>
-    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430">Pedro Louzada</td>
-    <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-  <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">A função "Limpar Filtros" resetou todos os campos corretamente.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center">[Inserir print mostrando campos de filtro vazios após limpar]</td>
+    <td colspan="6" align="center">
+      <img width="1917" height="736" alt="image" src="https://github.com/user-attachments/assets/2c6b61a1-483b-40e6-af21-cae917abdb1e" />
+      <img width="1916" height="734" alt="image" src="https://github.com/user-attachments/assets/ed093722-de95-4581-bcce-bc7fddacc7d7" />
+    </td>
   </tr>
 </table>
 
@@ -1208,7 +1187,12 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
-    <td colspan="6" align="center">[Inserir print mostrando quantidade alterada de itens]</td>
+    <td colspan="6" align="center">
+      <img width="1903" height="947" alt="image" src="https://github.com/user-attachments/assets/3a4aa6be-69da-4242-8810-7fe36e81cca6" />
+      <img width="1905" height="945" alt="image" src="https://github.com/user-attachments/assets/1f869f2a-8e3b-4d9d-b41c-f6f81f51f7a4" />
+      <img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/eff9f113-59e5-4fd3-bff4-6b7df85fcc0c" />
+      <img width="1904" height="913" alt="image" src="https://github.com/user-attachments/assets/2139f6cd-e5db-4308-9614-e03518783d83" />
+    </td>
   </tr>
 </table>
 
