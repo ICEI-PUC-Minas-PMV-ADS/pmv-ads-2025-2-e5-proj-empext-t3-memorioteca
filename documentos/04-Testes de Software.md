@@ -1141,7 +1141,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-006<br>Navegação entre páginas (paginação)</th>
+    <th colspan="6" width="1000">CT-005<br>Navegação entre páginas (paginação)</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1170,7 +1170,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-007<br>Alteração de itens por página</th>
+    <th colspan="6" width="1000">CT-006<br>Alteração de itens por página</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1201,7 +1201,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-008<br>Visualização de projeto ao clicar no card</th>
+    <th colspan="6" width="1000">CT-007<br>Visualização de projeto ao clicar no card</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1221,39 +1221,16 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
-    <td colspan="6" align="center">[Inserir print mostrando página de detalhes do projeto]</td>
+    <td colspan="6" align="center">
+        <img width="823" height="754" alt="image1"
+        src="https://github.com/user-attachments/assets/6b753f08-2b4b-4990-837c-36e20f54c086" />
+    </td>
   </tr>
 </table>
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-009<br>Controle de acesso - Botão "Cadastrar Novo Projeto" para administrador</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Quando um usuário com tipo "ADMINISTRADOR" acessar a página, o botão "Cadastrar Novo Projeto" deve estar visível e funcional, redirecionando para /projects/create.</td>
-  </tr>
-  <tr>
-    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430">Pedro Louzada</td>
-    <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-  <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O botão apareceu corretamente para usuários administradores e o redirecionamento funcionou.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center">[Inserir print mostrando botão visível para admin e página de criação]</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-010<br>Mensagem quando nenhum projeto é encontrado</th>
+    <th colspan="6" width="1000">CT-008<br>Mensagem quando nenhum projeto é encontrado</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1267,13 +1244,15 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
   </tr>
   <tr>
     <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">A mensagem foi exibida corretamente quando não havia resultados e o botão de limpar filtros funcionou.</td>
+    <td colspan="5">A mensagem foi exibida corretamente quando não havia resultados.</td>
   </tr>
   <tr>
     <td colspan="6" align="center"><strong>Evidência</strong></td>
   </tr>
   <tr>
-    <td colspan="6" align="center">[Inserir print mostrando mensagem de nenhum resultado encontrado]</td>
+    <td colspan="6" align="center">
+      <img width="1901" height="944" alt="image" src="https://github.com/user-attachments/assets/ba323aae-69d0-41f0-9e44-33b544f0ad72" />
+    </td>
   </tr>
 </table>
 
