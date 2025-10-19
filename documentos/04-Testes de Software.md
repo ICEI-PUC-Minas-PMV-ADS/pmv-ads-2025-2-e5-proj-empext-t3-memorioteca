@@ -734,14 +734,10 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td colspan="6" align="center">
-    01_Menu conforme perfil
-      <img width="823" height="754" alt="image1"
-        src="" />
+      <img width="1277" height="1027" alt="01_Menu conforme perfil" src="https://github.com/user-attachments/assets/3c212053-9cf7-465c-9d78-f33dd158fa26" />
     </td>
     <td colspan="6" align="center">
-    01_Menu conforme perfil cadastrar
-      <img width="823" height="754" alt="image1"
-        src="" />
+      <img width="2551" height="455" alt="01_Menu conforme perfil cadastrar" src="https://github.com/user-attachments/assets/8665ee48-3110-4b34-b157-266aba3d7d53" />
     </td>
   </tr>
 </table>
@@ -769,9 +765,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td colspan="6" align="center">
-    02_Lista Usuarios
-      <img width="823" height="754" alt="image1"
-        src="" />
+      <img width="1268" height="507" alt="02_Lista Usuarios" src="https://github.com/user-attachments/assets/6a15caf4-4a1e-467c-8930-7088c51f32cc" />
     </td>
   </tr>
 </table>
@@ -799,9 +793,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td colspan="6" align="center">
-    03_Editar Usuario
-      <img width="823" height="754" alt="image1"
-        src="" />
+<img width="1275" height="930" alt="03_Editar Usuario" src="https://github.com/user-attachments/assets/a8520719-b0c2-430a-8032-aea79706f458" />
     </td>
   </tr>
 </table>
@@ -829,14 +821,10 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td colspan="6" align="center">
-    04_Visualizar Projeto
-      <img width="823" height="754" alt="image1"
-        src="" />
+<img width="2558" height="940" alt="04_Visualizar Projeto" src="https://github.com/user-attachments/assets/5f06a0c0-b5b7-4cd4-bc67-ec47fc9d6a51" />
     </td>
     <td colspan="6" align="center">
-    05_Excluir projeto
-      <img width="823" height="754" alt="image1"
-        src="" />
+<img width="1276" height="949" alt="05_Excluir projeto" src="https://github.com/user-attachments/assets/bfa8f3da-f352-4973-88fa-68b9f3cf37d6" />
     </td>
   </tr>
 </table>
@@ -864,9 +852,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td colspan="6" align="center">
-    06_Alterar senha
-      <img width="823" height="754" alt="image1"
-        src="" />
+<img width="1276" height="945" alt="06_Alterar senha" src="https://github.com/user-attachments/assets/4aa76dfb-3882-42f4-8711-671f3ce55c10" />
     </td>
   </tr>
 </table>
@@ -1034,9 +1020,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
   </tr>
  <tr>
     <td colspan="6" align="center">
-    projetos_destaque
-      <img width="823" height="754" alt="image1"
-        src="" />
+<img width="1038" height="925" alt="projetos_destaque" src="https://github.com/user-attachments/assets/02a0f203-dc4d-4f28-aab6-8fbbe560f75a" />
     </td>
   </tr>
 </table>
