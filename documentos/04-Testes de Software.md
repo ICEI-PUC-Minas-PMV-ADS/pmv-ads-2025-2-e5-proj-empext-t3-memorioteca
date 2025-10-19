@@ -818,7 +818,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-001 - S01<br>Carregamento inicial da página de projetos</th>
+    <th colspan="2" width="1000">CT-016 - S01<br>Carregamento inicial da página de projetos</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -859,7 +859,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-002 - S02<br>Filtro de busca por título</th>
+    <th colspan="2" width="1000">CT-017 - S02<br>Filtro de busca por título</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -902,7 +902,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-003 - E01<br>Validação de data de criação inválida</th>
+    <th colspan="2" width="1000">CT-018 - E01<br>Validação de data de criação inválida</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -947,7 +947,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-004 - S03<br>Múltiplos filtros combinados</th>
+    <th colspan="2" width="1000">CT-019 - S03<br>Múltiplos filtros combinados</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -992,7 +992,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-005 - S04<br>Função "Limpar Filtros"</th>
+    <th colspan="2" width="1000">CT-020 - S04<br>Função "Limpar Filtros"</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -1035,7 +1035,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-006 - S05<br>Navegação entre páginas (paginação)</th>
+    <th colspan="2" width="1000">CT-021 - S05<br>Navegação entre páginas (paginação)</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -1078,7 +1078,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-007 - S06<br>Alteração de itens por página</th>
+    <th colspan="2" width="1000">CT-022 - S06<br>Alteração de itens por página</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -1123,7 +1123,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-008 - S07<br>Visualização de projeto ao clicar no card</th>
+    <th colspan="2" width="1000">CT-023 - S07<br>Visualização de projeto ao clicar no card</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -1166,7 +1166,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-009 - S08<br>Controle de acesso - Botão "Cadastrar Novo Projeto" para administrador</th>
+    <th colspan="2" width="1000">CT-024 - S08<br>Controle de acesso - Botão "Cadastrar Novo Projeto" para administrador</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
@@ -1210,7 +1210,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 <table>
   <tr>
-    <th colspan="2" width="1000">CT-010 - S09<br>Mensagem quando nenhum projeto é encontrado</th>
+    <th colspan="2" width="1000">CT-026 - S09<br>Mensagem quando nenhum projeto é encontrado</th>
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
