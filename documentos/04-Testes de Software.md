@@ -816,6 +816,441 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-001 - S01<br>Carregamento inicial da página de projetos</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se a página de projetos carrega corretamente ao ser acessada, exibindo a lista de projetos com a paginação padrão.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Abrir a aplicação.<br>
+      2. Acessar a página de Projetos através do menu ou URL direta (/projetos).<br>
+      3. Aguardar o carregamento da página.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>URL:</strong> /projetos<br>
+      - <strong>Paginação esperada:</strong> Página 1, 12 itens por página
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>A página deve carregar e exibir a lista de projetos com paginação padrão (12 itens por página).</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-002 - S02<br>Filtro de busca por título</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se o filtro de busca por título retorna apenas os projetos que contêm o texto buscado no título.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Acessar a página de Projetos.<br>
+      2. Localizar o campo de filtro "Título".<br>
+      3. Inserir um texto para busca (ex: "Memorial").<br>
+      4. Clicar no botão "Buscar".<br>
+      5. Verificar os resultados exibidos.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Título:</strong> Memorial<br>
+      - <strong>Filtros adicionais:</strong> Nenhum
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve retornar apenas os projetos que contenham "Memorial" no título.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-003 - E01<br>Validação de data de criação inválida</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se o sistema valida corretamente datas inválidas e impede a busca quando dados incorretos são informados.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Erro</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Acessar a página de Projetos.<br>
+      2. Localizar o campo de filtro "Data de Criação".<br>
+      3. Inserir uma data inválida (ex: 2025-13-45 ou ano < 1900 ou > 2100).<br>
+      4. Clicar no botão "Buscar".<br>
+      5. Verificar se um alerta é exibido.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Data inválida 1:</strong> 2025-13-01 (mês 13)<br>
+      - <strong>Data inválida 2:</strong> 2025-02-32 (dia 32)<br>
+      - <strong>Data inválida 3:</strong> 1899-12-31 (ano < 1900)<br>
+      - <strong>Data inválida 4:</strong> 2101-01-01 (ano > 2100)
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve exibir uma mensagem de alerta e não realizar a busca.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-004 - S03<br>Múltiplos filtros combinados</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se múltiplos filtros podem ser combinados e aplicados simultaneamente na busca de projetos.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Acessar a página de Projetos.<br>
+      2. Preencher o campo "Título" com um valor de busca.<br>
+      3. Preencher o campo "Descrição" com um valor de busca.<br>
+      4. Preencher o campo "Data de Criação" com uma data válida.<br>
+      5. Clicar no botão "Buscar".<br>
+      6. Verificar os resultados retornados.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Título:</strong> Memória<br>
+      - <strong>Descrição:</strong> cultural<br>
+      - <strong>Data de Criação:</strong> 2024-01-15
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve retornar apenas projetos que atendam TODOS os critérios simultaneamente.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-005 - S04<br>Função "Limpar Filtros"</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se o botão "Limpar Filtros" reseta todos os campos de filtro e retorna a página para o estado inicial.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Acessar a página de Projetos.<br>
+      2. Preencher um ou mais campos de filtro (título, descrição, data).<br>
+      3. Clicar no botão "Buscar" para aplicar os filtros.<br>
+      4. Clicar no botão "Limpar Filtros".<br>
+      5. Verificar se todos os campos foram resetados.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Filtros iniciais:</strong> Título: "Teste", Descrição: "exemplo", Data: "2024-01-01"<br>
+      - <strong>Estado esperado após limpar:</strong> Todos os campos vazios, página 1, 12 itens
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>Todos os campos de filtro devem ser resetados e a página deve voltar para o estado inicial (página 1, 12 itens).</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-006 - S05<br>Navegação entre páginas (paginação)</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se a navegação entre páginas funciona corretamente usando os botões "Próxima", "Anterior" e números de página específicos.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Acessar a página de Projetos com múltiplos resultados (mais de 12 projetos).<br>
+      2. Clicar no botão "Próxima" e verificar se a página 2 é carregada.<br>
+      3. Clicar em um número de página específico (ex: página 3) e verificar o carregamento.<br>
+      4. Clicar no botão "Anterior" e verificar se volta para a página anterior.<br>
+      5. Verificar se o indicador de página atual está correto.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Cenário:</strong> Base de dados com mais de 36 projetos (pelo menos 3 páginas)<br>
+      - <strong>Paginação padrão:</strong> 12 itens por página
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve carregar a página correspondente e atualizar o indicador de página atual corretamente.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-007 - S06<br>Alteração de itens por página</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se a alteração da quantidade de itens por página funciona corretamente e reseta a navegação para a página 1.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Acessar a página de Projetos.<br>
+      2. Localizar o seletor "Itens por página".<br>
+      3. Selecionar uma opção diferente (ex: alterar de 12 para 24 itens).<br>
+      4. Verificar se a lista é recarregada com a nova quantidade.<br>
+      5. Verificar se a página retorna para a página 1.<br>
+      6. Verificar se a paginação foi recalculada corretamente.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Opções disponíveis:</strong> 6, 12, 24, 48, 96<br>
+      - <strong>Quantidade selecionada:</strong> 24 itens<br>
+      - <strong>Página inicial:</strong> Qualquer página > 1
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve recarregar a lista com a nova quantidade de itens e resetar para a página 1.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-008 - S07<br>Visualização de projeto ao clicar no card</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se ao clicar em um card de projeto o sistema redireciona corretamente para a página de visualização detalhada.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003, RF-004</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Acessar a página de Projetos.<br>
+      2. Aguardar o carregamento da lista de projetos.<br>
+      3. Clicar em qualquer card de projeto exibido.<br>
+      4. Verificar o redirecionamento para a página de detalhes.<br>
+      5. Verificar se a URL contém o ID do projeto (/projects/:id).
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Projeto selecionado:</strong> Qualquer projeto da lista<br>
+      - <strong>URL esperada:</strong> /projects/{id_do_projeto}
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve redirecionar para a página de visualização detalhada do projeto (/projects/:id).</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-009 - S08<br>Controle de acesso - Botão "Cadastrar Novo Projeto" para administrador</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se o botão "Cadastrar Novo Projeto" está visível e funcional apenas para usuários com perfil de administrador.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003, RF-005</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Fazer login com um usuário do tipo "ADMINISTRADOR".<br>
+      2. Acessar a página de Projetos.<br>
+      3. Verificar se o botão "Cadastrar Novo Projeto" está visível no canto superior direito.<br>
+      4. Clicar no botão "Cadastrar Novo Projeto".<br>
+      5. Verificar o redirecionamento para a página de criação (/projects/create).
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Tipo de usuário:</strong> ADMINISTRADOR<br>
+      - <strong>E-mail:</strong> admin@memorioteca.com<br>
+      - <strong>URL esperada:</strong> /projects/create
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O botão deve estar visível e funcional, redirecionando para /projects/create.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-010 - S09<br>Mensagem quando nenhum projeto é encontrado</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td>Este caso de teste verifica se o sistema exibe uma mensagem apropriada quando nenhum projeto corresponde aos filtros aplicados.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">Pedro Louzada</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td width="430">Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-003</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td>
+      1. Acessar a página de Projetos.<br>
+      2. Preencher um ou mais filtros com valores que não retornem resultados (ex: título inexistente).<br>
+      3. Clicar no botão "Buscar".<br>
+      4. Verificar se a mensagem "Nenhum projeto encontrado com os filtros aplicados" é exibida.<br>
+      5. Verificar se o botão "Limpar Filtros" está disponível na mensagem.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td>
+      - <strong>Título:</strong> ProjetoInexistente123456<br>
+      - <strong>Resultado esperado:</strong> 0 projetos encontrados
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td>O sistema deve exibir a mensagem "Nenhum projeto encontrado com os filtros aplicados" com opção de limpar filtros.</td>
+  </tr>
+</table>
+
 ### ETAPA 4
 
 Criar casos de teste da etapa 4
