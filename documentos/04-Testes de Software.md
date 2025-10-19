@@ -1499,6 +1499,128 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-003<br>Tela contendo a lista de projetos cadastrados</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve carregar e exibir corretamente a lista de projetos cadastrados.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema carregou corretamente a lista de projetos cadastrados contendo título, imagem e descrição resumida de cada um. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_ListaProjetos.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-003<br>Busca avançada de projetos - Filtro Título </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao preencher o campo "Título" com o título completo ou em parte, o sistema deve trazer os projetos que possuem o texto que foi preenchido no título.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema trouxe o projeto com título "Natureza" tal como filtrado. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_FiltroT%C3%ADtulo.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-003<br>Busca avançada de projetos - Filtro Descrição </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao preencher o campo "Descrição" com a descrição completo ou em parte, o sistema deve trazer os projetos que possuem o texto que foi preenchido na descrição. </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema trouxe o projeto que continha a palavra "digitais" na descrição tal como filtrado. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_FiltroDescri%C3%A7%C3%A3o.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-003<br>Busca avançada de projetos - Filtro Descrição </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao preencher o campo "Data de criação" com a data de cadastro, o sistema deve trazer os projetos que foram cadastrados na data informada. </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema trouxe os projetos cadastrados em 06/10/2025, conforme preenchido. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_FiltroData.png" />
+    </td>
+  </tr>
+</table>
+
+
+
 
 ### ETAPA 4
 
