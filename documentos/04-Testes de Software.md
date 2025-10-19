@@ -1041,8 +1041,6 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
   </tr>
 </table>
 
-### ETAPA 4
-
 <table>
   <tr>
     <th colspan="6" width="1000">CT-001<br>Carregamento inicial da página de projetos</th>
@@ -1302,3 +1300,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     <td colspan="6" align="center">[Inserir print mostrando mensagem de nenhum resultado encontrado]</td>
   </tr>
 </table>
+
+### ETAPA 4
+
+
