@@ -1107,7 +1107,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Ao acessar a funcionalidade e preencher os campos de Texto com pelo menos 10 caracteres e e Imagem com uma URL válida, tais dados devem ser registrados.</td>
+    <td colspan="5">Ao acessar a funcionalidade e preencher os campos de Texto com pelo menos 10 caracteres e Imagem com uma URL válida, tais dados devem ser registrados.</td>
   </tr>
   <tr>
     <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
@@ -1135,7 +1135,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Ao acessar a funcionalidade e NÃO preencher os campos de Texto com pelo menos 10 caracteres e e Imagem com uma URL válida, tais dados NÃO devem ser registrados.</td>
+    <td colspan="5">Ao acessar a funcionalidade e NÃO preencher os campos de Texto com pelo menos 10 caracteres e/ou Imagem com uma URL válida, tais dados NÃO devem ser registrados.</td>
   </tr>
   <tr>
     <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
@@ -1221,7 +1221,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">Ao acessar a funcionalidade "Entrar em Contato", caso o campo Nome não tenha pelo menos dois caracteres, E-mail não tenha "arroba" e/ou Mensagem não tenha pelo menos 10 caracteres, tais dados não devem ser registrados</td>
+    <td colspan="5">Caso o campo Nome não seja preenchido com pelo menos dois caracteres, E-mail seja preenchido sem "arroba" e/ou a Mensagem não tenha pelo menos 10 caracteres, tais dados NÃO devem ser registrados</td>
   </tr>
   <tr>
     <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
