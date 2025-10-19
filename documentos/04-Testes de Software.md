@@ -487,7 +487,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td><strong>Tipo do Teste</strong></td>
-    <td>Sucesso</td>
+    <td>Insucesso</td>
   </tr>
   <tr>
     <td><strong>Requisitos associados</strong></td>
@@ -598,7 +598,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td><strong>Tipo do Teste</strong></td>
-    <td>Sucesso</td>
+    <td>Insucesso</td>
   </tr>
   <tr>
     <td><strong>Requisitos associados</strong></td>
@@ -1354,7 +1354,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-019 - I02<br> Informações Institucionais PUT incorreto </th>
+    <th colspan="6" width="1000">CT-019 - I01<br> Informações Institucionais PUT incorreto </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
