@@ -1026,6 +1026,8 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
     <td colspan="6" align="center">
       <img width="1327" height="683" alt="ver_projeto" src="https://github.com/user-attachments/assets/c6393926-85ff-4352-a9eb-85941a869d6e" />
     </td>
+  </tr>
+  <tr>
     <td colspan="6" align="center">
       <img width="1301" height="707" alt="confirma_exclusao" src="https://github.com/user-attachments/assets/1a57a058-9d3d-48cc-b6b5-abf943d7ddee" />
     </td>
@@ -1057,6 +1059,8 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
     <td colspan="6" align="center">
 <img width="2558" height="940" alt="04_Visualizar Projeto" src="https://github.com/user-attachments/assets/5f06a0c0-b5b7-4cd4-bc67-ec47fc9d6a51" />
     </td>
+  </tr>
+  <tr>
     <td colspan="6" align="center">
 <img width="1276" height="949" alt="05_Excluir projeto" src="https://github.com/user-attachments/assets/bfa8f3da-f352-4973-88fa-68b9f3cf37d6" />
     </td>
