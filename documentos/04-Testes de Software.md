@@ -327,7 +327,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
-    <td> - </td>
+    <td> O sistema deve permitir que um projeto seja excluido por usuarios administradores </td>
   </tr>
   <tr>
     <td><strong>Responsável Caso de Teste</strong></td>
@@ -343,7 +343,13 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td><strong>Passos</strong></td>
-    <td> - </td>
+    <td> 
+    1. Acesse o sistema com um usuario administrador </br>
+    2. Pesquise o projeto que deseja excluir </br>
+    3. Acesse a pagina de detalhes do projeto </br>
+    4. Solicite a exclusão do projeto </br>
+    5. Confirme a exclusão do projeto
+     </td>
   </tr>
   <tr>
     <td><strong>Dados de teste</strong></td>
@@ -351,7 +357,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td><strong>Critérios de êxito</strong></td>
-    <td> - </td>
+    <td> O projeto deve ser excluido da base de dados e não ser mais exibido no sistema </td>
   </tr>
 </table>
 
@@ -361,7 +367,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
-    <td> - </td>
+    <td> O sistema deve permitir a visualização dos dados de um projeto </td>
   </tr>
   <tr>
     <td><strong>Responsável Caso de Teste</strong></td>
@@ -377,7 +383,10 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td><strong>Passos</strong></td>
-    <td> - </td>
+    <td> 1. Acesse o sistema com um usuario qualquer. </br>
+    2. Acesse a tela de pesquisa/listagem de projetos. </br>
+    3. Selecione o projeto que deseja consultar. </br>
+     </td>
   </tr>
   <tr>
     <td><strong>Dados de teste</strong></td>
@@ -385,7 +394,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td><strong>Critérios de êxito</strong></td>
-    <td> - </td>
+    <td> O sistema deve exibir o titulo, descrição e imagem do projeto, alem das informações de data criação, inicio, fim e autor, quando disponiveis. </td>
   </tr>
 </table>
 
@@ -395,7 +404,7 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td width="150"><strong>Descrição</strong></td>
-    <td> - </td>
+    <td> Um usuario administrador pode alterar o perfil de um usuario </td>
   </tr>
   <tr>
     <td><strong>Responsável Caso de Teste</strong></td>
@@ -411,15 +420,18 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
   <tr>
     <td><strong>Passos</strong></td>
-    <td> - </td>
-  </tr>
+    <td> 1. Acesse o sistema com um usuario administrador </br>
+    2. Acesse o menu de usuarios. </br>
+    3. Encontre o usuario na lista e solicite a edição do mesmo </br>
+    4. Altere o perfil para o perfil desejado </br>
+    5. Salve as alterações
   <tr>
     <td><strong>Dados de teste</strong></td>
     <td> - </td>
   </tr>
   <tr>
     <td><strong>Critérios de êxito</strong></td>
-    <td> - </td>
+    <td> O sistema deve alterar o perfil do usuario conforme solicitado </td>
   </tr>
 </table>
 
