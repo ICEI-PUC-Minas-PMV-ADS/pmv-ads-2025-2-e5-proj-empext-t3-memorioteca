@@ -713,6 +713,114 @@ Apresente os casos de testes utilizados na realização da verificação e valid
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-013 - S01<br> Permitir listagem de usuarios</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> O administrador deve conseguir listar todos os usuarios </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">João Victor</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-000</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema com um usuário administrador</br>
+    2. Acessar o menu "Usuarios". </br>
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> O sistema deve listar todos os usuarios. </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-014 - S01<br> O sistema deve permitir a alteração de senha</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> O usuário deve conseguir editar a propria senha </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">João Victor Antunes</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-000</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema com um usuário</br>
+    2. Acessar o menu "Alterar senha". </br>
+    3. Informar a senha atual. </br>
+    4. Informar e confirmar a nova senha. </br>
+    5. Salvar a alteração
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> A senha do usuario deve ser alterada </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2" width="1000">CT-015 - S01<br> Deve ser possivel editar o perfil de um usuario</th>
+  </tr>
+  <tr>
+    <td width="150"><strong>Descrição</strong></td>
+    <td> O usuário administrador deve conseguir alterar os dados de um usuario, incluindo seu perfil </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável Caso de Teste</strong></td>
+    <td width="430">João Victor Antunes</td>
+  </tr>
+  <tr>
+    <td><strong>Tipo do Teste</strong></td>
+    <td>Sucesso</td>
+  </tr>
+  <tr>
+    <td><strong>Requisitos associados</strong></td>
+    <td>RF-000</td>
+  </tr>
+  <tr>
+    <td><strong>Passos</strong></td>
+    <td> 1. Acessar o sistema com um usuário administrador</br>
+    2. Acessar o menu Usuarios. </br>
+    3. Solicitar a edição de um usuario. </br>
+    4. Alterar os dados necessarios. </br>
+    5. Salvar as alterações
+  <tr>
+    <td><strong>Dados de teste</strong></td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><strong>Critérios de êxito</strong></td>
+    <td> Os dados do usuario devem ser alterados. </td>
+  </tr>
+</table>
+
 ### ETAPA 4
 
 Criar casos de teste da etapa 4
@@ -1304,40 +1412,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-00X - S01 <br>Definição de perfil</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">O sistema deve exibir/ocultar os menus conforme o perfil do usuario</td>
-  </tr>
-    <tr>
-    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430">João Victor</td>
-     <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150">19/10/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">Os menus respeitaram a regra definida</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center">
-      <img width="1277" height="1027" alt="01_Menu conforme perfil" src="https://github.com/user-attachments/assets/3c212053-9cf7-465c-9d78-f33dd158fa26" />
-    </td>
-     </tr>
-        <tr>
-    <td colspan="6" align="center">
-      <img width="2551" height="455" alt="01_Menu conforme perfil cadastrar" src="https://github.com/user-attachments/assets/8665ee48-3110-4b34-b157-266aba3d7d53" />
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-00X - S01 <br>Permitir listagem de usuarios</th>
+    <th colspan="6" width="1000">CT-013 - S01 <br>Permitir listagem de usuarios</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1365,7 +1440,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-00X - S01 <br>Permitir a alteração de senha</th>
+    <th colspan="6" width="1000">CT-014 - S01 <br>Permitir a alteração de senha</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1387,6 +1462,39 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   <tr>
     <td colspan="6" align="center">
 <img width="1276" height="945" alt="06_Alterar senha" src="https://github.com/user-attachments/assets/4aa76dfb-3882-42f4-8711-671f3ce55c10" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-015 - S01 <br>Definição de perfil</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir/ocultar os menus conforme o perfil do usuario</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Victor</td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Os menus respeitaram a regra definida</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1277" height="1027" alt="01_Menu conforme perfil" src="https://github.com/user-attachments/assets/3c212053-9cf7-465c-9d78-f33dd158fa26" />
+    </td>
+     </tr>
+        <tr>
+    <td colspan="6" align="center">
+      <img width="2551" height="455" alt="01_Menu conforme perfil cadastrar" src="https://github.com/user-attachments/assets/8665ee48-3110-4b34-b157-266aba3d7d53" />
     </td>
   </tr>
 </table>
@@ -1738,7 +1846,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-008 - S01<br> Teste de Alteração de Perfil de Usuário</th>
+    <th colspan="6" width="1000">CT-015 - S01<br> Teste de Alteração de Perfil de Usuário</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
