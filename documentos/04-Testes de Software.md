@@ -1042,4 +1042,263 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 </table>
 
 ### ETAPA 4
-Colocar evidências de teste da etapa 4
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-001<br>Carregamento inicial da página de projetos</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">A página deve carregar e exibir a lista de projetos com paginação padrão (12 itens por página).</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema carregou corretamente a lista de projetos ao acessar a página.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print da página carregada com lista de projetos]</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-002<br>Filtro de busca por título</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao inserir um título no campo de filtro e clicar em "Buscar", o sistema deve retornar apenas os projetos que contenham o título buscado.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">A busca por título funcionou corretamente, filtrando os projetos conforme esperado.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print mostrando filtro preenchido e resultados filtrados]</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-003<br>Validação de data de criação inválida</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao inserir uma data inválida (ex: mês 13, dia 32, ano < 1900 ou > 2100), o sistema deve exibir uma mensagem de alerta e não realizar a busca.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema validou corretamente datas inválidas, impedindo a busca e alertando o usuário.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print mostrando alerta de validação de data]</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-004<br>Múltiplos filtros combinados</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao preencher múltiplos campos de filtro (título, descrição e data) e clicar em "Buscar", o sistema deve retornar apenas projetos que atendam todos os critérios simultaneamente.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">Os filtros combinados funcionaram corretamente, aplicando todos os critérios na busca.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print mostrando múltiplos filtros aplicados e resultados]</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-005<br>Função "Limpar Filtros"</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao clicar no botão "Limpar Filtros", todos os campos de filtro devem ser resetados e a página deve voltar para o estado inicial (página 1, 12 itens).</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">A função "Limpar Filtros" resetou todos os campos corretamente.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print mostrando campos de filtro vazios após limpar]</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-006<br>Navegação entre páginas (paginação)</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao clicar nos botões "Próxima" ou "Anterior", ou em números de página específicos, o sistema deve carregar a página correspondente e atualizar o indicador de página atual.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">A navegação entre páginas funcionou corretamente, mantendo os filtros aplicados.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print mostrando navegação de páginas]</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-007<br>Alteração de itens por página</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao selecionar uma quantidade diferente de itens por página (6, 12, 24, 48 ou 96), o sistema deve recarregar a lista com a nova quantidade e resetar para a página 1.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">A alteração de itens por página funcionou corretamente, ajustando a exibição e paginação.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print mostrando quantidade alterada de itens]</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-008<br>Visualização de projeto ao clicar no card</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao clicar em um card de projeto, o sistema deve redirecionar para a página de visualização detalhada do projeto (/projects/:id).</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O redirecionamento para a página de detalhes do projeto funcionou corretamente.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print mostrando página de detalhes do projeto]</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-009<br>Controle de acesso - Botão "Cadastrar Novo Projeto" para administrador</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Quando um usuário com tipo "ADMINISTRADOR" acessar a página, o botão "Cadastrar Novo Projeto" deve estar visível e funcional, redirecionando para /projects/create.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O botão apareceu corretamente para usuários administradores e o redirecionamento funcionou.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print mostrando botão visível para admin e página de criação]</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-010<br>Mensagem quando nenhum projeto é encontrado</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Quando a busca não retorna resultados, deve ser exibida uma mensagem "Nenhum projeto encontrado com os filtros aplicados" com opção de limpar filtros.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">A mensagem foi exibida corretamente quando não havia resultados e o botão de limpar filtros funcionou.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">[Inserir print mostrando mensagem de nenhum resultado encontrado]</td>
+  </tr>
+</table>
