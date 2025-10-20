@@ -9,8 +9,6 @@ Apresente os casos de testes utilizados na realização da verificação e valid
 
 ### Etapa 2
 
-#### Exemplo de Caso de Teste de Sucesso
-
 <table>
   <tr>
     <th colspan="2" width="1000">CT-001 - S01<br> Teste de Cadastro</th>
@@ -95,8 +93,6 @@ Apresente os casos de testes utilizados na realização da verificação e valid
     <td>O sistema deve autenticar o usuário e redirecioná-lo para a página inicial da aplicação.</td>
   </tr>
 </table>
-
-#### Exemplo de Caso de Teste de Insucesso
 
 <table>
   <tr>
