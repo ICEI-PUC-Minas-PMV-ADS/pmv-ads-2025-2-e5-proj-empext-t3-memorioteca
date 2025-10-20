@@ -2540,7 +2540,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-012<br>Tela contendo a lista de projetos cadastrados</th>
+    <th colspan="6" width="1000">CT-016 - S01<br>Tela contendo a lista de projetos cadastrados</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -2570,7 +2570,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-013<br>Busca avançada de projetos - Filtro Título </th>
+    <th colspan="6" width="1000">CT-017 - S01 (Pt.1)<br>Busca avançada de projetos - Filtro Título </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -2600,7 +2600,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-014<br>Busca avançada de projetos - Filtro Descrição </th>
+    <th colspan="6" width="1000">CT-017 - S01 (Pt.2)<br>Busca avançada de projetos - Filtro Descrição </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -2630,7 +2630,7 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-015<br>Busca avançada de projetos - Filtro Data </th>
+    <th colspan="6" width="1000">CT-017 - S01 (Pt.03) <br>Busca avançada de projetos - Filtro Data </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -2657,6 +2657,247 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     </td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-018 - I01<br>Busca com data inválida </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">Ao preencher o campo "Data de criação" com uma data inválida, o sistema deve alertar o erro </td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema trouxe alertou o erro de data inválida. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_Datainv%C3%A1lida.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-019 - S01<br>Múltiplos filtros </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5"> Múltiplos filtros podem ser combinados e aplicados simultaneamente na busca de projetos.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema trouxe o resultado de filtros combinados. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_MultiplosFiltros.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-020 - S01<br> Função limpar filtros </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5"> Múltiplos filtros podem ser combinados e aplicados simultaneamente na busca de projetos.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O botão de Limpar Filtros funcionou corretamente apagando a digitação realizada nos campos. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_LimparFiltros.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-021 - S01 e CT-022 - S01<br>Navegação entre página e alteração da quantidade de itens por página </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5"> A funcionalidade de navegação entre páginas e alteração de itens entre página deve funcionar corretamente.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5"> Foi possível alterar a quantidade de itens por página e navegar entre as páginas. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_Navega%C3%A7%C3%A3oP%C3%A1ginaseItensporPagina.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-023 - S01<br> Visualização do projeto ao clicar no card </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5"> Ao clicar no card dentro da página de projetos, deve abrir a página do projeto que foi selecionado.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5"> Ao clicar no card, foi aberta a página específica do projeto selecionado. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_ClicarnoCard.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-024 - S01<br> Botão "Cadastrar Novo Projeto" para administrador </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5"> Usuários autenticados com perfil de administrador deve ter disponível o botão de "Cadastrar Novo Projeto".</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5"> Ao acessar o sistema como Administrador, estava disponível o botão "Cadastrar Novo Projeto" na tela de Projetos. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_CadastrarNovoProjetoADM.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-024 - I01<br> Botão "Cadastrar Novo Projeto" NÃO deve estar disponível para usuários que não são administradores </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5"> Usuários sem perfil de administrador NÃO devem ter disponível o botão de "Cadastrar Novo Projeto".</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5"> Ao acessar o sistema com um usuário que não seja Administrador, não estava disponível o botão "Cadastrar Novo Projeto" na tela de Projetos. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_Bot%C3%A3oCadastrarProjetoIndispon%C3%ADvel.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-025 - S01<br> Mensagem quando projeto não é encontrado </th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5"> Ao aplicar filtros que não tenham projetos correspondentes, o sistema deve trazer a seguinte mensagem: "Nenhum projeto encontrado com os filtros aplicados."</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Pedro Louzada</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">19/10/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5"> Ao preencher o campo título com texto que não correspondia total ou parcialmente a nenhum dos projetos, o sistema trouxe a mensagem esperada. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/TesteporPares_BuscaSemResultados.png" />
+    </td>
+  </tr>
+</table>
+
 
 ### ETAPA 4
 
