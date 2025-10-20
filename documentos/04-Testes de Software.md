@@ -1267,61 +1267,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-001<br>Login com credenciais válidas</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">A API deve responder status 200 com token de autenticação gerado.</td>
-  </tr>
-    <tr>
-    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430">João Antunes </td>
-     <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150">21/09/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O sistema permitiu o login corretamente.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><img width="823" height="754" alt="image" src="https://github.com/user-attachments/assets/e214df86-3385-4100-92f6-f39ebb3a1b1a" />
-</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-001<br>Login com credenciais invalidas</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">A API deve responder status 400 com mensagem indicativa de falha de login.</td>
-  </tr>
-    <tr>
-    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430">João Antunes </td>
-     <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150">21/09/2025</td>
-  </tr>
-    <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5">O sistema respondeu conforme o esperado.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><img width="855" height="504" alt="image" src="https://github.com/user-attachments/assets/dcac0323-c577-4605-addd-fab3ff4f3f24" />
-</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-002<br>Cadastro com sucesso</th>
+    <th colspan="6" width="1000">CT-001 - S01<br>Cadastro com sucesso</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1352,38 +1298,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-002<br>Cadastro com senha invalida</th>
-  </tr>
-  <tr>
-    <td width="170"><strong>Critérios de êxito</strong></td>
-    <td colspan="5">A API deve responder 400 com mensagem indicativa de senha invalida.</td>
-  </tr>
-    <tr>
-    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
-    <td width="430">João Antunes </td>
-     <td width="100"><strong>Data do Teste</strong></td>
-    <td width="150">21/09/2025</td>
-  </tr>
-  <tr>
-    <td width="170"><strong>Comentário</strong></td>
-    <td colspan="5"><s>API respondeu codigo 200 e não 400 (resolvido).</s></td>
-  </tr>
-  <tr>
-    <td width="170"><strong></strong></td>
-    <td colspan="5">Resposta conforme o esperado.</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><strong>Evidência</strong></td>
-  </tr>
-  <tr>
-    <td colspan="6" align="center"><img width="860" height="513" alt="image" src="https://github.com/user-attachments/assets/d0a5bc41-7f9f-4985-ac3d-ccbd8da9ee29" />
-</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="6" width="1000">CT-002<br>Cadastro com email invalido</th>
+    <th colspan="6" width="1000">CT-001 - I01<br>Cadastro com email invalido</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1412,9 +1327,42 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
 </table>
 
+
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-002<br>Cadastro com email já cadastrado</th>
+    <th colspan="6" width="1000">CT-001 - I02<br>Cadastro com senha invalida</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">A API deve responder 400 com mensagem indicativa de senha invalida.</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Antunes </td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">21/09/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5"><s>API respondeu codigo 200 e não 400 (resolvido).</s></td>
+  </tr>
+  <tr>
+    <td width="170"><strong></strong></td>
+    <td colspan="5">Resposta conforme o esperado.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><img width="860" height="513" alt="image" src="https://github.com/user-attachments/assets/d0a5bc41-7f9f-4985-ac3d-ccbd8da9ee29" />
+</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-001 - I03<br>Cadastro com email já cadastrado</th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
@@ -1439,6 +1387,60 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
   </tr>
   <tr>
     <td colspan="6" align="center"><img width="845" height="515" alt="image" src="https://github.com/user-attachments/assets/5a71a0a3-a4c5-46cd-8fb6-c6df50e6ff6b" />
+</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-002 - S1<br>Login com credenciais válidas</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">A API deve responder status 200 com token de autenticação gerado.</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Antunes </td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">21/09/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema permitiu o login corretamente.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><img width="823" height="754" alt="image" src="https://github.com/user-attachments/assets/e214df86-3385-4100-92f6-f39ebb3a1b1a" />
+</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-002 - I01<br>Login com credenciais invalidas</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">A API deve responder status 400 com mensagem indicativa de falha de login.</td>
+  </tr>
+    <tr>
+    <td><strong>Responsável pela funcionalidade (desenvolvimento e teste)</strong></td>
+    <td width="430">João Antunes </td>
+     <td width="100"><strong>Data do Teste</strong></td>
+    <td width="150">21/09/2025</td>
+  </tr>
+    <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema respondeu conforme o esperado.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><img width="855" height="504" alt="image" src="https://github.com/user-attachments/assets/dcac0323-c577-4605-addd-fab3ff4f3f24" />
 </td>
   </tr>
 </table>
@@ -1730,7 +1732,7 @@ Cada funcionalidade desenvolvida deve ser testada pelo próprio desenvolvedor, u
 
 <table>
   <tr>
-    <th colspan="6" width="1000">CT-010 - S01<br> Informações Institucionais PUT incorreto GET </th>
+    <th colspan="6" width="1000">CT-010 - S01<br> Informações Institucionais GET </th>
   </tr>
   <tr>
     <td width="170"><strong>Critérios de êxito</strong></td>
