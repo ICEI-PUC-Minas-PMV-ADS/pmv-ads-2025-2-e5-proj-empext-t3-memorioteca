@@ -96,10 +96,10 @@ const UsersPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      <main className="flex-1 container mx-auto px-4 py-8 overflow-y-auto">
+      <main className="flex-1 container mx-auto px-4 py-4 md:py-8 overflow-y-auto">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Gerenciar Usuários</h2>
+          <div className="mb-4 md:mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">Gerenciar Usuários</h2>
 
             {loading ? (
               <div className="text-center py-8">
@@ -110,65 +110,140 @@ const UsersPage = () => {
                 <p className="text-muted-foreground">Nenhum usuário encontrado.</p>
               </div>
             ) : (
-              <div className="bg-white rounded-lg shadow overflow-hidden">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
-                    <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Nome
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Email
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Tipo
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Data de Criação
-                      </th>
-                      <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Ações
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
-                    {users.map((user) => (
-                      <tr key={user.id} className="hover:bg-gray-50">
-                        <td className="px-6 py-4 whitespace-nowrap">
+              <>
+                {/* Desktop Table View */}
+                <div className="hidden md:block bg-white rounded-lg shadow overflow-hidden">
+                  <div className="overflow-x-auto">
+                    <table className="min-w-full divide-y divide-gray-200">
+                      <thead className="bg-gray-50">
+                        <tr>
+                          <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Nome
+                          </th>
+                          <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Email
+                          </th>
+                          <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Tipo
+                          </th>
+                          <th className="px-4 lg:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Data de Criação
+                          </th>
+                          <th className="px-4 lg:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Ações
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody className="bg-white divide-y divide-gray-200">
+                        {users.map((user) => (
+                          <tr key={user.id} className="hover:bg-gray-50">
+                            <td className="px-4 lg:px-6 py-4 whitespace-nowrap">
+                              <div className="text-sm font-medium text-gray-900">
+                                {user.nome}
+                                {user.id === currentUser?.id && (
+                                  <span className="ml-2 text-xs text-blue-600">(Você)</span>
+                                )}
+                              </div>
+                            </td>
+                            <td className="px-4 lg:px-6 py-4 whitespace-nowrap">
+                              <div className="text-sm text-gray-500">
+                                {user.email}
+                              </div>
+                            </td>
+                            <td className="px-4 lg:px-6 py-4 whitespace-nowrap">
+                              <span className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                                user.user_type === 'ADMINISTRADOR'
+                                  ? 'bg-purple-100 text-purple-800'
+                                  : 'bg-gray-100 text-gray-800'
+                              }`}>
+                                {user.user_type || 'NORMAL'}
+                              </span>
+                            </td>
+                            <td className="px-4 lg:px-6 py-4 whitespace-nowrap">
+                              <div className="text-sm text-gray-500">
+                                {user.data_criacao
+                                  ? new Date(user.data_criacao).toLocaleDateString('pt-BR')
+                                  : '-'}
+                              </div>
+                            </td>
+                            <td className="px-4 lg:px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                              <div className="flex gap-2 justify-end">
+                                <Button
+                                  variant="outline"
+                                  onClick={() => handleEdit(user.id)}
+                                  className="text-blue-600 hover:text-blue-900"
+                                >
+                                  Editar
+                                </Button>
+                                {user.id !== currentUser?.id && (
+                                  <Button
+                                    variant="outline"
+                                    onClick={() => handleDeleteClick(user)}
+                                    className="text-red-600 hover:text-red-900"
+                                  >
+                                    Excluir
+                                  </Button>
+                                )}
+                              </div>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Mobile Card View */}
+                <div className="md:hidden space-y-4">
+                  {users.map((user) => (
+                    <div key={user.id} className="bg-white rounded-lg shadow p-4">
+                      <div className="space-y-3">
+                        {/* Nome */}
+                        <div>
+                          <div className="text-xs font-medium text-gray-500 uppercase mb-1">Nome</div>
                           <div className="text-sm font-medium text-gray-900">
                             {user.nome}
                             {user.id === currentUser?.id && (
                               <span className="ml-2 text-xs text-blue-600">(Você)</span>
                             )}
                           </div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm text-gray-500">
-                            {user.email}
+                        </div>
+
+                        {/* Email */}
+                        <div>
+                          <div className="text-xs font-medium text-gray-500 uppercase mb-1">Email</div>
+                          <div className="text-sm text-gray-900 break-all">{user.email}</div>
+                        </div>
+
+                        {/* Tipo e Data */}
+                        <div className="flex gap-4">
+                          <div className="flex-1">
+                            <div className="text-xs font-medium text-gray-500 uppercase mb-1">Tipo</div>
+                            <span className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                              user.user_type === 'ADMINISTRADOR'
+                                ? 'bg-purple-100 text-purple-800'
+                                : 'bg-gray-100 text-gray-800'
+                            }`}>
+                              {user.user_type || 'NORMAL'}
+                            </span>
                           </div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <span className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                            user.user_type === 'ADMINISTRADOR'
-                              ? 'bg-purple-100 text-purple-800'
-                              : 'bg-gray-100 text-gray-800'
-                          }`}>
-                            {user.user_type || 'NORMAL'}
-                          </span>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm text-gray-500">
-                            {user.data_criacao
-                              ? new Date(user.data_criacao).toLocaleDateString('pt-BR')
-                              : '-'}
+                          <div className="flex-1">
+                            <div className="text-xs font-medium text-gray-500 uppercase mb-1">Data de Criação</div>
+                            <div className="text-sm text-gray-900">
+                              {user.data_criacao
+                                ? new Date(user.data_criacao).toLocaleDateString('pt-BR')
+                                : '-'}
+                            </div>
                           </div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                          <div className="flex gap-2 justify-end">
+                        </div>
+
+                        {/* Ações */}
+                        <div className="pt-2 border-t border-gray-200">
+                          <div className="flex gap-2">
                             <Button
                               variant="outline"
                               onClick={() => handleEdit(user.id)}
-                              className="text-blue-600 hover:text-blue-900"
+                              className="flex-1 text-blue-600 hover:text-blue-900 text-sm"
                             >
                               Editar
                             </Button>
@@ -176,18 +251,18 @@ const UsersPage = () => {
                               <Button
                                 variant="outline"
                                 onClick={() => handleDeleteClick(user)}
-                                className="text-red-600 hover:text-red-900"
+                                className="flex-1 text-red-600 hover:text-red-900 text-sm"
                               >
                                 Excluir
                               </Button>
                             )}
                           </div>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
             )}
           </div>
         </div>
