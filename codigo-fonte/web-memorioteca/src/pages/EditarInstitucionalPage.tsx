@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getInstitucional, updateInstitucional } from '@/services/institucionalService'
-import { supabase } from '@/infra/supabaseClient'
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/Card'
 import { Input, Button } from '@/components/ui'
 import Textarea from '@/components/ui/Textarea'

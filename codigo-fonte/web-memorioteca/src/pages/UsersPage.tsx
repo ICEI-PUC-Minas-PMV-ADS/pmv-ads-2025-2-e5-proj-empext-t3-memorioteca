@@ -4,6 +4,9 @@ import { useAuth } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { config } from '@/config/env'
+
+const API_BASE_URL = config.API_BASE_URL
 
 interface UserData {
   id: string
@@ -30,7 +33,7 @@ const UsersPage = () => {
 
     const fetchUsers = async () => {
       try {
-        const response = await fetch('/api/user', {
+        const response = await fetch(`${API_BASE_URL}/user`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -68,7 +71,7 @@ const UsersPage = () => {
     if (!userToDelete) return
 
     try {
-      const response = await fetch(`/api/user/${userToDelete.id}`, {
+      const response = await fetch(`${API_BASE_URL}/user/${userToDelete.id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`

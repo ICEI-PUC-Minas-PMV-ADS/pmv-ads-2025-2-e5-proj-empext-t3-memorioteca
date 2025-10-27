@@ -5,6 +5,9 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
 import { Input, Button } from '@/components/ui'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { config } from '@/config/env'
+
+const API_BASE_URL = config.API_BASE_URL
 
 interface UserData {
   id: string
@@ -37,7 +40,7 @@ const UserEditPage = () => {
 
     const fetchUser = async () => {
       try {
-        const response = await fetch(`/api/user/${id}`, {
+        const response = await fetch(`${API_BASE_URL}/user/${id}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -90,7 +93,7 @@ const UserEditPage = () => {
         updateData.user_type = formData.user_type
       }
 
-      const response = await fetch(`/api/user/${id}`, {
+      const response = await fetch(`${API_BASE_URL}/user/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -5,6 +5,9 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
 import { Input, Button } from '@/components/ui'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { config } from '@/config/env'
+
+const API_BASE_URL = config.API_BASE_URL
 
 const ChangePasswordPage = () => {
   const navigate = useNavigate()
@@ -68,7 +71,7 @@ const ChangePasswordPage = () => {
     setSaving(true)
 
     try {
-      const response = await fetch(`/api/user/${user?.id}/senha`, {
+      const response = await fetch(`${API_BASE_URL}/user/${user?.id}/senha`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -15,6 +15,7 @@ const ProjetoPage = () => {
   const [projeto, setProjeto] = useState<ProjectData | null>(null)
 
   useEffect(() => {
+    if (!id) return
     ProjectService.getProject(id)
       .then(res => {console.log(res); setProjeto(res)})
       .catch(err => {
@@ -28,6 +29,7 @@ const ProjetoPage = () => {
   }
 
   const handleDeletar = async () => {
+    if (!id) return
     try {
       await ProjectService.deleteProject(id)
       navigate('/projects')

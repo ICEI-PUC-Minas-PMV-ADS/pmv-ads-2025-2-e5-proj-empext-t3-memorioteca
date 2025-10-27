@@ -6,6 +6,9 @@ import Footer from '@/components/Footer'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui'
 import { useAuth } from '@/contexts/AuthContext'
+import { config } from '@/config/env'
+
+const API_BASE_URL = config.API_BASE_URL
 
 const InstitucionalPage = () => {
   const navigate = useNavigate()
@@ -17,7 +20,7 @@ const InstitucionalPage = () => {
   } | null>(null)
 
   useEffect(() => {
-    axios.get('http://localhost:3001/institucional')
+    axios.get(`${API_BASE_URL}/institucional`)
       .then(res => setInstitucional(res.data))
       .catch(err => console.error('Erro ao buscar institucional:', err))
   }, [])

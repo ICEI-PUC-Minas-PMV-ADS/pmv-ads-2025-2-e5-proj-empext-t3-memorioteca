@@ -9,6 +9,9 @@ import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone'
 import { useAuth } from '@/contexts/AuthContext'
+import { config } from '@/config/env'
+
+const API_BASE_URL = config.API_BASE_URL
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -30,7 +33,7 @@ export default function MensagensRecebidasPage() {
 
     async function fetchMensagens() {
       try {
-        const response = await axios.get<MensagemResposta[]>('/api/fale-conosco')
+        const response = await axios.get<MensagemResposta[]>(`${API_BASE_URL}/fale-conosco`)
         setMensagens(response.data)
       } catch (err) {
         setError('Erro ao carregar mensagens.')

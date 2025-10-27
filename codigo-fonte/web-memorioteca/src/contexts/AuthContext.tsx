@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react'
 import { AuthState, User } from '@/types'
+import { config } from '@/config/env'
 
 interface AuthContextType extends AuthState {
   login: (email: string, senha: string) => Promise<{ success: boolean; message?: string }>
@@ -55,7 +56,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const login = async (email: string, senha: string) => {
     try {
-      const response = await fetch('/api/auth', {
+      const response = await fetch(`${config.API_BASE_URL}/auth`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -94,7 +95,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const register = async (email: string, nome: string, senha: string) => {
     try {
-      const response = await fetch('/api/user', {
+      const response = await fetch(`${config.API_BASE_URL}/user`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

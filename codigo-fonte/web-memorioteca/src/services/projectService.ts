@@ -36,7 +36,7 @@ export class ProjectService {
       const data: ProjectResponse = await res.json();
       return {
         success: data.success,
-        projetos: data.projects || [],
+        projetos: data.projetos || [],
         errors: data.errors || [],
       };
     } catch (error) {
@@ -69,14 +69,14 @@ export class ProjectService {
       const data: ProjectResponse = await res.json();
       return {
         success: data.success,
-        projeto: data.projeto,
+        project: data.project,
         errors: data.errors || [],
       };
     } catch (error) {
       console.error("Erro ao criar projeto:", error);
       return {
         success: false,
-        projeto: undefined,
+        project: undefined,
         errors: ["Erro de conexão com o servidor"],
       };
     }
@@ -84,7 +84,7 @@ export class ProjectService {
 
   // Atualizar projeto
   static async updateProject(
-    id: number,
+    id: string,
     project: ProjectData,
     token: string
   ): Promise<ProjectResponse> {
@@ -103,14 +103,14 @@ export class ProjectService {
       const data: ProjectResponse = await res.json();
       return {
         success: data.success,
-        projeto: data.projeto,
+        project: data.project,
         errors: data.errors || [],
       };
     } catch (error) {
       console.error("Erro ao atualizar projeto:", error);
       return {
         success: false,
-        projeto: undefined,
+        project: undefined,
         errors: ["Erro de conexão com o servidor"],
       };
     }
@@ -151,7 +151,7 @@ export class ProjectService {
       });
       const data: ProjectResponse = await res.json();
       console.log(data);
-      if (!data.success) {
+      if (!data.success || !data.project) {
         throw new Error("Falha ao recuperar o projeto");
       }
 
