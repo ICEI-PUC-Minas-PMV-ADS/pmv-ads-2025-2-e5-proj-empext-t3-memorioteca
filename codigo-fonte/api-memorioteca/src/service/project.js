@@ -11,6 +11,8 @@ export class Project {
     this.nome_autor = data.nome_autor || null;
     this.data_inicio = data.data_inicio || null;
     this.data_fim = data.data_fim || null;
+    this.url_drive = data.url_drive || '';
+    this.drive_publico = data.drive_publico || false;
   }
 
   validate() {
@@ -30,6 +32,8 @@ export class Project {
       nome_autor: this.nome_autor,
       data_inicio: this.data_inicio,
       data_fim: this.data_fim,
+      url_drive: this.url_drive,
+      drive_publico: this.drive_publico
     };
     if (update) dbObj.data_atualizacao = now;
     return dbObj;
@@ -46,6 +50,8 @@ export class Project {
       nome_autor: this.nome_autor,
       data_inicio: this.data_inicio,
       data_fim: this.data_fim,
+      url_drive: this.url_drive,
+      drive_publico: this.drive_publico
     };
   }
 

@@ -18,6 +18,8 @@ const ProjectCreatePage: React.FC = () => {
     nome_autor: "",
     data_inicio: "",
     data_fim: "",
+    url_drive: "",
+    drive_publico: false,
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -37,8 +39,13 @@ const ProjectCreatePage: React.FC = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    const { name, value, type } = e.target;
+    const checked = (e.target as HTMLInputElement).checked;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value
+    }));
 
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: "" }));
     if (apiErrors.length > 0) setApiErrors([]);
@@ -66,6 +73,8 @@ const ProjectCreatePage: React.FC = () => {
         nome_autor: formData.nome_autor?.trim() || undefined,
         data_inicio: formData.data_inicio || undefined,
         data_fim: formData.data_fim || undefined,
+        url_drive: formData.url_drive?.trim() || undefined,
+        drive_publico: formData.drive_publico,
       };
 
       const res = await ProjectService.createProject(payload, token);
@@ -79,6 +88,8 @@ const ProjectCreatePage: React.FC = () => {
           nome_autor: "",
           data_inicio: "",
           data_fim: "",
+          url_drive: "",
+          drive_publico: false,
         });
 
         setTimeout(() => navigate("/projetos"), 1000);
@@ -178,13 +189,54 @@ const ProjectCreatePage: React.FC = () => {
                 />
 
                 <Input
-                  label="URL do Arquivo"
+                  label="URL do Drive"
                   type="text"
-                  name="url"
-                  value={formData.url || ""}
+                  name="url_drive"
+                  value={formData.url_drive || ""}
                   onChange={handleChange}
-                  placeholder="Cole a URL do arquivo aqui"
+                  placeholder="Cole a URL do Drive/Site aqui"
                 />
+
+                <div className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    id="drive_publico"
+                    name="drive_publico"
+                    checked={formData.drive_publico || false}
+                    onChange={handleChange}
+                    className="w-4 h-4 rounded border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
+                  />
+                  <label
+                    htmlFor="drive_publico"
+                    className="text-sm font-medium cursor-pointer"
+                  >
+                    Drive público (pode ser divulgado)
+                  </label>
+                </div>
+
+                <div>
+                  <Input
+                    label="Imagem de capa"
+                    type="text"
+                    name="url"
+                    value={formData.url || ""}
+                    onChange={handleChange}
+                    placeholder="Cole a URL da imagem de capa aqui"
+                  />
+                  {formData.url && (
+                    <div className="mt-2">
+                      <p className="text-sm font-medium mb-2">Pré-visualização:</p>
+                      <img
+                        src={formData.url}
+                        alt="Pré-visualização da capa"
+                        className="w-full max-w-xs rounded-md border border-gray-300"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).style.display = 'none';
+                        }}
+                      />
+                    </div>
+                  )}
+                </div>
 
                 <p className="text-xs text-muted-foreground mt-1">
                   *Campos obrigatórios

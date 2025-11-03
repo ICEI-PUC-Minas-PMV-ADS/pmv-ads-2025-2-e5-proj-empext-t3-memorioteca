@@ -10,6 +10,8 @@ export interface ProjectData {
   nome_autor?: string;
   data_inicio?: string;
   data_fim?: string;
+  url_drive?: string | null;
+  drive_publico?: boolean;
 }
 
 export interface ProjectResponse {

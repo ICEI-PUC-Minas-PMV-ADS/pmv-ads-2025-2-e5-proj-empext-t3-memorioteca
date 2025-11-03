@@ -19,6 +19,8 @@ const ProjectEditPage: React.FC = () => {
     nome_autor: "",
     data_inicio: "",
     data_fim: "",
+    url_drive: "",
+    drive_publico: false,
   });
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -38,6 +40,8 @@ const ProjectEditPage: React.FC = () => {
           nome_autor: project.nome_autor || "",
           data_inicio: project.data_inicio || "",
           data_fim: project.data_fim || "",
+          url_drive: project.url_drive || "",
+          drive_publico: project.drive_publico || false,
         });
       } catch (error) {
         console.error("Erro ao carregar projeto:", error);
@@ -50,8 +54,13 @@ const ProjectEditPage: React.FC = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    const { name, value, type } = e.target;
+    const checked = (e.target as HTMLInputElement).checked;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value
+    }));
     setErrors((prev) => ({ ...prev, [name]: "" }));
     if (apiErrors.length) setApiErrors([]);
     if (successMessage) setSuccessMessage("");
@@ -81,7 +90,12 @@ const ProjectEditPage: React.FC = () => {
     setIsLoading(true);
 
     try {
-      const payload = { ...formData, url: formData.url?.trim() || null };
+      const payload = {
+        ...formData,
+        url: formData.url?.trim() || null,
+        url_drive: formData.url_drive?.trim() || null,
+        drive_publico: formData.drive_publico
+      };
       const res = await ProjectService.updateProject(id!, payload, token);
 
       if (res.success) {
@@ -183,13 +197,54 @@ const ProjectEditPage: React.FC = () => {
                 />
 
                 <Input
-                  label="URL do Arquivo"
+                  label="URL do Drive"
                   type="text"
-                  name="url"
-                  value={formData.url || ""}
+                  name="url_drive"
+                  value={formData.url_drive || ""}
                   onChange={handleChange}
-                  placeholder="Cole a URL do arquivo aqui"
+                  placeholder="Cole a URL do Drive/Site aqui"
                 />
+
+                <div className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    id="drive_publico"
+                    name="drive_publico"
+                    checked={formData.drive_publico || false}
+                    onChange={handleChange}
+                    className="w-4 h-4 rounded border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
+                  />
+                  <label
+                    htmlFor="drive_publico"
+                    className="text-sm font-medium cursor-pointer"
+                  >
+                    Drive público (pode ser divulgado)
+                  </label>
+                </div>
+
+                <div>
+                  <Input
+                    label="Imagem de capa"
+                    type="text"
+                    name="url"
+                    value={formData.url || ""}
+                    onChange={handleChange}
+                    placeholder="Cole a URL da imagem de capa aqui"
+                  />
+                  {formData.url && (
+                    <div className="mt-2">
+                      <p className="text-sm font-medium mb-2">Pré-visualização:</p>
+                      <img
+                        src={formData.url}
+                        alt="Pré-visualização da capa"
+                        className="w-full max-w-xs rounded-md border border-gray-300"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).style.display = 'none';
+                        }}
+                      />
+                    </div>
+                  )}
+                </div>
 
                 <p className="text-xs text-muted-foreground mt-1">
                   *Campos obrigatórios
