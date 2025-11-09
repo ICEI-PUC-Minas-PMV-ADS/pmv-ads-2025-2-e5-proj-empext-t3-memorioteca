@@ -2896,7 +2896,94 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
   </tr>
 </table>
 
-
 ### ETAPA 4
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-001 - I01<br>Cadastro com e-mail inválido</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir uma mensagem de erro informando que o formato do e-mail é inválido.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema exibiu uma mensagem de erro informando que o formato do e-mail é inválido.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/8ec825ee-7ca1-4e96-aa1f-9c58f0a0948d" />
+    </td>
+  </tr>
+</table>
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-001 - I02<br>Cadastro com senha inválido</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir uma mensagem de erro informando que a senha é inválida.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema exibiu uma mensagem de erro informando que a senha é inválida.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/7563f9bf-02a7-4ca3-9c74-c7f69ec65268" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-001 - I03<br>Cadastro com e-mail já cadastrado</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir uma mensagem de erro informando que o e-mail fornecido já está em uso.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema exibiu uma mensagem de erro informando que o e-mail fornecido já está em uso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/6aa9a73b-7653-44bd-8197-9ca1978fb787" />
+    </td>
+  </tr>
+</table>
