@@ -2987,3 +2987,63 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     </td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-009 - S01<br>Atualização de Informações Institucionais</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve atualizar as informações institucionais.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema atualizou as informações institucionais e exibiu uma mensagem de sucesso.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/fb86b459-935f-4abf-9b9b-d8b002f2a7a8" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-009 - I01<br>Impossibilidade de Alterar as Informações Institucionais utilizando parâmetros incorretos</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir uma mensagem de erro informando que o texto institucional deve ter pelo menos 10 caracteres.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema exibiu uma mensagem de erro informando que o texto institucional deve ter pelo menos 10 caracteres.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/d13fd506-4282-4fb9-bf31-8a6822e708c7" />
+    </td>
+  </tr>
+</table>
