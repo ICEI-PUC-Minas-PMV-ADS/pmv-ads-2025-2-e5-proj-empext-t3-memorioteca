@@ -3047,3 +3047,93 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     </td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-011 - I01<br>Fale Conosco POST incorreto (Parte 1)</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir uma mensagem de erro informando que o nome deve ter pelo menos 2 caracteres.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema exibiu uma mensagem de erro informando que o nome deve ter pelo menos 2 caracteres.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/13d2b88b-f1b5-494a-bf7f-7a2f93b194fa" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-011 - I01<br>Fale Conosco POST incorreto (Parte 2)</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir uma mensagem de erro informando que o e-mail é inválido.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema exibiu uma mensagem de erro informando que o e-mail é inválido.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/08f90077-b28a-4c66-a59f-2d7e22efeebb" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-011 - I01<br>Fale Conosco POST incorreto (Parte 3)</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir uma mensagem de erro informando que a mensagem deve ter pelo menos 10 caracteres.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema exibiu uma mensagem de erro informando que a mensagem deve ter pelo menos 10 caracteres.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/b9fe9c15-df49-44e0-9b0c-7e70ab56291b" />
+    </td>
+  </tr>
+</table>
