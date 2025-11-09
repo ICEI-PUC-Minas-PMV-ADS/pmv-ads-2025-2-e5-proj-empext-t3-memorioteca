@@ -3137,3 +3137,99 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     </td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-012 - S01<br>O usuário administrador deve conseguir visualizar as mensagens recebidas</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">(Apenas administrador) O sistema deve exibir as mensagens recebidas.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">Mayara Pinheiro</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">(Apenas administrador) O sistema exibiu as mensagens recebidas.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/ac997c3c-4a3b-4032-b5b1-e2a711c20425" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-013 - S01<br>Permitir listagem de usuários</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">(Apenas administrador) O sistema deve listar todos os usuários.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">(Apenas administrador) O sistema exibiu todos os usuários cadastrados.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/f2e734db-63dd-4ea1-9ee8-c14c16c959e4" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-014 - S01<br>O sistema deve permitir a alteração de senha</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve alterar a senha do usuário no banco de dados.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">O sistema alterou a senha do usuário no banco de dados.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/54bb9381-bf13-4fc0-aca6-0ddd019a3a94" />
+    </td>
+  </tr>
+  <tr>
+     <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/a72416f4-8be6-46cc-9a77-b8b69b0864c5" />
+    </td>
+  </tr>
+</table>
+
