@@ -1,29 +1,27 @@
 message: Please cite this software using these metadata.
-title:
+title: Memorioteca
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Antunes Faria Lima
+    given-names: João Victor
+  - family-names: Martins Costa
+    given-names: Laila Suelen
+  - family-names: da Rocha Pinheiro
+    given-names: Mayara 
+  - family-names: de Souza Louzada Silva
+    given-names: Pedro 
+  - family-names: do Nascimento Maruno
+    given-names: Priscila Myuki 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: da Costa
+    given-names: José Wilson
+  
 keywords:
-  - 
-  - 
-repository-code: 
+  - Biblioteca
+  - Projetos
+  - Academico
+  - Acervo
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca
 version: 1.0.0
-date-released: 2023-10-31
+
+date-released: 2025-12-08
