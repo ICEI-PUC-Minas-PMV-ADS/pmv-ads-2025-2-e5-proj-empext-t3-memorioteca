@@ -113,37 +113,80 @@ const ProjectEditPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-gray-100">
       <Header />
-      <main className="flex-1 flex items-center justify-center p-4">
-        <div className="w-full max-w-md">
-          <Card>
-            <CardHeader className="text-center">
-              <CardTitle className="text-2xl font-bold">
+      <main className="flex-1 container mx-auto px-4 py-8 sm:py-12 overflow-y-auto">
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-8 animate-in fade-in duration-500">
+            <div className="text-center space-y-4 pb-4">
+              <div className="inline-block">
+                <div className="bg-gray-900 rounded-2xl p-4 mb-4 shadow-lg">
+                  <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                  </svg>
+                </div>
+              </div>
+              <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
                 Editar Projeto
-              </CardTitle>
-              <p className="text-sm text-muted-foreground mt-1">
+              </h1>
+              <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                 Atualize os dados do projeto
               </p>
-            </CardHeader>
+              <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
+                <div className="h-1 w-8 bg-primary/60 rounded"></div>
+                <span>Edição</span>
+                <div className="h-1 w-8 bg-primary/60 rounded"></div>
+              </div>
+            </div>
 
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                {successMessage && (
-                  <div className="p-3 text-sm text-green-600 bg-green-50 border border-green-200 rounded-md">
-                    {successMessage}
+            <Card className="shadow-2xl border border-primary/20 overflow-hidden bg-white">
+              <CardHeader className="bg-primary text-white pb-8 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+                <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary-foreground/10 rounded-full -ml-24 -mb-24"></div>
+                <CardTitle className="text-2xl font-bold flex items-center gap-3 relative z-10">
+                  <div className="bg-white/20 backdrop-blur-sm p-2 rounded-xl">
+                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
                   </div>
-                )}
+                  Formulário de Edição
+                </CardTitle>
+                <p className="text-gray-100 mt-2 relative z-10">Preencha os campos abaixo</p>
+              </CardHeader>
 
-                {apiErrors.length > 0 && (
-                  <div className="p-3 text-sm text-destructive bg-destructive/10 border border-destructive/20 rounded-md">
-                    <ul className="space-y-1">
-                      {apiErrors.map((err, idx) => (
-                        <li key={idx}>{err}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+              <CardContent className="p-8 sm:p-10">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  {successMessage && (
+                    <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-lg p-4 shadow-sm animate-in fade-in duration-300">
+                      <div className="flex items-center gap-3">
+                        <div className="bg-green-500 rounded-full p-1">
+                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                          </svg>
+                        </div>
+                        <p className="text-green-800 font-semibold">
+                          {successMessage}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {apiErrors.length > 0 && (
+                    <div className="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 rounded-lg p-4 shadow-sm animate-in fade-in duration-300">
+                      <div className="flex items-start gap-3">
+                        <div className="bg-red-500 rounded-full p-1 mt-0.5">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd"/>
+                          </svg>
+                        </div>
+                        <ul className="text-red-700 text-sm space-y-1 flex-1">
+                          {apiErrors.map((err) => (
+                            <li key={err} className="font-medium">• {err}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
 
                 <Input
                   label="Título*"
@@ -154,10 +197,11 @@ const ProjectEditPage: React.FC = () => {
                 />
 
                 <div>
-                  <label className="block text-sm font-medium mb-1">
+                  <label htmlFor="descricao" className="block text-sm font-medium mb-1">
                     Descrição*
                   </label>
                   <textarea
+                    id="descricao"
                     name="descricao"
                     value={formData.descricao}
                     onChange={handleChange}
@@ -246,30 +290,50 @@ const ProjectEditPage: React.FC = () => {
                   )}
                 </div>
 
-                <p className="text-xs text-muted-foreground mt-1">
-                  *Campos obrigatórios
-                </p>
+                  <p className="text-xs text-gray-500 italic pt-2 border-t border-gray-200">
+                    *Campos obrigatórios
+                  </p>
 
-                <div className="flex gap-4 mt-4">
-                  <Button
-                    type="submit"
-                    className="flex-1"
-                    loading={isLoading}
-                    disabled={isLoading || !!successMessage}
-                  >
-                    {isLoading ? "Atualizando..." : "Salvar"}
-                  </Button>
-                  <Button
-                    type="button"
-                    className="flex-1 bg-red-600 hover:bg-red-700"
-                    onClick={() => navigate("/projetos")}
-                  >
-                    Cancelar
-                  </Button>
-                </div>
-              </form>
-            </CardContent>
-          </Card>
+                  <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-200">
+                    <Button
+                      type="submit"
+                      className="flex-1 bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 font-semibold group"
+                      loading={isLoading}
+                      disabled={isLoading || !!successMessage}
+                    >
+                      {isLoading ? (
+                        <>
+                          <svg className="animate-spin h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                          Atualizando...
+                        </>
+                      ) : (
+                        <>
+                          <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          Salvar Alterações
+                        </>
+                      )}
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="flex-1 border-2 hover:bg-gray-50 font-semibold group"
+                      onClick={() => navigate("/projetos")}
+                    >
+                      <svg className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                      </svg>
+                      Cancelar
+                    </Button>
+                  </div>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </main>
       <Footer />
