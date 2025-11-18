@@ -26,6 +26,8 @@ const ProjectCreatePage: React.FC = () => {
   const [apiErrors, setApiErrors] = useState<string[]>([]);
   const [successMessage, setSuccessMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isUploadingImage, setIsUploadingImage] = useState(false);
+  const [uploadError, setUploadError] = useState("");
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
@@ -50,6 +52,65 @@ const ProjectCreatePage: React.FC = () => {
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: "" }));
     if (apiErrors.length > 0) setApiErrors([]);
     if (successMessage) setSuccessMessage("");
+  };
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    // Validar tipo de arquivo
+    const validTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp'];
+    if (!validTypes.includes(file.type)) {
+      setUploadError("Por favor, selecione uma imagem válida (JPG, PNG, GIF ou WebP)");
+      return;
+    }
+
+    // Validar tamanho (máximo 10MB)
+    const maxSize = 10 * 1024 * 1024; // 10MB
+    if (file.size > maxSize) {
+      setUploadError("A imagem deve ter no máximo 10MB");
+      return;
+    }
+
+    setIsUploadingImage(true);
+    setUploadError("");
+
+    try {
+      const formData = new FormData();
+      formData.append('image', file);
+
+      const apiKey = import.meta.env.VITE_IMGBB_API_KEY;
+      const apiUrl = import.meta.env.VITE_IMGBB_API_URL;
+
+      if (!apiKey || !apiUrl) {
+        throw new Error("Configuração da API de upload não encontrada");
+      }
+
+      const response = await fetch(`${apiUrl}?key=${apiKey}`, {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success && data.data?.url) {
+        setFormData((prev) => ({
+          ...prev,
+          url: data.data.url
+        }));
+      } else {
+        throw new Error(data.error?.message || "Erro ao fazer upload da imagem");
+      }
+    } catch (err) {
+      console.error("Erro ao fazer upload:", err);
+      setUploadError(
+        err instanceof Error ? err.message : "Erro ao fazer upload da imagem"
+      );
+    } finally {
+      setIsUploadingImage(false);
+      // Limpar o input para permitir upload da mesma imagem novamente se necessário
+      e.target.value = '';
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -267,8 +328,69 @@ const ProjectCreatePage: React.FC = () => {
                     onChange={handleChange}
                     placeholder="Cole a URL da imagem de capa aqui"
                   />
+
+                  <div className="mt-3">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="flex-1 border-t border-gray-300"></div>
+                      <span className="text-xs text-gray-500 font-medium">OU</span>
+                      <div className="flex-1 border-t border-gray-300"></div>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <input
+                        type="file"
+                        accept="image/jpeg,image/jpg,image/png,image/gif,image/webp"
+                        onChange={handleImageUpload}
+                        disabled={isUploadingImage}
+                        className="hidden"
+                        id="image-upload"
+                      />
+                      <label htmlFor="image-upload">
+                        <Button
+                          type="button"
+                          variant="outline"
+                          className="cursor-pointer"
+                          disabled={isUploadingImage}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('image-upload')?.click();
+                          }}
+                        >
+                          {isUploadingImage ? (
+                            <>
+                              <svg className="animate-spin h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24">
+                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                              </svg>
+                              Enviando...
+                            </>
+                          ) : (
+                            <>
+                              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                              </svg>
+                              Fazer Upload de Imagem
+                            </>
+                          )}
+                        </Button>
+                      </label>
+                      <span className="text-xs text-gray-500">
+                        JPG, PNG, GIF ou WebP (máx. 10MB)
+                      </span>
+                    </div>
+
+                    {uploadError && (
+                      <div className="mt-2 text-sm text-red-600 flex items-center gap-1">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd"/>
+                        </svg>
+                        {uploadError}
+                      </div>
+                    )}
+                  </div>
+
                   {formData.url && (
-                    <div className="mt-2">
+                    <div className="mt-4">
                       <p className="text-sm font-medium mb-2">Pré-visualização:</p>
                       <img
                         src={formData.url}
