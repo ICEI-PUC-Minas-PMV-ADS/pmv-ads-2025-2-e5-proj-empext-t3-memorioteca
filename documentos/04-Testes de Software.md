@@ -3233,3 +3233,79 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="6" width="1000">CT-015 - S01<br>O sistema deve restringir funcionalidades de acordo com o perfil do usuário</th>
+  </tr>
+  <tr>
+    <td width="170"><strong>Critérios de êxito</strong></td>
+    <td colspan="5">O sistema deve exibir/ocultar os menus conforme o perfil do usuário.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsável pela funcionalidade</strong></td>
+    <td width="430">João Victor Antunes</td>
+    <td><strong>Responsável pelo teste</strong></td>
+    <td width="430">Priscila Maruno</td>
+    <td width="100"><strong>Data do teste</strong></td>
+    <td width="150">09/11/2025</td>
+  </tr>
+  <tr>
+    <td width="170"><strong>Comentário</strong></td>
+    <td colspan="5">As funcionalidades aparecem conforme o tipo de usuário.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center"><strong>Evidência</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/f942e901-259e-43e1-a279-4317224918e0" />
+    </td>
+  </tr>
+  <tr>
+     <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/6e006c8b-5820-4f47-8b24-284e1993ef8f" />
+    </td>
+  </tr>
+   <tr>
+     <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/c0782102-bfbf-4a7a-92a4-9bc258448a58" />
+    </td>
+  </tr>
+   <tr>
+     <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/c5d2dd75-88b1-4b55-b5e7-d4337fc4bbf0" />
+    </td>
+  </tr>
+   <tr>
+     <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/259d1d3d-dc14-4a64-bfaf-ec07bc237d55" />
+    </td>
+  </tr>
+   <tr>
+     <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/b28a85f7-944a-46b9-aaf9-09d04ec2f8db" />
+    </td>
+  </tr>
+     <tr>
+     <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/ea3463cf-133c-4c3f-a825-510589385548" />
+    </td>
+  </tr>
+     <tr>
+     <td colspan="6" align="center">
+      <img width="1902" height="944" alt="image" src="https://github.com/user-attachments/assets/7c0b993a-7524-4a53-af36-1055dda08840" />
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
