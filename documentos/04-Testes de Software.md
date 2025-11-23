@@ -2279,9 +2279,25 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
         src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e5-proj-empext-t3-memorioteca/blob/main/documentos/img/CadastroTestePares.png" />
     </td>
   </tr>
+   <tr>
+    <td colspan="6" align="center">
+      <img alt="Cadastro de Projeto"
+        src="https://github.com/user-attachments/assets/dffe7555-dac7-467f-9ed3-34da98ade342" />
+    </td>
+  </tr>
+   <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="Cadastro de Projeto"
+        src="https://github.com/user-attachments/assets/8a9a6592-6a87-4069-ad92-0b5f148f6226" />
+    </td>
+  </tr>
+   <tr>
+    <td colspan="6" align="center">
+      <img width="823" height="754" alt="Cadastro de Projeto"
+        src="https://github.com/user-attachments/assets/746c23c3-051f-41be-9954-32a98b45ba70" />
+    </td>
+  </tr>
 </table>
-
-<br><br>
 
 <table>
   <tr>
@@ -3297,15 +3313,3 @@ A fim de aumentar a qualidade da aplicação desenvolvida, cada funcionalidade d
     </td>
   </tr>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
