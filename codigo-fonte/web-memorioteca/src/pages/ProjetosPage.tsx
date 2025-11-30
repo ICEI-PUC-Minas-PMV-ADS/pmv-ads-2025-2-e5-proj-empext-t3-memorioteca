@@ -124,8 +124,10 @@ const ProjetosPage = () => {
   }
 
   const formatarData = (dataString: string) => {
+    if (!dataString) return ''
     const data = new Date(dataString)
-    return data.toLocaleDateString('pt-BR')
+  
+    return data.toLocaleDateString('pt-BR', { timeZone: 'UTC' })
   }
 
   const handlePaginacao = (novaPagina: number) => {
