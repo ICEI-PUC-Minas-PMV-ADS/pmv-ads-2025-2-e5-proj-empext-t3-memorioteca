@@ -1,1 +1,1 @@
-Você deve colocar aqui o relatório gerado na entrega do APC (sistema de Atividades e Práticas curriculares).
+[Relatório de Atividades em Grupo](https://github.com/user-attachments/files/24020612/puc.pdf)
